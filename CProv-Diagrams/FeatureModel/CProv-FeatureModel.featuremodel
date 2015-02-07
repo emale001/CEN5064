@@ -36,24 +36,39 @@
                 </children>
               </features>
             </children>
-            <children id="_KqJNwK8DEeSB-YH5M4lDYQ">
-              <features id="_KqImsK8DEeSB-YH5M4lDYQ" name="Network Type">
-                <children id="_RPbfsa8DEeSB-YH5M4lDYQ" lower="1" upper="1">
-                  <features id="_RPbfsK8DEeSB-YH5M4lDYQ" name="NAT"/>
-                  <features id="_TfUMwK8FEeSB-YH5M4lDYQ" name="Bridge"/>
-                  <features id="_VWQgQK8FEeSB-YH5M4lDYQ" name="Host Only"/>
+          </features>
+          <features id="_LwYvAK8BEeSB-YH5M4lDYQ" name="Multi Instance Creation">
+            <children id="_5GeWIK8XEeSB-YH5M4lDYQ">
+              <features id="_5GdvEK8XEeSB-YH5M4lDYQ" name="Network Type">
+                <children id="_6hoska8XEeSB-YH5M4lDYQ">
+                  <features id="_6hoskK8XEeSB-YH5M4lDYQ" name="NAT"/>
+                </children>
+                <children id="_70WRoK8XEeSB-YH5M4lDYQ">
+                  <features id="_70VqkK8XEeSB-YH5M4lDYQ" name="Host Only"/>
+                </children>
+                <children id="_-UIt0K8XEeSB-YH5M4lDYQ">
+                  <features id="_7JxDkK8XEeSB-YH5M4lDYQ" name="Bridge"/>
                 </children>
               </features>
             </children>
           </features>
-          <features id="_LwYvAK8BEeSB-YH5M4lDYQ" name="Multi Instance Creation"/>
         </children>
         <children id="_0DHhEa8DEeSB-YH5M4lDYQ">
           <features id="_0DHhEK8DEeSB-YH5M4lDYQ" name="Security Group">
             <children id="_EKraga8EEeSB-YH5M4lDYQ">
               <features id="_EKragK8EEeSB-YH5M4lDYQ" name="VPC"/>
             </children>
+            <children id="_cBjD0K8WEeSB-YH5M4lDYQ">
+              <features id="_cBicwK8WEeSB-YH5M4lDYQ" name="VPN"/>
+            </children>
           </features>
+        </children>
+      </features>
+    </children>
+    <children id="_ROixEK8SEeSB-YH5M4lDYQ" lower="1">
+      <features id="_ROiKAK8SEeSB-YH5M4lDYQ" name="Provider">
+        <children id="_H2hU8K8WEeSB-YH5M4lDYQ">
+          <features id="_H2gt4K8WEeSB-YH5M4lDYQ" name="EC2"/>
         </children>
       </features>
     </children>

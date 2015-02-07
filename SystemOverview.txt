@@ -1,0 +1,24 @@
+Nodes:
+	Environment
+
+	Security Group
+		IP Range
+		VPC Name
+
+	Instance
+		OS     { Windows, Linux         }
+		CPU    { Intel, AMD             }
+		
+	Storage
+		Type   { HDD, SSD               }
+		Size
+
+	Network
+		Type   { NAT, Bridge, Host Only }
+
+Connections:
+	Environment   [1..*]    Environment
+	Environment   [1..*]    Instance
+	Environment   [1..1]    Security Group
+	Instance      [1..*]	Storage
+	Instance      [1..1]	Network
