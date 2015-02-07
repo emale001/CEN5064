@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featuremodel:FeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:featuremodel="http://www.eclipse.org/featuremodel" id="_SdkqoK7_EeSB-YH5M4lDYQ">
+  <root id="_o6gxwK7_EeSB-YH5M4lDYQ" name="Cloud Provisioning">
+    <children id="_5NAI0K7_EeSB-YH5M4lDYQ" lower="1">
+      <features id="_5M-6sK7_EeSB-YH5M4lDYQ" name="Environment">
+        <children id="_FJAn0K8AEeSB-YH5M4lDYQ" lower="1" upper="1">
+          <features id="_FJAAwK8AEeSB-YH5M4lDYQ" name="Single Instance Creation">
+            <children id="_Zl8JkK8BEeSB-YH5M4lDYQ" lower="1">
+              <features id="_Zl7igK8BEeSB-YH5M4lDYQ" name="OS">
+                <children id="_riOwAK8BEeSB-YH5M4lDYQ" lower="1" upper="1">
+                  <features id="_riOI8K8BEeSB-YH5M4lDYQ" name="Windows"/>
+                  <features id="_s1wNYK8BEeSB-YH5M4lDYQ" name="Linux"/>
+                </children>
+              </features>
+            </children>
+            <children id="_FeJfcK8CEeSB-YH5M4lDYQ" lower="1">
+              <features id="_FeI4YK8CEeSB-YH5M4lDYQ" name="CPU">
+                <children id="_Y78U4K8CEeSB-YH5M4lDYQ" lower="1" upper="1">
+                  <features id="_Y77GwK8CEeSB-YH5M4lDYQ" name="Intel"/>
+                  <features id="_aZssUK8CEeSB-YH5M4lDYQ" name="AMD"/>
+                </children>
+              </features>
+            </children>
+            <children id="_c8D7YK8CEeSB-YH5M4lDYQ" lower="1">
+              <features id="_c8DUUK8CEeSB-YH5M4lDYQ" name="Storage">
+                <children id="_ngs-0K8CEeSB-YH5M4lDYQ">
+                  <features id="_ngsXwK8CEeSB-YH5M4lDYQ" name="Type">
+                    <children id="_xU0kQK8CEeSB-YH5M4lDYQ" lower="1" upper="1">
+                      <features id="_xUz9MK8CEeSB-YH5M4lDYQ" name="SSD"/>
+                      <features id="_y99FQK8CEeSB-YH5M4lDYQ" name="HDD"/>
+                    </children>
+                  </features>
+                </children>
+                <children id="_0slKQa8CEeSB-YH5M4lDYQ" lower="1">
+                  <features id="_0slKQK8CEeSB-YH5M4lDYQ" name="Size"/>
+                </children>
+              </features>
+            </children>
+            <children id="_KqJNwK8DEeSB-YH5M4lDYQ">
+              <features id="_KqImsK8DEeSB-YH5M4lDYQ" name="Network Type">
+                <children id="_RPbfsa8DEeSB-YH5M4lDYQ">
+                  <features id="_RPbfsK8DEeSB-YH5M4lDYQ" name="NAT"/>
+                </children>
+                <children id="_R8NtMK8DEeSB-YH5M4lDYQ">
+                  <features id="_R8NGIK8DEeSB-YH5M4lDYQ" name="Bridge"/>
+                </children>
+                <children id="_Slt9MK8DEeSB-YH5M4lDYQ">
+                  <features id="_SltWIK8DEeSB-YH5M4lDYQ" name="Host Only"/>
+                </children>
+              </features>
+            </children>
+          </features>
+          <features id="_LwYvAK8BEeSB-YH5M4lDYQ" name="Multi Instance Creation"/>
+        </children>
+        <children id="_0DHhEa8DEeSB-YH5M4lDYQ">
+          <features id="_0DHhEK8DEeSB-YH5M4lDYQ" name="Security Group">
+            <children id="_EKraga8EEeSB-YH5M4lDYQ">
+              <features id="_EKragK8EEeSB-YH5M4lDYQ" name="VPC"/>
+            </children>
+          </features>
+        </children>
+      </features>
+    </children>
+  </root>
+</featuremodel:FeatureModel>
