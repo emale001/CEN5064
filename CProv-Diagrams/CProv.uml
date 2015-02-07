@@ -49,5 +49,14 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_lmFwoK8gEeSB-YH5M4lDYQ" general="_OK2OMK8gEeSB-YH5M4lDYQ"/>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Model" xmi:id="_NCtMUK8eEeSB-YH5M4lDYQ" name="ExecutionEngine"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_NCtMUK8eEeSB-YH5M4lDYQ" name="ExecutionEngine">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-k-lMK8iEeSB-YH5M4lDYQ" name="Transformation to CProv-XML"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__5NNMK8iEeSB-YH5M4lDYQ" name="Validation against CProv Schema"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BLiXwK8jEeSB-YH5M4lDYQ" name="Submit request for instance deployment"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_C6nvwK8jEeSB-YH5M4lDYQ" name="Transformation to Cloud Provider API Calls"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FPEeoK8jEeSB-YH5M4lDYQ" name="Print CProv-XML"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GmC4oK8jEeSB-YH5M4lDYQ" name="Transformation from CProv-XML to Graphical Tree Model"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_wTBigK8iEeSB-YH5M4lDYQ" client="_8Tp1EK8dEeSB-YH5M4lDYQ" supplier="_C8ZDoK8eEeSB-YH5M4lDYQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_NaJpsK8jEeSB-YH5M4lDYQ" client="_8Tp1EK8dEeSB-YH5M4lDYQ" supplier="_NCtMUK8eEeSB-YH5M4lDYQ"/>
 </uml:Model>
