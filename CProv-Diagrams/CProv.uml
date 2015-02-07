@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4wlW8K8dEeSB-YH5M4lDYQ" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_8Tp1EK8dEeSB-YH5M4lDYQ" name="Cloud Administrator"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_C8ZDoK8eEeSB-YH5M4lDYQ" name="GraphicalVisualEnvironment">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_T9yIEK8eEeSB-YH5M4lDYQ" name="Create New Model">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_CcN5UK8fEeSB-YH5M4lDYQ" name="AddModelElement" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_U36OAK8eEeSB-YH5M4lDYQ" name="Add Model Element">
+      <extend xmi:type="uml:Extend" xmi:id="_CcBsEK8fEeSB-YH5M4lDYQ" extendedCase="_T9yIEK8eEeSB-YH5M4lDYQ" extensionLocation="_CcN5UK8fEeSB-YH5M4lDYQ"/>
+      <extend xmi:type="uml:Extend" xmi:id="_f1s70K8fEeSB-YH5M4lDYQ" extendedCase="_cETGwK8fEeSB-YH5M4lDYQ" extensionLocation="_f1zCcK8fEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WkVTkK8eEeSB-YH5M4lDYQ" name="Add Environment Node">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Yne3EK8eEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ZWQooK8eEeSB-YH5M4lDYQ" name="Add Environment Node">
+        <generalization xmi:type="uml:Generalization" xmi:id="_ZWQooa8eEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Z30dkK8eEeSB-YH5M4lDYQ" name="Add Security Group Node">
+      <generalization xmi:type="uml:Generalization" xmi:id="_eLUTEK8eEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_f62XAK8eEeSB-YH5M4lDYQ" name="Add Instance Node">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hVaQgK8eEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hrToAK8eEeSB-YH5M4lDYQ" name="Add Storage Node">
+      <generalization xmi:type="uml:Generalization" xmi:id="_48VegK8eEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-Lyl8K8eEeSB-YH5M4lDYQ" name="Add Network Node">
+      <generalization xmi:type="uml:Generalization" xmi:id="_AGibYK8fEeSB-YH5M4lDYQ" general="_U36OAK8eEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Zb2d0K8fEeSB-YH5M4lDYQ" name="Save Model"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_aXXq4K8fEeSB-YH5M4lDYQ" name="Validate Model"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cETGwK8fEeSB-YH5M4lDYQ" name="Load Existing Model">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_f1zCcK8fEeSB-YH5M4lDYQ" name="AddModelElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2f9tQK8fEeSB-YH5M4lDYQ" name="Delete Node"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4U_8QK8fEeSB-YH5M4lDYQ" name="Add Connection"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__ZbBQK8fEeSB-YH5M4lDYQ" name="Delete Connection"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OK2OMK8gEeSB-YH5M4lDYQ" name="Edit Node Properties"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PjHosK8gEeSB-YH5M4lDYQ" name="Edit Instance Properties">
+      <generalization xmi:type="uml:Generalization" xmi:id="_khSEsK8gEeSB-YH5M4lDYQ" general="_OK2OMK8gEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QpKDsK8gEeSB-YH5M4lDYQ" name="Edit Security Group Properties">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kB7PMK8gEeSB-YH5M4lDYQ" general="_OK2OMK8gEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_SpaEMK8gEeSB-YH5M4lDYQ" name="Edit Storage Properties">
+      <generalization xmi:type="uml:Generalization" xmi:id="_k7D2oK8gEeSB-YH5M4lDYQ" general="_OK2OMK8gEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UInNIK8gEeSB-YH5M4lDYQ" name="Edit Network Properties">
+      <generalization xmi:type="uml:Generalization" xmi:id="_lmFwoK8gEeSB-YH5M4lDYQ" general="_OK2OMK8gEeSB-YH5M4lDYQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_NCtMUK8eEeSB-YH5M4lDYQ" name="ExecutionEngine"/>
+</uml:Model>
