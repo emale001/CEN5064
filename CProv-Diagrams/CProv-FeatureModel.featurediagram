@@ -390,14 +390,14 @@
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
     </anchors>
     <children visible="true">
-      <graphicsAlgorithm xsi:type="al:MultiText" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="40" height="15" x="10" y="10" horizontalAlignment="ALIGNMENT_CENTER" value="Intel"/>
+      <graphicsAlgorithm xsi:type="al:MultiText" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="40" height="20" x="10" y="10" horizontalAlignment="ALIGNMENT_CENTER" value="Intel"/>
       <link>
         <businessObjects href="CProv-FeatureModel.featuremodel#_Y77GwK8CEeSB-YH5M4lDYQ"/>
       </link>
     </children>
     <children xsi:type="pi:ContainerShape">
       <properties key="type" value="expandsign"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" lineWidth="1" filled="true" transparency="0.0" width="11" height="11" x="40" y="15"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" lineWidth="1" filled="true" transparency="0.0" width="11" height="11" x="40" y="20"/>
       <link>
         <businessObjects href="CProv-FeatureModel.featuremodel#_Y77GwK8CEeSB-YH5M4lDYQ"/>
       </link>
@@ -433,14 +433,14 @@
       <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
     </anchors>
     <children visible="true">
-      <graphicsAlgorithm xsi:type="al:MultiText" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="41" height="11" x="10" y="10" horizontalAlignment="ALIGNMENT_CENTER" value="AMD"/>
+      <graphicsAlgorithm xsi:type="al:MultiText" foreground="//@colors.2" lineWidth="1" filled="false" transparency="0.0" width="41" height="20" x="10" y="10" horizontalAlignment="ALIGNMENT_CENTER" value="AMD"/>
       <link>
         <businessObjects href="CProv-FeatureModel.featuremodel#_aZssUK8CEeSB-YH5M4lDYQ"/>
       </link>
     </children>
     <children xsi:type="pi:ContainerShape">
       <properties key="type" value="expandsign"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" lineWidth="1" filled="true" transparency="0.0" width="11" height="11" x="41" y="11"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" lineWidth="1" filled="true" transparency="0.0" width="11" height="11" x="41" y="20"/>
       <link>
         <businessObjects href="CProv-FeatureModel.featuremodel#_aZssUK8CEeSB-YH5M4lDYQ"/>
       </link>
