@@ -38,14 +38,10 @@
             </children>
             <children id="_KqJNwK8DEeSB-YH5M4lDYQ">
               <features id="_KqImsK8DEeSB-YH5M4lDYQ" name="Network Type">
-                <children id="_RPbfsa8DEeSB-YH5M4lDYQ">
+                <children id="_RPbfsa8DEeSB-YH5M4lDYQ" lower="1" upper="1">
                   <features id="_RPbfsK8DEeSB-YH5M4lDYQ" name="NAT"/>
-                </children>
-                <children id="_R8NtMK8DEeSB-YH5M4lDYQ">
-                  <features id="_R8NGIK8DEeSB-YH5M4lDYQ" name="Bridge"/>
-                </children>
-                <children id="_Slt9MK8DEeSB-YH5M4lDYQ">
-                  <features id="_SltWIK8DEeSB-YH5M4lDYQ" name="Host Only"/>
+                  <features id="_TfUMwK8FEeSB-YH5M4lDYQ" name="Bridge"/>
+                  <features id="_VWQgQK8FEeSB-YH5M4lDYQ" name="Host Only"/>
                 </children>
               </features>
             </children>
