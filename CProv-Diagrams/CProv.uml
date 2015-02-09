@@ -142,6 +142,9 @@
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_K8JXgLAmEeSRNNZIuVQCyA" name="validate"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Le6tYLAmEeSRNNZIuVQCyA" name="save"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_vKzsoLAnEeSRNNZIuVQCyA" name="addElement"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QegTMLAuEeSRNNZIuVQCyA" name="newModel"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UuG1QLAwEeSRNNZIuVQCyA" name="create"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_EQ32gLAfEeSRNNZIuVQCyA" name="ModelElement">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_I7gVcLAmEeSRNNZIuVQCyA" name="viewProperties"/>
@@ -154,6 +157,8 @@
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Dwr2YLAmEeSRNNZIuVQCyA" name="selectModelElement"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Ctb0MLAnEeSRNNZIuVQCyA" name="dragElement"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OQUhMLAqEeSRNNZIuVQCyA" name="initialize"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TyFHULAvEeSRNNZIuVQCyA" name="addElements"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_h3QaoLAhEeSRNNZIuVQCyA" name="Workspace">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0OQnILAhEeSRNNZIuVQCyA" name="palette" type="_Ya2xoLAhEeSRNNZIuVQCyA" association="_0OQnI7AhEeSRNNZIuVQCyA">
@@ -164,8 +169,14 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19koobAhEeSRNNZIuVQCyA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19koorAhEeSRNNZIuVQCyA" value="*"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_MsTGgLAmEeSRNNZIuVQCyA" name="createModel"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_MsTGgLAmEeSRNNZIuVQCyA" name="createModel">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rDdnULAoEeSRNNZIuVQCyA" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_NhY7cLAmEeSRNNZIuVQCyA" name="loadModel"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_EgGSYLAsEeSRNNZIuVQCyA" name="createModel"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_0uQ_ELAwEeSRNNZIuVQCyA" name="createModelEditor"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_ycCnILAXEeSRNNZIuVQCyA" memberEnd="_ycCnIbAXEeSRNNZIuVQCyA _ycCAELAXEeSRNNZIuVQCyA">
           <ownedEnd xmi:type="uml:Property" xmi:id="_ycCnIbAXEeSRNNZIuVQCyA" name="environment" type="_XqDyYLAXEeSRNNZIuVQCyA" association="_ycCnILAXEeSRNNZIuVQCyA">
@@ -275,7 +286,44 @@
           </ownedEnd>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Model" xmi:id="_kLERULAWEeSRNNZIuVQCyA" name="Dynamic"/>
+      <packagedElement xmi:type="uml:Model" xmi:id="_kLERULAWEeSRNNZIuVQCyA" name="Dynamic">
+        <packagedElement xmi:type="uml:Interaction" xmi:id="_jM2s4LAnEeSRNNZIuVQCyA" name="CPROVME001-CreateNewModel">
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_5VnTwLAnEeSRNNZIuVQCyA" name="Workspace" represents="_0OQnJLAhEeSRNNZIuVQCyA" coveredBy="_OGqnMLAwEeSRNNZIuVQCyA _OGr1ULAwEeSRNNZIuVQCyA _OGrOQLAwEeSRNNZIuVQCyA _tTmkULAwEeSRNNZIuVQCyA _BEIvkLAxEeSRNNZIuVQCyA _BEJWoLAxEeSRNNZIuVQCyA _GX1d0LAxEeSRNNZIuVQCyA"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_3UeF8LAoEeSRNNZIuVQCyA" name="Palette" represents="_0OQnILAhEeSRNNZIuVQCyA" coveredBy="_DW3nMLAxEeSRNNZIuVQCyA _DW3AILAxEeSRNNZIuVQCyA _GX2E4LAxEeSRNNZIuVQCyA"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_HhJEsLAwEeSRNNZIuVQCyA" name="Model" represents="_19kooLAhEeSRNNZIuVQCyA" coveredBy="_ZNpisbAwEeSRNNZIuVQCyA _ZNpisLAwEeSRNNZIuVQCyA _tTnLYLAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_OGqnMLAwEeSRNNZIuVQCyA" name="ActionExecSpecStart" covered="_5VnTwLAnEeSRNNZIuVQCyA" execution="_OGrOQLAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_OGrOQLAwEeSRNNZIuVQCyA" name="ActionExecSpec" covered="_5VnTwLAnEeSRNNZIuVQCyA" finish="_OGr1ULAwEeSRNNZIuVQCyA" start="_OGqnMLAwEeSRNNZIuVQCyA" action="_PM-hQLArEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tTmkULAwEeSRNNZIuVQCyA" name="create_MessageSend" covered="_5VnTwLAnEeSRNNZIuVQCyA" message="_tTl9QLAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ZNpisLAwEeSRNNZIuVQCyA" name="ActionExecSpec0" covered="_HhJEsLAwEeSRNNZIuVQCyA" finish="_ZNpisbAwEeSRNNZIuVQCyA" start="_tTnLYLAwEeSRNNZIuVQCyA" action="_g8gr0LAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tTnLYLAwEeSRNNZIuVQCyA" name="create_MessageRecv" covered="_HhJEsLAwEeSRNNZIuVQCyA" message="_tTl9QLAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZNpisbAwEeSRNNZIuVQCyA" name="ActionExecSpec0Finish" covered="_HhJEsLAwEeSRNNZIuVQCyA" execution="_ZNpisLAwEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BEIvkLAxEeSRNNZIuVQCyA" name="createModelEditor_MessageSend" covered="_5VnTwLAnEeSRNNZIuVQCyA" message="_BEIIgLAxEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BEJWoLAxEeSRNNZIuVQCyA" name="createModelEditor_MessageRecv" covered="_5VnTwLAnEeSRNNZIuVQCyA" message="_BEIIgLAxEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GX2E4LAxEeSRNNZIuVQCyA" name="initialize_MessageRecv" covered="_3UeF8LAoEeSRNNZIuVQCyA" message="_GX02wLAxEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_DW3AILAxEeSRNNZIuVQCyA" name="ActionExecSpec1" covered="_3UeF8LAoEeSRNNZIuVQCyA" finish="_DW3nMLAxEeSRNNZIuVQCyA" start="_GX2E4LAxEeSRNNZIuVQCyA" action="_t-saoLAuEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GX1d0LAxEeSRNNZIuVQCyA" name="initialize_MessageSend" covered="_5VnTwLAnEeSRNNZIuVQCyA" message="_GX02wLAxEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DW3nMLAxEeSRNNZIuVQCyA" name="ActionExecSpec1Finish" covered="_3UeF8LAoEeSRNNZIuVQCyA" execution="_DW3AILAxEeSRNNZIuVQCyA"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_OGr1ULAwEeSRNNZIuVQCyA" name="ActionExecSpecFinish" covered="_5VnTwLAnEeSRNNZIuVQCyA" execution="_OGrOQLAwEeSRNNZIuVQCyA"/>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_PM-hQLArEeSRNNZIuVQCyA" name="createModel" operation="_MsTGgLAmEeSRNNZIuVQCyA">
+            <target xmi:type="uml:ValuePin" xmi:id="_OrNbgLAsEeSRNNZIuVQCyA" name="workspace">
+              <value xmi:type="uml:LiteralString" xmi:id="_UVjIILAsEeSRNNZIuVQCyA" name="workspace" value="workspace"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_t-saoLAuEeSRNNZIuVQCyA" name="initializePalette" operation="_OQUhMLAqEeSRNNZIuVQCyA">
+            <target xmi:type="uml:ValuePin" xmi:id="_t-saobAuEeSRNNZIuVQCyA" name="palette">
+              <value xmi:type="uml:LiteralString" xmi:id="_t-saorAuEeSRNNZIuVQCyA" name="palette" value="palette"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_g8gr0LAwEeSRNNZIuVQCyA" name="modelCtor" operation="_UuG1QLAwEeSRNNZIuVQCyA">
+            <target xmi:type="uml:ValuePin" xmi:id="_g8gr0bAwEeSRNNZIuVQCyA" name="model">
+              <value xmi:type="uml:LiteralString" xmi:id="_lBOecLAwEeSRNNZIuVQCyA" name="ctor" value="ctor"/>
+            </target>
+          </action>
+          <message xmi:type="uml:Message" xmi:id="_tTl9QLAwEeSRNNZIuVQCyA" name="create" messageSort="asynchCall" receiveEvent="_tTnLYLAwEeSRNNZIuVQCyA" sendEvent="_tTmkULAwEeSRNNZIuVQCyA" signature="_UuG1QLAwEeSRNNZIuVQCyA"/>
+          <message xmi:type="uml:Message" xmi:id="_BEIIgLAxEeSRNNZIuVQCyA" name="createModelEditor" messageSort="asynchCall" receiveEvent="_BEJWoLAxEeSRNNZIuVQCyA" sendEvent="_BEIvkLAxEeSRNNZIuVQCyA" signature="_0uQ_ELAwEeSRNNZIuVQCyA"/>
+          <message xmi:type="uml:Message" xmi:id="_GX02wLAxEeSRNNZIuVQCyA" name="initialize_Message" messageSort="asynchCall" receiveEvent="_GX2E4LAxEeSRNNZIuVQCyA" sendEvent="_GX1d0LAxEeSRNNZIuVQCyA" signature="_OQUhMLAqEeSRNNZIuVQCyA"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Hpm0QLAcEeSRNNZIuVQCyA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HqT-4LAcEeSRNNZIuVQCyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
