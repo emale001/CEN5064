@@ -58,6 +58,7 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_C6nvwK8jEeSB-YH5M4lDYQ" name="TransformToCloudProviderAPICalls"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_FPEeoK8jEeSB-YH5M4lDYQ" name="PrintCProvXML"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_GmC4oK8jEeSB-YH5M4lDYQ" name="TransformFromCProvXMLToGraphicalTreeModel"/>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_JU_SALVAEeS9h90QRJo0kg" name="Actor1"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Realization" xmi:id="_wTBigK8iEeSB-YH5M4lDYQ" client="_8Tp1EK8dEeSB-YH5M4lDYQ" supplier="_C8ZDoK8eEeSB-YH5M4lDYQ"/>
       <packagedElement xmi:type="uml:Realization" xmi:id="_NaJpsK8jEeSB-YH5M4lDYQ" client="_8Tp1EK8dEeSB-YH5M4lDYQ" supplier="_NCtMUK8eEeSB-YH5M4lDYQ"/>
@@ -323,6 +324,120 @@
           <message xmi:type="uml:Message" xmi:id="_BEIIgLAxEeSRNNZIuVQCyA" name="createModelEditor" messageSort="asynchCall" receiveEvent="_BEJWoLAxEeSRNNZIuVQCyA" sendEvent="_BEIvkLAxEeSRNNZIuVQCyA" signature="_0uQ_ELAwEeSRNNZIuVQCyA"/>
           <message xmi:type="uml:Message" xmi:id="_GX02wLAxEeSRNNZIuVQCyA" name="initialize_Message" messageSort="asynchCall" receiveEvent="_GX2E4LAxEeSRNNZIuVQCyA" sendEvent="_GX1d0LAxEeSRNNZIuVQCyA" signature="_OQUhMLAqEeSRNNZIuVQCyA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Activity" xmi:id="_1JJ1YLVAEeS9h90QRJo0kg" name="CProv-CPROVME005-AddInstanceNode" node="_Oq3YQLVFEeS9h90QRJo0kg __5pfULVHEeS9h90QRJo0kg _gQm_kLVIEeS9h90QRJo0kg _QGazcLVJEeS9h90QRJo0kg _dWwoILVJEeS9h90QRJo0kg _x_NS0LVJEeS9h90QRJo0kg _DgpwULVKEeS9h90QRJo0kg _iTDGgLVKEeS9h90QRJo0kg _2BB3kLVLEeS9h90QRJo0kg" isSingleExecution="true">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_HFtdYLVIEeS9h90QRJo0kg" target="__5pfULVHEeS9h90QRJo0kg" source="_Oq3YQLVFEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_luYP0LVIEeS9h90QRJo0kg" target="_gQm_kLVIEeS9h90QRJo0kg" source="__5pfULVHEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_izmO0LVKEeS9h90QRJo0kg" target="_iTDGgLVKEeS9h90QRJo0kg" source="_DgpwULVKEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_jde5ULVKEeS9h90QRJo0kg" target="_iTDGgLVKEeS9h90QRJo0kg" source="_x_NS0LVJEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_rC-EALVKEeS9h90QRJo0kg" target="_QGazcLVJEeS9h90QRJo0kg" source="_dWwoILVJEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_rf0YELVKEeS9h90QRJo0kg" name="Yes" target="_x_NS0LVJEeS9h90QRJo0kg" source="_QGazcLVJEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_xeNpILVKEeS9h90QRJo0kg" name="No" target="_DgpwULVKEeS9h90QRJo0kg" source="_QGazcLVJEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_4YO_gLVLEeS9h90QRJo0kg" target="_2BB3kLVLEeS9h90QRJo0kg" source="_gQm_kLVIEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_47Pl8LVLEeS9h90QRJo0kg" target="_dWwoILVJEeS9h90QRJo0kg" source="_2BB3kLVLEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_Oq3YQLVFEeS9h90QRJo0kg" name="ME is running on system" outgoing="_HFtdYLVIEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="__5pfULVHEeS9h90QRJo0kg" name="Select Instance node from Palette" incoming="_HFtdYLVIEeS9h90QRJo0kg" outgoing="_luYP0LVIEeS9h90QRJo0kg" language="" body=""/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_gQm_kLVIEeS9h90QRJo0kg" name="Click Workspace" incoming="_luYP0LVIEeS9h90QRJo0kg" outgoing="_4YO_gLVLEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:DecisionNode" xmi:id="_QGazcLVJEeS9h90QRJo0kg" name="Rename decision" incoming="_rC-EALVKEeS9h90QRJo0kg" outgoing="_rf0YELVKEeS9h90QRJo0kg _xeNpILVKEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_dWwoILVJEeS9h90QRJo0kg" name="Rename Instance Node" incoming="_47Pl8LVLEeS9h90QRJo0kg" outgoing="_rC-EALVKEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_x_NS0LVJEeS9h90QRJo0kg" name="Enter new Instance node name" incoming="_rf0YELVKEeS9h90QRJo0kg" outgoing="_jde5ULVKEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_DgpwULVKEeS9h90QRJo0kg" name="Default Name Assigned to Node" incoming="_xeNpILVKEeS9h90QRJo0kg" outgoing="_izmO0LVKEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_iTDGgLVKEeS9h90QRJo0kg" name="Final State" incoming="_izmO0LVKEeS9h90QRJo0kg _jde5ULVKEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_2BB3kLVLEeS9h90QRJo0kg" name="Node Instance Created" incoming="_4YO_gLVLEeS9h90QRJo0kg" outgoing="_47Pl8LVLEeS9h90QRJo0kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Activity" xmi:id="_zgz2MLVOEeS9h90QRJo0kg" name="CProv-CPROVME001-CreateNewModel" node="_AbEGILVPEeS9h90QRJo0kg _FBzAsLVPEeS9h90QRJo0kg _OhP9sLVPEeS9h90QRJo0kg _WpnL8LVPEeS9h90QRJo0kg _bNTZkLVPEeS9h90QRJo0kg _mDT50LVPEeS9h90QRJo0kg" isSingleExecution="true">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_NNcMcLVPEeS9h90QRJo0kg" target="_FBzAsLVPEeS9h90QRJo0kg" source="_AbEGILVPEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_QtFjILVPEeS9h90QRJo0kg" target="_OhP9sLVPEeS9h90QRJo0kg" source="_FBzAsLVPEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_ep9tsLVPEeS9h90QRJo0kg" target="_WpnL8LVPEeS9h90QRJo0kg" source="_OhP9sLVPEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_fB7hwLVPEeS9h90QRJo0kg" target="_bNTZkLVPEeS9h90QRJo0kg" source="_WpnL8LVPEeS9h90QRJo0kg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_nkvQULVPEeS9h90QRJo0kg" target="_mDT50LVPEeS9h90QRJo0kg" source="_bNTZkLVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_AbEGILVPEeS9h90QRJo0kg" name="ME is running on system" outgoing="_NNcMcLVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_FBzAsLVPEeS9h90QRJo0kg" name="Select &quot;File&quot;" incoming="_NNcMcLVPEeS9h90QRJo0kg" outgoing="_QtFjILVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_OhP9sLVPEeS9h90QRJo0kg" name="Select &quot;Create CPROV Model&quot;" incoming="_QtFjILVPEeS9h90QRJo0kg" outgoing="_ep9tsLVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_WpnL8LVPEeS9h90QRJo0kg" name="Enter Name for the Model" incoming="_ep9tsLVPEeS9h90QRJo0kg" outgoing="_fB7hwLVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_bNTZkLVPEeS9h90QRJo0kg" name="Click &quot;OK&quot;" incoming="_fB7hwLVPEeS9h90QRJo0kg" outgoing="_nkvQULVPEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_mDT50LVPEeS9h90QRJo0kg" name="New CPROV Model Created" incoming="_nkvQULVPEeS9h90QRJo0kg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_2KLPsLVPEeS9h90QRJo0kg" name="CProv-CPROVME014-AddConnection" node="_BjqQcLVQEeS9h90QRJo0kg _CEdQYLVQEeS9h90QRJo0kg _L6wAELVQEeS9h90QRJo0kg _Oo3zMLVQEeS9h90QRJo0kg _V5AY8LVQEeS9h90QRJo0kg _exs38LVQEeS9h90QRJo0kg _lR8R0LVQEeS9h90QRJo0kg _v5TSELVQEeS9h90QRJo0kg _4W_3ILVQEeS9h90QRJo0kg _cmqxgLVVEeS9h90QRJo0kg" isSingleExecution="true">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_RYtdkLVQEeS9h90QRJo0kg" target="_CEdQYLVQEeS9h90QRJo0kg" source="_BjqQcLVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Rwtt4LVQEeS9h90QRJo0kg" target="_L6wAELVQEeS9h90QRJo0kg" source="_CEdQYLVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_SI8nsLVQEeS9h90QRJo0kg" target="_Oo3zMLVQEeS9h90QRJo0kg" source="_L6wAELVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_hhQ1gLVQEeS9h90QRJo0kg" target="_exs38LVQEeS9h90QRJo0kg" source="_Oo3zMLVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_h7X-oLVQEeS9h90QRJo0kg" target="_V5AY8LVQEeS9h90QRJo0kg" source="_exs38LVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_qnuDsLVQEeS9h90QRJo0kg" name="Yes" target="_lR8R0LVQEeS9h90QRJo0kg" source="_V5AY8LVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_y_8S4LVQEeS9h90QRJo0kg" name="No" target="_v5TSELVQEeS9h90QRJo0kg" source="_V5AY8LVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4uysELVQEeS9h90QRJo0kg" target="_cmqxgLVVEeS9h90QRJo0kg" source="_v5TSELVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_5N30wLVQEeS9h90QRJo0kg" target="_cmqxgLVVEeS9h90QRJo0kg" source="_lR8R0LVQEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_jANtgLVVEeS9h90QRJo0kg" target="_4W_3ILVQEeS9h90QRJo0kg" source="_cmqxgLVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_BjqQcLVQEeS9h90QRJo0kg" name="ME is running on system" outgoing="_RYtdkLVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_CEdQYLVQEeS9h90QRJo0kg" name="Select Connection form palette" incoming="_RYtdkLVQEeS9h90QRJo0kg" outgoing="_Rwtt4LVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_L6wAELVQEeS9h90QRJo0kg" name="Click on the Source Node" incoming="_Rwtt4LVQEeS9h90QRJo0kg" outgoing="_SI8nsLVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Oo3zMLVQEeS9h90QRJo0kg" name="Click on the Destination Node" incoming="_SI8nsLVQEeS9h90QRJo0kg" outgoing="_hhQ1gLVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_V5AY8LVQEeS9h90QRJo0kg" name="rename decision" incoming="_h7X-oLVQEeS9h90QRJo0kg" outgoing="_qnuDsLVQEeS9h90QRJo0kg _y_8S4LVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_exs38LVQEeS9h90QRJo0kg" name="Rename connection" incoming="_hhQ1gLVQEeS9h90QRJo0kg" outgoing="_h7X-oLVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_lR8R0LVQEeS9h90QRJo0kg" name="Enter Name for Connection" incoming="_qnuDsLVQEeS9h90QRJo0kg" outgoing="_5N30wLVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_v5TSELVQEeS9h90QRJo0kg" name="Defautl Name assigned" incoming="_y_8S4LVQEeS9h90QRJo0kg" outgoing="_4uysELVQEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_4W_3ILVQEeS9h90QRJo0kg" name="Connection created betwen Source and Destination" incoming="_jANtgLVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_cmqxgLVVEeS9h90QRJo0kg" name="Connection Created" incoming="_4uysELVQEeS9h90QRJo0kg _5N30wLVQEeS9h90QRJo0kg" outgoing="_jANtgLVVEeS9h90QRJo0kg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_7x8MoLVTEeS9h90QRJo0kg" name="CProv-CPROVEE001-SubmitRequestForInstanceDeployment" node="_MNvQsLVUEeS9h90QRJo0kg _VsrQULVUEeS9h90QRJo0kg _hkVa0LVUEeS9h90QRJo0kg _l3X9ULVUEeS9h90QRJo0kg _oNdD4LVUEeS9h90QRJo0kg _lMzg4LVVEeS9h90QRJo0kg _wWzUILVVEeS9h90QRJo0kg _KBMOsLVWEeS9h90QRJo0kg" isSingleExecution="true">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_a2V40LVUEeS9h90QRJo0kg" target="_VsrQULVUEeS9h90QRJo0kg" source="_MNvQsLVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_h3UoQLVUEeS9h90QRJo0kg" target="_l3X9ULVUEeS9h90QRJo0kg" source="_VsrQULVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_rDkVYLVUEeS9h90QRJo0kg" name="continue" target="_hkVa0LVUEeS9h90QRJo0kg" source="_l3X9ULVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_sc1OYLVUEeS9h90QRJo0kg" name="Cancel request" target="_oNdD4LVUEeS9h90QRJo0kg" source="_l3X9ULVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_G2_ZALVVEeS9h90QRJo0kg" target="_VsrQULVUEeS9h90QRJo0kg" source="_oNdD4LVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_vcQ-gLVVEeS9h90QRJo0kg" target="_lMzg4LVVEeS9h90QRJo0kg" source="_hkVa0LVUEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_w3XqkLVVEeS9h90QRJo0kg" target="_wWzUILVVEeS9h90QRJo0kg" source="_KBMOsLVWEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_OQVIoLVWEeS9h90QRJo0kg" target="_KBMOsLVWEeS9h90QRJo0kg" source="_lMzg4LVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_MNvQsLVUEeS9h90QRJo0kg" name="Model Diagram is Active" outgoing="_a2V40LVUEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_VsrQULVUEeS9h90QRJo0kg" name="Click on the Deployment" incoming="_a2V40LVUEeS9h90QRJo0kg _G2_ZALVVEeS9h90QRJo0kg" outgoing="_h3UoQLVUEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_hkVa0LVUEeS9h90QRJo0kg" name="Click &quot;Confirm&quot;" incoming="_rDkVYLVUEeS9h90QRJo0kg" outgoing="_vcQ-gLVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_l3X9ULVUEeS9h90QRJo0kg" name="Confirm/Cancel decision" incoming="_h3UoQLVUEeS9h90QRJo0kg" outgoing="_rDkVYLVUEeS9h90QRJo0kg _sc1OYLVUEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_oNdD4LVUEeS9h90QRJo0kg" name="Click &quot;Cancel&quot;" incoming="_sc1OYLVUEeS9h90QRJo0kg" outgoing="_G2_ZALVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_lMzg4LVVEeS9h90QRJo0kg" name="Translation To CPROV API calls" incoming="_vcQ-gLVVEeS9h90QRJo0kg" outgoing="_OQVIoLVWEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_wWzUILVVEeS9h90QRJo0kg" name="ActivityFinalNode1" incoming="_w3XqkLVVEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_KBMOsLVWEeS9h90QRJo0kg" name="CPROV API calls executed" incoming="_OQVIoLVWEeS9h90QRJo0kg" outgoing="_w3XqkLVVEeS9h90QRJo0kg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_2tn20LVWEeS9h90QRJo0kg" name="CProv-CPROVEE002-TranslationToCprovXML" node="_D4WywLVXEeS9h90QRJo0kg _EXlFYLVXEeS9h90QRJo0kg _PWXHILVXEeS9h90QRJo0kg _RFErsLVXEeS9h90QRJo0kg _S5OJ4LVXEeS9h90QRJo0kg _p-VEQLVXEeS9h90QRJo0kg _vLqEwLVXEeS9h90QRJo0kg _1rP-YLVXEeS9h90QRJo0kg" isSingleExecution="true">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_MrdAELVXEeS9h90QRJo0kg" target="_EXlFYLVXEeS9h90QRJo0kg" source="_D4WywLVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QSvP0LVXEeS9h90QRJo0kg" target="_PWXHILVXEeS9h90QRJo0kg" source="_EXlFYLVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WJOiELVXEeS9h90QRJo0kg" name="continue" target="_RFErsLVXEeS9h90QRJo0kg" source="_PWXHILVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_YbHsMLVXEeS9h90QRJo0kg" name="Start over" target="_S5OJ4LVXEeS9h90QRJo0kg" source="_PWXHILVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_cIv0gLVXEeS9h90QRJo0kg" target="_EXlFYLVXEeS9h90QRJo0kg" source="_S5OJ4LVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_uXs4QLVXEeS9h90QRJo0kg" target="_p-VEQLVXEeS9h90QRJo0kg" source="_RFErsLVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_0yZDwLVXEeS9h90QRJo0kg" target="_vLqEwLVXEeS9h90QRJo0kg" source="_p-VEQLVXEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_5fByALVXEeS9h90QRJo0kg" target="_1rP-YLVXEeS9h90QRJo0kg" source="_vLqEwLVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_D4WywLVXEeS9h90QRJo0kg" name="Model is Created and Validated" outgoing="_MrdAELVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_EXlFYLVXEeS9h90QRJo0kg" name="Tranform to CPROV XML" incoming="_MrdAELVXEeS9h90QRJo0kg _cIv0gLVXEeS9h90QRJo0kg" outgoing="_QSvP0LVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_PWXHILVXEeS9h90QRJo0kg" name="Confirm/Cancel decision" incoming="_QSvP0LVXEeS9h90QRJo0kg" outgoing="_WJOiELVXEeS9h90QRJo0kg _YbHsMLVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RFErsLVXEeS9h90QRJo0kg" name="Click &quot;Confirm&quot;" incoming="_WJOiELVXEeS9h90QRJo0kg" outgoing="_uXs4QLVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_S5OJ4LVXEeS9h90QRJo0kg" name="Cick &quot;Cancel&quot;" incoming="_YbHsMLVXEeS9h90QRJo0kg" outgoing="_cIv0gLVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_p-VEQLVXEeS9h90QRJo0kg" name="Model Translated to CPROV XML schema" incoming="_uXs4QLVXEeS9h90QRJo0kg" outgoing="_0yZDwLVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_vLqEwLVXEeS9h90QRJo0kg" name="Translation Written to File" incoming="_0yZDwLVXEeS9h90QRJo0kg" outgoing="_5fByALVXEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_1rP-YLVXEeS9h90QRJo0kg" name="Translation Saved to File" incoming="_5fByALVXEeS9h90QRJo0kg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_lcrBgLVYEeS9h90QRJo0kg" name="CProv-CPROVEE003-ValidationAgainstCProvSchema" node="_4Z3rULVYEeS9h90QRJo0kg _4oOQYLVYEeS9h90QRJo0kg _C78i8LVZEeS9h90QRJo0kg _HL_b0LVZEeS9h90QRJo0kg _MKcS0LVZEeS9h90QRJo0kg _ANzsQLVaEeS9h90QRJo0kg _BSKFMLVaEeS9h90QRJo0kg _DNqIkLVaEeS9h90QRJo0kg _rYLrwLVaEeS9h90QRJo0kg _6LknkLVaEeS9h90QRJo0kg" isSingleExecution="true">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_P80_ULVZEeS9h90QRJo0kg" target="_4Z3rULVYEeS9h90QRJo0kg" source="_4oOQYLVYEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QUt64LVZEeS9h90QRJo0kg" target="_C78i8LVZEeS9h90QRJo0kg" source="_4Z3rULVYEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QqPe8LVZEeS9h90QRJo0kg" target="_HL_b0LVZEeS9h90QRJo0kg" source="_C78i8LVZEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_S1OIwLVZEeS9h90QRJo0kg" source="_MKcS0LVZEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_CaSK4LVaEeS9h90QRJo0kg" target="_BSKFMLVaEeS9h90QRJo0kg" source="_HL_b0LVZEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_KkDHULVaEeS9h90QRJo0kg" name="Errors found" target="_ANzsQLVaEeS9h90QRJo0kg" source="_BSKFMLVaEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_K-86oLVaEeS9h90QRJo0kg" name="Successful Validation" target="_DNqIkLVaEeS9h90QRJo0kg" source="_BSKFMLVaEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_pILYALVaEeS9h90QRJo0kg" target="_MKcS0LVZEeS9h90QRJo0kg" source="_DNqIkLVaEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zvPdULVaEeS9h90QRJo0kg" target="_rYLrwLVaEeS9h90QRJo0kg" source="_ANzsQLVaEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_0c7pwLVaEeS9h90QRJo0kg" target="_4Z3rULVYEeS9h90QRJo0kg" source="_rYLrwLVaEeS9h90QRJo0kg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_6ihvALVaEeS9h90QRJo0kg" target="_6LknkLVaEeS9h90QRJo0kg" source="_MKcS0LVZEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4Z3rULVYEeS9h90QRJo0kg" name="Right-Click Diagram" incoming="_P80_ULVZEeS9h90QRJo0kg _0c7pwLVaEeS9h90QRJo0kg" outgoing="_QUt64LVZEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_4oOQYLVYEeS9h90QRJo0kg" name="New Model Created and Active" outgoing="_P80_ULVZEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_C78i8LVZEeS9h90QRJo0kg" name="Select &quot;Validate&quot;" incoming="_QUt64LVZEeS9h90QRJo0kg" outgoing="_QqPe8LVZEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_HL_b0LVZEeS9h90QRJo0kg" name="Progress Bar Displayed" incoming="_QqPe8LVZEeS9h90QRJo0kg" outgoing="_CaSK4LVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MKcS0LVZEeS9h90QRJo0kg" name="Validation Finished Executing" incoming="_pILYALVaEeS9h90QRJo0kg" outgoing="_S1OIwLVZEeS9h90QRJo0kg _6ihvALVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ANzsQLVaEeS9h90QRJo0kg" name="Display Errors Found" incoming="_KkDHULVaEeS9h90QRJo0kg" outgoing="_zvPdULVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_BSKFMLVaEeS9h90QRJo0kg" name="Validation Errors decision" incoming="_CaSK4LVaEeS9h90QRJo0kg" outgoing="_KkDHULVaEeS9h90QRJo0kg _K-86oLVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_DNqIkLVaEeS9h90QRJo0kg" name="Diplay no errors found" incoming="_K-86oLVaEeS9h90QRJo0kg" outgoing="_pILYALVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_rYLrwLVaEeS9h90QRJo0kg" name="View Errors Report" incoming="_zvPdULVaEeS9h90QRJo0kg" outgoing="_0c7pwLVaEeS9h90QRJo0kg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_6LknkLVaEeS9h90QRJo0kg" name="Validation Complete" incoming="_6ihvALVaEeS9h90QRJo0kg"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Hpm0QLAcEeSRNNZIuVQCyA">
