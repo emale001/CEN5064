@@ -68,7 +68,7 @@
       <packagedElement xmi:type="uml:Realization" xmi:id="_5ItPALWfEeS816MUjePndQ" client="_8Tp1EK8dEeSB-YH5M4lDYQ" supplier="_0nxacLWfEeS816MUjePndQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_X03YYLAQEeSRNNZIuVQCyA" name="Analysis">
-      <packagedElement xmi:type="uml:Model" xmi:id="_AX1egLAWEeSRNNZIuVQCyA" name="Static" visibility="private">
+      <packagedElement xmi:type="uml:Model" xmi:id="_BEzGYLWhEeS816MUjePndQ" name="Static">
         <packagedElement xmi:type="uml:Class" xmi:id="_XqDyYLAXEeSRNNZIuVQCyA" name="Environment">
           <generalization xmi:type="uml:Generalization" xmi:id="_LPGXcLAgEeSRNNZIuVQCyA" general="_EQ32gLAfEeSRNNZIuVQCyA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ycCAELAXEeSRNNZIuVQCyA" name="securityGroup" type="_eiQZQLAXEeSRNNZIuVQCyA" aggregation="shared" association="_ycCnILAXEeSRNNZIuVQCyA">
@@ -306,6 +306,34 @@
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VeOacLWdEeS816MUjePndQ" name="ProviderCaller">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_i9usgLWdEeS816MUjePndQ" name="providerGenerator" type="_gQ4rwLWdEeS816MUjePndQ" association="_i9v6oLWdEeS816MUjePndQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9usgbWdEeS816MUjePndQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9usgrWdEeS816MUjePndQ" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qbJgULWdEeS816MUjePndQ" name="callProvider">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uNlQILWdEeS816MUjePndQ" name="xml">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gQ4rwLWdEeS816MUjePndQ" name="ProviderGenerator">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kcOq0LWdEeS816MUjePndQ" name="generateCalls">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_v4AxoLWdEeS816MUjePndQ" name="xml">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mVcMALWZEeS816MUjePndQ" name="XmlWriter">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_o4GWALWZEeS816MUjePndQ" name="persistXmlFile">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_1AYLWZEeS816MUjePndQ" name="fileName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rUCM8LWZEeS816MUjePndQ" name="fileContents">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_ycCnILAXEeSRNNZIuVQCyA" memberEnd="_ycCnIbAXEeSRNNZIuVQCyA _ycCAELAXEeSRNNZIuVQCyA">
           <ownedEnd xmi:type="uml:Property" xmi:id="_ycCnIbAXEeSRNNZIuVQCyA" name="environment" type="_XqDyYLAXEeSRNNZIuVQCyA" association="_ycCnILAXEeSRNNZIuVQCyA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ycCnIrAXEeSRNNZIuVQCyA" value="1"/>
@@ -394,6 +422,27 @@
           <ownedEnd xmi:type="uml:Property" xmi:id="_PjNZEbWTEeS816MUjePndQ" name="workspace" type="_h3QaoLAhEeSRNNZIuVQCyA" association="_PjNZELWTEeS816MUjePndQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PjNZErWTEeS816MUjePndQ" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PjNZE7WTEeS816MUjePndQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_u3KVcLWZEeS816MUjePndQ" memberEnd="_u3KVcbWZEeS816MUjePndQ _u3H5MLWZEeS816MUjePndQ">
+          <name xsi:nil="true"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_u3KVcbWZEeS816MUjePndQ" name="workspace" type="_h3QaoLAhEeSRNNZIuVQCyA" association="_u3KVcLWZEeS816MUjePndQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u3KVcrWZEeS816MUjePndQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u3KVc7WZEeS816MUjePndQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_b6TtELWdEeS816MUjePndQ" memberEnd="_b6TtEbWdEeS816MUjePndQ _b6Se8LWdEeS816MUjePndQ">
+          <name xsi:nil="true"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_b6TtEbWdEeS816MUjePndQ" name="workspace" type="_h3QaoLAhEeSRNNZIuVQCyA" association="_b6TtELWdEeS816MUjePndQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b6TtErWdEeS816MUjePndQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b6TtE7WdEeS816MUjePndQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_i9v6oLWdEeS816MUjePndQ" memberEnd="_i9v6obWdEeS816MUjePndQ _i9usgLWdEeS816MUjePndQ">
+          <name xsi:nil="true"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_i9v6obWdEeS816MUjePndQ" name="providerCaller" type="_VeOacLWdEeS816MUjePndQ" association="_i9v6oLWdEeS816MUjePndQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9v6orWdEeS816MUjePndQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9v6o7WdEeS816MUjePndQ" value="1"/>
           </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Model" xmi:id="_pT8ygLAdEeSRNNZIuVQCyA" name="Object">
@@ -503,55 +552,6 @@
               <value xmi:type="uml:InstanceValue" xmi:id="_GiyYsbVXEeS3K750VyEYWw" name="InstanceValue1" type="_h3QaoLAhEeSRNNZIuVQCyA" instance="_d4qzQLAjEeSRNNZIuVQCyA"/>
             </slot>
           </packagedElement>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_mVcMALWZEeS816MUjePndQ" name="XmlWriter">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_o4GWALWZEeS816MUjePndQ" name="persistXmlFile">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_1AYLWZEeS816MUjePndQ" name="fileName">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rUCM8LWZEeS816MUjePndQ" name="fileContents">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_u3KVcLWZEeS816MUjePndQ" memberEnd="_u3KVcbWZEeS816MUjePndQ _u3H5MLWZEeS816MUjePndQ">
-          <name xsi:nil="true"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_u3KVcbWZEeS816MUjePndQ" name="workspace" type="_h3QaoLAhEeSRNNZIuVQCyA" association="_u3KVcLWZEeS816MUjePndQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u3KVcrWZEeS816MUjePndQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u3KVc7WZEeS816MUjePndQ" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_VeOacLWdEeS816MUjePndQ" name="ProviderCaller">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_i9usgLWdEeS816MUjePndQ" name="providerGenerator" type="_gQ4rwLWdEeS816MUjePndQ" association="_i9v6oLWdEeS816MUjePndQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9usgbWdEeS816MUjePndQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9usgrWdEeS816MUjePndQ" value="1"/>
-          </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_qbJgULWdEeS816MUjePndQ" name="callProvider">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uNlQILWdEeS816MUjePndQ" name="xml">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_b6TtELWdEeS816MUjePndQ" memberEnd="_b6TtEbWdEeS816MUjePndQ _b6Se8LWdEeS816MUjePndQ">
-          <name xsi:nil="true"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_b6TtEbWdEeS816MUjePndQ" name="workspace" type="_h3QaoLAhEeSRNNZIuVQCyA" association="_b6TtELWdEeS816MUjePndQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b6TtErWdEeS816MUjePndQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b6TtE7WdEeS816MUjePndQ" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_gQ4rwLWdEeS816MUjePndQ" name="ProviderGenerator">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_kcOq0LWdEeS816MUjePndQ" name="generateCalls">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_v4AxoLWdEeS816MUjePndQ" name="xml">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_i9v6oLWdEeS816MUjePndQ" memberEnd="_i9v6obWdEeS816MUjePndQ _i9usgLWdEeS816MUjePndQ">
-          <name xsi:nil="true"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_i9v6obWdEeS816MUjePndQ" name="providerCaller" type="_VeOacLWdEeS816MUjePndQ" association="_i9v6oLWdEeS816MUjePndQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9v6orWdEeS816MUjePndQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9v6o7WdEeS816MUjePndQ" value="1"/>
-          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Model" xmi:id="_kLERULAWEeSRNNZIuVQCyA" name="Dynamic">
