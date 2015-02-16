@@ -1345,7 +1345,6 @@
           <edge xmi:type="uml:ControlFlow" xmi:id="_P80_ULVZEeS9h90QRJo0kg" target="_4Z3rULVYEeS9h90QRJo0kg" source="_4oOQYLVYEeS9h90QRJo0kg"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_QUt64LVZEeS9h90QRJo0kg" target="_C78i8LVZEeS9h90QRJo0kg" source="_4Z3rULVYEeS9h90QRJo0kg"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_QqPe8LVZEeS9h90QRJo0kg" target="_HL_b0LVZEeS9h90QRJo0kg" source="_C78i8LVZEeS9h90QRJo0kg"/>
-          <edge xmi:type="uml:ControlFlow" xmi:id="_S1OIwLVZEeS9h90QRJo0kg" source="_MKcS0LVZEeS9h90QRJo0kg"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_CaSK4LVaEeS9h90QRJo0kg" target="_BSKFMLVaEeS9h90QRJo0kg" source="_HL_b0LVZEeS9h90QRJo0kg"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_KkDHULVaEeS9h90QRJo0kg" name="Errors found" target="_ANzsQLVaEeS9h90QRJo0kg" source="_BSKFMLVaEeS9h90QRJo0kg"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_K-86oLVaEeS9h90QRJo0kg" name="Successful Validation" target="_DNqIkLVaEeS9h90QRJo0kg" source="_BSKFMLVaEeS9h90QRJo0kg"/>
@@ -1357,7 +1356,7 @@
           <node xmi:type="uml:InitialNode" xmi:id="_4oOQYLVYEeS9h90QRJo0kg" name="New Model Created and Active" outgoing="_P80_ULVZEeS9h90QRJo0kg"/>
           <node xmi:type="uml:OpaqueAction" xmi:id="_C78i8LVZEeS9h90QRJo0kg" name="Select &quot;Validate&quot;" incoming="_QUt64LVZEeS9h90QRJo0kg" outgoing="_QqPe8LVZEeS9h90QRJo0kg"/>
           <node xmi:type="uml:OpaqueAction" xmi:id="_HL_b0LVZEeS9h90QRJo0kg" name="Progress Bar Displayed" incoming="_QqPe8LVZEeS9h90QRJo0kg" outgoing="_CaSK4LVaEeS9h90QRJo0kg"/>
-          <node xmi:type="uml:OpaqueAction" xmi:id="_MKcS0LVZEeS9h90QRJo0kg" name="Validation Finished Executing" incoming="_pILYALVaEeS9h90QRJo0kg" outgoing="_S1OIwLVZEeS9h90QRJo0kg _6ihvALVaEeS9h90QRJo0kg"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_MKcS0LVZEeS9h90QRJo0kg" name="Validation Finished Executing" incoming="_pILYALVaEeS9h90QRJo0kg" outgoing="_6ihvALVaEeS9h90QRJo0kg"/>
           <node xmi:type="uml:OpaqueAction" xmi:id="_ANzsQLVaEeS9h90QRJo0kg" name="Display Errors Found" incoming="_KkDHULVaEeS9h90QRJo0kg" outgoing="_zvPdULVaEeS9h90QRJo0kg"/>
           <node xmi:type="uml:DecisionNode" xmi:id="_BSKFMLVaEeS9h90QRJo0kg" name="Validation Errors decision" incoming="_CaSK4LVaEeS9h90QRJo0kg" outgoing="_KkDHULVaEeS9h90QRJo0kg _K-86oLVaEeS9h90QRJo0kg"/>
           <node xmi:type="uml:OpaqueAction" xmi:id="_DNqIkLVaEeS9h90QRJo0kg" name="Diplay no errors found" incoming="_K-86oLVaEeS9h90QRJo0kg" outgoing="_pILYALVaEeS9h90QRJo0kg"/>
