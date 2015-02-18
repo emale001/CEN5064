@@ -1830,11 +1830,27 @@
               </ownedRule>
               <trigger xmi:type="uml:Trigger" xmi:id="_4KYDwLc6EeSsQ5jtQRm2Ww" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
             </transition>
-            <transition xmi:type="uml:Transition" xmi:id="_EJJ_YLc6EeSsQ5jtQRm2Ww" source="_2-swQLc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww"/>
-            <transition xmi:type="uml:Transition" xmi:id="_Jjh9YLc6EeSsQ5jtQRm2Ww" source="_F-izsLc6EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww"/>
-            <transition xmi:type="uml:Transition" xmi:id="_YNBWULc6EeSsQ5jtQRm2Ww" source="_0z-lILc5EeSsQ5jtQRm2Ww" target="_UEKDgLc6EeSsQ5jtQRm2Ww"/>
-            <transition xmi:type="uml:Transition" xmi:id="_Zp9OYLc6EeSsQ5jtQRm2Ww" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_2-swQLc5EeSsQ5jtQRm2Ww"/>
-            <transition xmi:type="uml:Transition" xmi:id="_aBwqYLc6EeSsQ5jtQRm2Ww" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_F-izsLc6EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_EJJ_YLc6EeSsQ5jtQRm2Ww" source="_2-swQLc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww">
+              <trigger xmi:type="uml:Trigger" xmi:id="_q6NjULc8EeSlQcZCfW2pNA" name="transformFinished2" event="_q0kOULc8EeSlQcZCfW2pNA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Jjh9YLc6EeSsQ5jtQRm2Ww" source="_F-izsLc6EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww">
+              <trigger xmi:type="uml:Trigger" xmi:id="_kx_A0Lc8EeSlQcZCfW2pNA" name="transformFinished" event="_ksSogLc8EeSlQcZCfW2pNA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_YNBWULc6EeSsQ5jtQRm2Ww" source="_0z-lILc5EeSsQ5jtQRm2Ww" target="_UEKDgLc6EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_8X1tQLc7EeSlQcZCfW2pNA" name="deploy"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Zp9OYLc6EeSsQ5jtQRm2Ww" guard="_O5N9wLc8EeSlQcZCfW2pNA" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_2-swQLc5EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_O5N9wLc8EeSlQcZCfW2pNA" name="successful">
+                <specification xmi:type="uml:LiteralString" xmi:id="_QOHUILc8EeSlQcZCfW2pNA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_KACoULc8EeSlQcZCfW2pNA" name="deployed" event="_JuqkcLc8EeSlQcZCfW2pNA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_aBwqYLc6EeSsQ5jtQRm2Ww" guard="_ZrLEcLc8EeSlQcZCfW2pNA" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_F-izsLc6EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ZrLEcLc8EeSlQcZCfW2pNA" name="failed">
+                <specification xmi:type="uml:LiteralString" xmi:id="_aWjjwLc8EeSlQcZCfW2pNA" name="failed" value="failed"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_XbUhsLc8EeSlQcZCfW2pNA" name="deployed2" event="_W5_9ULc8EeSlQcZCfW2pNA"/>
+            </transition>
             <transition xmi:type="uml:Transition" xmi:id="_G4Kt4Lc7EeSsQ5jtQRm2Ww" guard="_Pukt4Lc7EeSsQ5jtQRm2Ww" source="_nNVwULc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_G4Kt4bc7EeSsQ5jtQRm2Ww" name="success">
                 <specification xmi:type="uml:LiteralString" xmi:id="_G4Kt4rc7EeSsQ5jtQRm2Ww" name="successful" value="successful"/>
@@ -1849,6 +1865,15 @@
                 <specification xmi:type="uml:LiteralString" xmi:id="_eoSUIrc7EeSsQ5jtQRm2Ww" name="successful" value="successful"/>
               </ownedRule>
               <trigger xmi:type="uml:Trigger" xmi:id="_eoSUI7c7EeSsQ5jtQRm2Ww" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_zxSHILc7EeSlQcZCfW2pNA" guard="_zxSHI7c7EeSlQcZCfW2pNA" source="_ra5V4Lc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_zxSHIbc7EeSlQcZCfW2pNA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_zxSHIrc7EeSlQcZCfW2pNA" name="successful" value="successful"/>
+              </ownedRule>
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_zxSHI7c7EeSlQcZCfW2pNA" name="failed">
+                <specification xmi:type="uml:LiteralString" xmi:id="_zxSHJLc7EeSlQcZCfW2pNA" name="failed" value="failed"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_zxSHJbc7EeSlQcZCfW2pNA" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
             </transition>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_keuN8Lc5EeSsQ5jtQRm2Ww" name="Initial"/>
             <subvertex xmi:type="uml:State" xmi:id="_nNVwULc5EeSsQ5jtQRm2Ww" name="GraphicalModel"/>
@@ -1865,6 +1890,18 @@
         </packagedElement>
         <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_39mzELc6EeSsQ5jtQRm2Ww" name="transformed">
           <changeExpression xmi:type="uml:LiteralString" xmi:id="_39mzEbc6EeSsQ5jtQRm2Ww" name="transformed" value="transformed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_JuqkcLc8EeSlQcZCfW2pNA" name="deployed">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_Juqkcbc8EeSlQcZCfW2pNA" name="deployed" value="deployed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_W5_9ULc8EeSlQcZCfW2pNA" name="deployed2">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_W5_9Ubc8EeSlQcZCfW2pNA" name="deployed" value="deployed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ksSogLc8EeSlQcZCfW2pNA" name="transformFinished">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_ksSogbc8EeSlQcZCfW2pNA" name="transformFinished" value="transformFinished"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_q0kOULc8EeSlQcZCfW2pNA" name="transformFinished2">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_q0kOUbc8EeSlQcZCfW2pNA" name="transformFinished" value="transformFinished"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
