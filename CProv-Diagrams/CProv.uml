@@ -1745,6 +1745,127 @@
           <node xmi:type="uml:OpaqueAction" xmi:id="_rYLrwLVaEeS9h90QRJo0kg" name="View Errors Report" incoming="_zvPdULVaEeS9h90QRJo0kg" outgoing="_0c7pwLVaEeS9h90QRJo0kg"/>
           <node xmi:type="uml:ActivityFinalNode" xmi:id="_6LknkLVaEeS9h90QRJo0kg" name="Validation Complete" incoming="_6ihvALVaEeS9h90QRJo0kg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_5_ZlULcyEeSsQ5jtQRm2Ww" name="CProv-ME-WorkspacePaletteStateDiagram">
+          <region xmi:type="uml:Region" xmi:id="_8bragLcyEeSsQ5jtQRm2Ww" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_lvlAkLczEeSsQ5jtQRm2Ww" source="_N0eSULczEeSsQ5jtQRm2Ww" target="_R4-CgLczEeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_pXSHELczEeSsQ5jtQRm2Ww" name="new Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_w8XCELczEeSsQ5jtQRm2Ww" source="_R4-CgLczEeSsQ5jtQRm2Ww" target="_sIzzgLczEeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_4STU4LczEeSsQ5jtQRm2Ww" name="select element on Palette"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_SzQrELc0EeSsQ5jtQRm2Ww" guard="_h35H4Lc0EeSsQ5jtQRm2Ww" source="_JCsI4Lc0EeSsQ5jtQRm2Ww" target="_R4-CgLczEeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_h35H4Lc0EeSsQ5jtQRm2Ww" name="elementCount" constrainedElement="_-J2X0LVWEeS3K750VyEYWw">
+                <specification xmi:type="uml:LiteralString" xmi:id="_6XiGkLc0EeSsQ5jtQRm2Ww" name="guard" value="elementCount == 1"/>
+              </ownedRule>
+              <effect xmi:type="uml:Activity" xmi:id="_YOKNgLc0EeSsQ5jtQRm2Ww" name="delete Model Element"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Cz0WYLc1EeSsQ5jtQRm2Ww" guard="_Q99g4Lc1EeSsQ5jtQRm2Ww" source="_JCsI4Lc0EeSsQ5jtQRm2Ww" target="_JCsI4Lc0EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Q99g4Lc1EeSsQ5jtQRm2Ww" name="elementCountGT1" constrainedElement="_-J2X0LVWEeS3K750VyEYWw">
+                <specification xmi:type="uml:LiteralString" xmi:id="_TOEiULc1EeSsQ5jtQRm2Ww" name="guard" value="elementCount > 1"/>
+              </ownedRule>
+              <effect xmi:type="uml:Activity" xmi:id="_H47PALc1EeSsQ5jtQRm2Ww" name="delete Model Element"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_bgE0wLc1EeSsQ5jtQRm2Ww" guard="_p03wELc1EeSsQ5jtQRm2Ww" source="_sIzzgLczEeSsQ5jtQRm2Ww" target="_R4-CgLczEeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_p03wELc1EeSsQ5jtQRm2Ww" name="elementCountEQ0" constrainedElement="_-J2X0LVWEeS3K750VyEYWw">
+                <specification xmi:type="uml:LiteralString" xmi:id="_r-nDwLc1EeSsQ5jtQRm2Ww" name="guard" value="elementCount == 0"/>
+              </ownedRule>
+              <effect xmi:type="uml:Activity" xmi:id="_hW8hgLc1EeSsQ5jtQRm2Ww" name="palette element Unselected"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_wNv9sLc1EeSsQ5jtQRm2Ww" source="_sIzzgLczEeSsQ5jtQRm2Ww" target="_JCsI4Lc0EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_29OGYLc1EeSsQ5jtQRm2Ww" name="click on Editor"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_AmyBoLc2EeSsQ5jtQRm2Ww" source="_sIzzgLczEeSsQ5jtQRm2Ww" target="_sIzzgLczEeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_LyDAMLc2EeSsQ5jtQRm2Ww" name="select element on Palette"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rtVRELc2EeSsQ5jtQRm2Ww" source="_JCsI4Lc0EeSsQ5jtQRm2Ww" target="_sIzzgLczEeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_v4S1oLc2EeSsQ5jtQRm2Ww" name="select element on Palette"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_JZ9SALc3EeSsQ5jtQRm2Ww" source="_R4-CgLczEeSsQ5jtQRm2Ww" target="_BCLuwLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_L3AjQLc3EeSsQ5jtQRm2Ww" name="close Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_PpfWYLc3EeSsQ5jtQRm2Ww" source="_JCsI4Lc0EeSsQ5jtQRm2Ww" target="_BCLuwLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_eW3JwLc3EeSsQ5jtQRm2Ww" name="close Project"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_N0eSULczEeSsQ5jtQRm2Ww" name="Initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_R4-CgLczEeSsQ5jtQRm2Ww" name="EmptyModel"/>
+            <subvertex xmi:type="uml:State" xmi:id="_sIzzgLczEeSsQ5jtQRm2Ww" name="PaletteElementSelected"/>
+            <subvertex xmi:type="uml:State" xmi:id="_JCsI4Lc0EeSsQ5jtQRm2Ww" name="ModelWithElements"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_BCLuwLc3EeSsQ5jtQRm2Ww" name="Final"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_qqBkgLc3EeSsQ5jtQRm2Ww" name="CProv-ME-WorkspaceProjectSaveStateDiagram">
+          <region xmi:type="uml:Region" xmi:id="_w1hdcLc3EeSsQ5jtQRm2Ww" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_BZmTwLc4EeSsQ5jtQRm2Ww" source="_z0H8kLc3EeSsQ5jtQRm2Ww" target="_42aKsLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_DGdeMLc4EeSsQ5jtQRm2Ww" name="open Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_RbXHMLc4EeSsQ5jtQRm2Ww" source="_42aKsLc3EeSsQ5jtQRm2Ww" target="_7Gk2gLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_oZRNYLc4EeSsQ5jtQRm2Ww" name="modify Workspace"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_qTKHMLc4EeSsQ5jtQRm2Ww" source="_42aKsLc3EeSsQ5jtQRm2Ww" target="__sIFULc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_1YwioLc4EeSsQ5jtQRm2Ww" name="close Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rq4vILc4EeSsQ5jtQRm2Ww" source="_7Gk2gLc3EeSsQ5jtQRm2Ww" target="__sIFULc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_4YJE4Lc4EeSsQ5jtQRm2Ww" name="close Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_s_aSELc4EeSsQ5jtQRm2Ww" source="_7Gk2gLc3EeSsQ5jtQRm2Ww" target="_42aKsLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_vD-K0Lc4EeSsQ5jtQRm2Ww" name="save Project"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_H2d0ELc5EeSsQ5jtQRm2Ww" source="_7Gk2gLc3EeSsQ5jtQRm2Ww" target="_7Gk2gLc3EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_PBTDELc5EeSsQ5jtQRm2Ww" name="modify Workspace"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_z0H8kLc3EeSsQ5jtQRm2Ww" name="Initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_42aKsLc3EeSsQ5jtQRm2Ww" name="ProjectSaved"/>
+            <subvertex xmi:type="uml:State" xmi:id="_7Gk2gLc3EeSsQ5jtQRm2Ww" name="ProjectNotSaved"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="__sIFULc3EeSsQ5jtQRm2Ww" name="Final"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_ZsR_ELc5EeSsQ5jtQRm2Ww" name="CProv-EE-CloudDeploymentStateDiagram">
+          <region xmi:type="uml:Region" xmi:id="_dvYoILc5EeSsQ5jtQRm2Ww" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_APDhULc6EeSsQ5jtQRm2Ww" source="_keuN8Lc5EeSsQ5jtQRm2Ww" target="_nNVwULc5EeSsQ5jtQRm2Ww">
+              <effect xmi:type="uml:Activity" xmi:id="_f82IwLc6EeSsQ5jtQRm2Ww" name="transform"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_AvacYLc6EeSsQ5jtQRm2Ww" guard="_7b9wULc6EeSsQ5jtQRm2Ww" source="_nNVwULc5EeSsQ5jtQRm2Ww" target="_ra5V4Lc5EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_7b9wULc6EeSsQ5jtQRm2Ww" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_94HCoLc6EeSsQ5jtQRm2Ww" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_4KYDwLc6EeSsQ5jtQRm2Ww" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_EJJ_YLc6EeSsQ5jtQRm2Ww" source="_2-swQLc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Jjh9YLc6EeSsQ5jtQRm2Ww" source="_F-izsLc6EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_YNBWULc6EeSsQ5jtQRm2Ww" source="_0z-lILc5EeSsQ5jtQRm2Ww" target="_UEKDgLc6EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Zp9OYLc6EeSsQ5jtQRm2Ww" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_2-swQLc5EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_aBwqYLc6EeSsQ5jtQRm2Ww" source="_UEKDgLc6EeSsQ5jtQRm2Ww" target="_F-izsLc6EeSsQ5jtQRm2Ww"/>
+            <transition xmi:type="uml:Transition" xmi:id="_G4Kt4Lc7EeSsQ5jtQRm2Ww" guard="_Pukt4Lc7EeSsQ5jtQRm2Ww" source="_nNVwULc5EeSsQ5jtQRm2Ww" target="_5KXWkLc5EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_G4Kt4bc7EeSsQ5jtQRm2Ww" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_G4Kt4rc7EeSsQ5jtQRm2Ww" name="successful" value="successful"/>
+              </ownedRule>
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Pukt4Lc7EeSsQ5jtQRm2Ww" name="failed">
+                <specification xmi:type="uml:LiteralString" xmi:id="_SYHjALc7EeSsQ5jtQRm2Ww" name="failed" value="failed"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_G4Kt47c7EeSsQ5jtQRm2Ww" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_eoSUILc7EeSsQ5jtQRm2Ww" guard="_eoSUIbc7EeSsQ5jtQRm2Ww" source="_ra5V4Lc5EeSsQ5jtQRm2Ww" target="_0z-lILc5EeSsQ5jtQRm2Ww">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_eoSUIbc7EeSsQ5jtQRm2Ww" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_eoSUIrc7EeSsQ5jtQRm2Ww" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_eoSUI7c7EeSsQ5jtQRm2Ww" name="transformed" event="_39mzELc6EeSsQ5jtQRm2Ww"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_keuN8Lc5EeSsQ5jtQRm2Ww" name="Initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_nNVwULc5EeSsQ5jtQRm2Ww" name="GraphicalModel"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ra5V4Lc5EeSsQ5jtQRm2Ww" name="CProvModel"/>
+            <subvertex xmi:type="uml:State" xmi:id="_0z-lILc5EeSsQ5jtQRm2Ww" name="ExecutableModel"/>
+            <subvertex xmi:type="uml:State" xmi:id="_2-swQLc5EeSsQ5jtQRm2Ww" name="Deployed"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_5KXWkLc5EeSsQ5jtQRm2Ww" name="Final"/>
+            <subvertex xmi:type="uml:State" xmi:id="_F-izsLc6EeSsQ5jtQRm2Ww" name="DeploymentError"/>
+            <subvertex xmi:type="uml:State" xmi:id="_UEKDgLc6EeSsQ5jtQRm2Ww" name="Executing"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_q7xUcLc6EeSsQ5jtQRm2Ww" name="event1">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_q7xUcbc6EeSsQ5jtQRm2Ww" name="event1" value="transformed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_39mzELc6EeSsQ5jtQRm2Ww" name="transformed">
+          <changeExpression xmi:type="uml:LiteralString" xmi:id="_39mzEbc6EeSsQ5jtQRm2Ww" name="transformed" value="transformed"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Hpm0QLAcEeSRNNZIuVQCyA">
@@ -1757,4 +1878,9 @@
   <ActionLanguage:TextualRepresentation xmi:id="_HqWbILAcEeSRNNZIuVQCyA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
   <css:ModelStyleSheets xmi:id="_v4mnwLAcEeSRNNZIuVQCyA"/>
   <ActionLanguage:TextualRepresentation xmi:id="_4E2ogLWjEeSwIsd_Wh7l1w" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_VHMSALczEeSsQ5jtQRm2Ww" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_duNyMLczEeSsQ5jtQRm2Ww" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_iE9I8LczEeSsQ5jtQRm2Ww" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_HsEM0Lc3EeSsQ5jtQRm2Ww" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_syh3MLc5EeSsQ5jtQRm2Ww" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
 </xmi:XMI>
