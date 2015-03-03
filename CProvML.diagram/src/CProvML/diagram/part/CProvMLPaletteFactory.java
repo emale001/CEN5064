@@ -43,11 +43,12 @@ public class CProvMLPaletteFactory {
 				CProvML.diagram.part.Messages.Instance1CreationTool_title,
 				CProvML.diagram.part.Messages.Instance1CreationTool_desc,
 				Collections
-						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002));
+						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001));
 		entry.setId("createInstance1CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(CProvML.diagram.providers.CProvMLElementTypes
-				.getImageDescriptor(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002));
-		entry.setLargeIcon(entry.getSmallIcon());
+		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Instance.png")); //$NON-NLS-1$
+		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Instance.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -59,11 +60,12 @@ public class CProvMLPaletteFactory {
 				CProvML.diagram.part.Messages.Storage2CreationTool_title,
 				CProvML.diagram.part.Messages.Storage2CreationTool_desc,
 				Collections
-						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001));
+						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002));
 		entry.setId("createStorage2CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(CProvML.diagram.providers.CProvMLElementTypes
-				.getImageDescriptor(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001));
-		entry.setLargeIcon(entry.getSmallIcon());
+		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Storage.png")); //$NON-NLS-1$
+		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Storage.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -77,9 +79,10 @@ public class CProvMLPaletteFactory {
 				Collections
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001));
 		entry.setId("createConnection3CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(CProvML.diagram.providers.CProvMLElementTypes
-				.getImageDescriptor(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001));
-		entry.setLargeIcon(entry.getSmallIcon());
+		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Connection.png")); //$NON-NLS-1$
+		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
+				.findImageDescriptor("/CProvML.edit/icons/full/obj16/Connection.png")); //$NON-NLS-1$
 		return entry;
 	}
 

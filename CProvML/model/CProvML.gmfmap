@@ -21,7 +21,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="CProvML.gmfgraph#Storage"/>
     </ownedChild>
@@ -41,7 +41,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.0"/>
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
       <diagramNode
           href="CProvML.gmfgraph#Instance"/>
     </ownedChild>

@@ -14,27 +14,39 @@
           title="Instance"
           description="Create new Instance">
         <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Instance.png"
+            bundle="CProvML.edit"/>
         <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Instance.png"
+            bundle="CProvML.edit"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
           title="Storage"
           description="Create new Storage">
         <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Storage.png"
+            bundle="CProvML.edit"/>
         <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Storage.png"
+            bundle="CProvML.edit"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
           title="Connection"
           description="Create new Connection">
         <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Connection.png"
+            bundle="CProvML.edit"/>
         <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Connection.png"
+            bundle="CProvML.edit"/>
       </tools>
     </tools>
   </palette>

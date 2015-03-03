@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: CProvML.diagram.part.CProvMLDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: CProvML.diagram.edit.parts, 
+Export-Package: CProvML.diagram.edit.parts,
  CProvML.diagram.part,
  CProvML.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,
