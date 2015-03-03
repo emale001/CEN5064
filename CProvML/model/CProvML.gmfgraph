@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="CProvML">
+  <figures name="Default">
+    <descriptors name="InstanceFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InstanceFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="StorageFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="StorageFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="StorageNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ConnectionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionFigure"/>
+    </descriptors>
+  </figures>
+  <nodes name="Instance" figure="InstanceFigure"/>
+  <nodes name="Storage" figure="StorageFigure"/>
+  <connections name="Connection" figure="ConnectionFigure"/>
+  <labels name="InstanceName" figure="InstanceFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="StorageName" figure="StorageFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+</gmfgraph:Canvas>

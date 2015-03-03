@@ -3,15 +3,15 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="CProvML" nsURI="CProvML" nsPrefix="CProvML">
   <eClassifiers xsi:type="ecore:EClass" name="Node">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceConnections" lowerBound="1"
-        upperBound="-1" eType="#//Connection" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="targetConnections" lowerBound="1"
-        upperBound="-1" eType="#//Connection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceConnections" upperBound="-2"
+        eType="#//Connection" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetConnections" upperBound="-2"
+        eType="#//Connection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Instance" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="Storage" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="NodesDiagram">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" lowerBound="1" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
         eType="#//Node" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Connection">

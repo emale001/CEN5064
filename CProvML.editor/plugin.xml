@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated CProvML -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="CProvML.presentation.CProvMLModelWizardID"
+            name="%_UI_CProvMLModelWizard_label"
+            class="CProvML.presentation.CProvMLModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CProvMLModelFile.gif">
+         <description>%_UI_CProvMLModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated CProvML -->
+      <editor
+            id="CProvML.presentation.CProvMLEditorID"
+            name="%_UI_CProvMLEditor_label"
+            icon="icons/full/obj16/CProvMLModelFile.gif"
+            extensions="cprovml"
+            class="CProvML.presentation.CProvMLEditor"
+            contributorClass="CProvML.presentation.CProvMLActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -149,7 +149,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_2_gjwcFZEeS5g95KaS4WAA" x="-6" y="-7"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_2_hK0MFZEeS5g95KaS4WAA" type="6003">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_2_hK0cFZEeS5g95KaS4WAA" x="-6" y="21"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2_hK0cFZEeS5g95KaS4WAA" x="-6" y="9"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_2_f8scFZEeS5g95KaS4WAA" fontName="Segoe UI"/>
     <element xmi:type="ecore:EReference" href="CProvML.ecore#//Node/targetConnections"/>
