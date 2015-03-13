@@ -62,10 +62,10 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
-			return getStorageName_5001Parser();
 		case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
 			return getInstanceName_5002Parser();
+		case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
+			return getStorageName_5001Parser();
 		}
 		return null;
 	}

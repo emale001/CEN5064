@@ -24,14 +24,14 @@ public class NodesDiagramItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (CProvML.diagram.providers.CProvMLElementTypes.Storage_2001 == req
-				.getElementType()) {
-			return getGEFWrapper(new CProvML.diagram.edit.commands.StorageCreateCommand(
-					req));
-		}
 		if (CProvML.diagram.providers.CProvMLElementTypes.Instance_2002 == req
 				.getElementType()) {
 			return getGEFWrapper(new CProvML.diagram.edit.commands.InstanceCreateCommand(
+					req));
+		}
+		if (CProvML.diagram.providers.CProvMLElementTypes.Storage_2001 == req
+				.getElementType()) {
+			return getGEFWrapper(new CProvML.diagram.edit.commands.StorageCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

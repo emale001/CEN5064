@@ -56,10 +56,10 @@ public class CProvMLModelingAssistantProviderOfInstanceEditPart extends
 			CProvML.diagram.edit.parts.InstanceEditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
-		if (targetEditPart instanceof CProvML.diagram.edit.parts.StorageEditPart) {
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.InstanceEditPart) {
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
 		}
-		if (targetEditPart instanceof CProvML.diagram.edit.parts.InstanceEditPart) {
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.StorageEditPart) {
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
 		}
 		return types;
@@ -86,8 +86,8 @@ public class CProvMLModelingAssistantProviderOfInstanceEditPart extends
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == CProvML.diagram.providers.CProvMLElementTypes.Connection_4001) {
-			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
 		}
 		return types;
 	}
@@ -133,8 +133,8 @@ public class CProvMLModelingAssistantProviderOfInstanceEditPart extends
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == CProvML.diagram.providers.CProvMLElementTypes.Connection_4001) {
-			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
 		}
 		return types;
 	}

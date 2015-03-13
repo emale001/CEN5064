@@ -27,6 +27,7 @@ import org.eclipse.gmf.runtime.notation.DecorationNode;
 import org.eclipse.gmf.runtime.notation.Diagram;
 import org.eclipse.gmf.runtime.notation.Edge;
 import org.eclipse.gmf.runtime.notation.FontStyle;
+import org.eclipse.gmf.runtime.notation.Location;
 import org.eclipse.gmf.runtime.notation.MeasurementUnit;
 import org.eclipse.gmf.runtime.notation.Node;
 import org.eclipse.gmf.runtime.notation.NotationFactory;
@@ -136,8 +137,8 @@ public class CProvMLViewProvider extends AbstractProvider implements
 					return false; // foreign diagram
 				}
 				switch (visualID) {
-				case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
 				case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+				case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
 					if (domainElement == null
 							|| visualID != CProvML.diagram.part.CProvMLVisualIDRegistry
 									.getNodeVisualID(op.getContainerView(),
@@ -150,8 +151,8 @@ public class CProvMLViewProvider extends AbstractProvider implements
 				}
 			}
 		}
-		return CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID == visualID
-				|| CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID == visualID;
+		return CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID == visualID
+				|| CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID == visualID;
 	}
 
 	/**
@@ -211,11 +212,11 @@ public class CProvMLViewProvider extends AbstractProvider implements
 					.getVisualID(semanticHint);
 		}
 		switch (visualID) {
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			return createStorage_2001(domainElement, containerView, index,
-					persisted, preferencesHint);
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return createInstance_2002(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			return createStorage_2001(domainElement, containerView, index,
 					persisted, preferencesHint);
 		}
 		// can't happen, provided #provides(CreateNodeViewOperation) is correct
@@ -331,6 +332,11 @@ public class CProvMLViewProvider extends AbstractProvider implements
 				node,
 				CProvML.diagram.part.CProvMLVisualIDRegistry
 						.getType(CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID));
+		label5002.setLayoutConstraint(NotationFactory.eINSTANCE
+				.createLocation());
+		Location location5002 = (Location) label5002.getLayoutConstraint();
+		location5002.setX(0);
+		location5002.setY(5);
 		return node;
 	}
 

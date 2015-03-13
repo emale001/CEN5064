@@ -225,13 +225,13 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getDiagramLinksByType(
@@ -320,25 +320,25 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getLinksTargetByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target,
 					true));
 			connectedViews = getLinksTargetByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target,
 					true));
 			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
 			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
 			if (!target.isEmpty()) {

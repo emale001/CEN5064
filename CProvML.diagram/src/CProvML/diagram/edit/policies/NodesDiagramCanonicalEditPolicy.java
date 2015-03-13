@@ -83,8 +83,8 @@ public class NodesDiagramCanonicalEditPolicy extends CanonicalEditPolicy {
 	private boolean isMyDiagramElement(View view) {
 		int visualID = CProvML.diagram.part.CProvMLVisualIDRegistry
 				.getVisualID(view);
-		return visualID == CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID
-				|| visualID == CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
+		return visualID == CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID
+				|| visualID == CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID;
 	}
 
 	/**
@@ -245,18 +245,18 @@ public class NodesDiagramCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
-						.getStorage_2001ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
 						.getInstance_2002ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
+						.getStorage_2001ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

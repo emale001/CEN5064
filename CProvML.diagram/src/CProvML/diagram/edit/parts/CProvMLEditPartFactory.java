@@ -24,17 +24,17 @@ public class CProvMLEditPartFactory implements EditPartFactory {
 			case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.NodesDiagramEditPart(view);
 
-			case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.StorageEditPart(view);
-
-			case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.StorageNameEditPart(view);
-
 			case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.InstanceEditPart(view);
 
 			case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.InstanceNameEditPart(view);
+
+			case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.StorageEditPart(view);
+
+			case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.StorageNameEditPart(view);
 
 			case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.ConnectionEditPart(view);

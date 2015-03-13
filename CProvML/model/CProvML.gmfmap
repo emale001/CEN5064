@@ -11,26 +11,6 @@
         href="CProvML.ecore#//NodesDiagram/nodes"/>
     <ownedChild>
       <domainMetaElement
-          href="CProvML.ecore#//Storage"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="CProvML.gmfgraph#StorageName"/>
-        <features
-            href="CProvML.ecore#//Node/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.0"/>
-      <diagramNode
-          href="CProvML.gmfgraph#Storage"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="CProvML.ecore#//NodesDiagram/nodes"/>
-    <ownedChild>
-      <domainMetaElement
           href="CProvML.ecore#//Instance"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -41,9 +21,29 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="CProvML.gmfgraph#Instance"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="CProvML.ecore#//NodesDiagram/nodes"/>
+    <ownedChild>
+      <domainMetaElement
+          href="CProvML.ecore#//Storage"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="CProvML.gmfgraph#StorageName"/>
+        <features
+            href="CProvML.ecore#//Node/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
+      <diagramNode
+          href="CProvML.gmfgraph#Storage"/>
     </ownedChild>
   </nodes>
   <links>

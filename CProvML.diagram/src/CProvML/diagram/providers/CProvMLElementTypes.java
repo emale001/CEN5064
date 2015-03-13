@@ -100,11 +100,11 @@ public class CProvMLElementTypes {
 			elements.put(NodesDiagram_1000,
 					CProvML.CProvMLPackage.eINSTANCE.getNodesDiagram());
 
-			elements.put(Storage_2001,
-					CProvML.CProvMLPackage.eINSTANCE.getStorage());
-
 			elements.put(Instance_2002,
 					CProvML.CProvMLPackage.eINSTANCE.getInstance());
+
+			elements.put(Storage_2001,
+					CProvML.CProvMLPackage.eINSTANCE.getStorage());
 
 			elements.put(Connection_4001,
 					CProvML.CProvMLPackage.eINSTANCE.getConnection());
@@ -126,8 +126,8 @@ public class CProvMLElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(NodesDiagram_1000);
-			KNOWN_ELEMENT_TYPES.add(Storage_2001);
 			KNOWN_ELEMENT_TYPES.add(Instance_2002);
+			KNOWN_ELEMENT_TYPES.add(Storage_2001);
 			KNOWN_ELEMENT_TYPES.add(Connection_4001);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
@@ -140,10 +140,10 @@ public class CProvMLElementTypes {
 		switch (visualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
 			return NodesDiagram_1000;
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			return Storage_2001;
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return Instance_2002;
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			return Storage_2001;
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return Connection_4001;
 		}

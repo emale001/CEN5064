@@ -10,3 +10,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide;bundle-version="3.10.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.draw2d,
+ org.eclipse.gmf.runtime.diagram.ui.figures
+Export-Package: cprovml.custom.figures

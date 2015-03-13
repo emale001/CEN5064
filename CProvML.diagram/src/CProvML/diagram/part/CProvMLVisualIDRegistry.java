@@ -119,13 +119,13 @@ public class CProvMLVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
-			if (CProvML.CProvMLPackage.eINSTANCE.getStorage().isSuperTypeOf(
-					domainElement.eClass())) {
-				return CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID;
-			}
 			if (CProvML.CProvMLPackage.eINSTANCE.getInstance().isSuperTypeOf(
 					domainElement.eClass())) {
 				return CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
+			}
+			if (CProvML.CProvMLPackage.eINSTANCE.getStorage().isSuperTypeOf(
+					domainElement.eClass())) {
+				return CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -156,20 +156,20 @@ public class CProvMLVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
-			if (CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
 			if (CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			break;
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			if (CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			if (CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			if (CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;

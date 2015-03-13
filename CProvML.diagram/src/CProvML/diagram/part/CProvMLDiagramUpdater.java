@@ -45,12 +45,12 @@ public class CProvMLDiagramUpdater {
 			CProvML.Node childElement = (CProvML.Node) it.next();
 			int visualID = CProvML.diagram.part.CProvMLVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID) {
+			if (visualID == CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID) {
 				result.add(new CProvML.diagram.part.CProvMLNodeDescriptor(
 						childElement, visualID));
 				continue;
 			}
-			if (visualID == CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID) {
+			if (visualID == CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID) {
 				result.add(new CProvML.diagram.part.CProvMLNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -67,10 +67,10 @@ public class CProvMLDiagramUpdater {
 		switch (CProvML.diagram.part.CProvMLVisualIDRegistry.getVisualID(view)) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
 			return getNodesDiagram_1000ContainedLinks(view);
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			return getStorage_2001ContainedLinks(view);
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_2002ContainedLinks(view);
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			return getStorage_2001ContainedLinks(view);
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getConnection_4001ContainedLinks(view);
 		}
@@ -83,10 +83,10 @@ public class CProvMLDiagramUpdater {
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getIncomingLinks(
 			View view) {
 		switch (CProvML.diagram.part.CProvMLVisualIDRegistry.getVisualID(view)) {
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			return getStorage_2001IncomingLinks(view);
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_2002IncomingLinks(view);
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			return getStorage_2001IncomingLinks(view);
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getConnection_4001IncomingLinks(view);
 		}
@@ -99,10 +99,10 @@ public class CProvMLDiagramUpdater {
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getOutgoingLinks(
 			View view) {
 		switch (CProvML.diagram.part.CProvMLVisualIDRegistry.getVisualID(view)) {
-		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
-			return getStorage_2001OutgoingLinks(view);
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_2002OutgoingLinks(view);
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+			return getStorage_2001OutgoingLinks(view);
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getConnection_4001OutgoingLinks(view);
 		}
