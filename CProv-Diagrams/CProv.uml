@@ -1905,6 +1905,23 @@
         </packagedElement>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_2TH-oNCeEeSCELejsM6hMg" name="Design">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9Lrx4NCeEeSCELejsM6hMg" name="EMF/GMF Filter">
+        <packagedElement xmi:type="uml:Package" xmi:id="__WLTgNCeEeSCELejsM6hMg" name="CPS Model"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_AanzENCfEeSCELejsM6hMg" name="CPS View">
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_6NOKwNCgEeSCELejsM6hMg" client="_AanzENCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_IrRaoNCfEeSCELejsM6hMg" name="CPS Controller">
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_7dL90NCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_8cQ1MNCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="_AanzENCfEeSCELejsM6hMg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_41T8oNCgEeSCELejsM6hMg" client="_9Lrx4NCeEeSCELejsM6hMg" supplier="_9g4l0NCeEeSCELejsM6hMg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9g4l0NCeEeSCELejsM6hMg" name="X-CProvML Filter">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_5LEKMNCgEeSCELejsM6hMg" client="_9g4l0NCeEeSCELejsM6hMg" supplier="_9wzRINCeEeSCELejsM6hMg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9wzRINCeEeSCELejsM6hMg" name="Cloud Service Calls Filter"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Hpm0QLAcEeSRNNZIuVQCyA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HqT-4LAcEeSRNNZIuVQCyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
