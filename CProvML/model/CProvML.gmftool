@@ -15,12 +15,12 @@
           description="Create new Instance">
         <smallIcon
             xsi:type="gmftool:BundleImage"
-            path="icons/full/obj16/Instance.png"
-            bundle="CProvML.edit"/>
+            path="icons/Instance.png"
+            bundle="cprovml.custom"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
-            path="icons/full/obj16/Instance.png"
-            bundle="CProvML.edit"/>
+            path="icons/Instance.png"
+            bundle="cprovml.custom"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -28,12 +28,12 @@
           description="Create new Storage">
         <smallIcon
             xsi:type="gmftool:BundleImage"
-            path="icons/full/obj16/Storage.png"
-            bundle="CProvML.edit"/>
+            path="icons/Storage.png"
+            bundle="cprovml.custom"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
-            path="icons/full/obj16/Storage.png"
-            bundle="CProvML.edit"/>
+            path="icons/Storage.png"
+            bundle="cprovml.custom"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
