@@ -1907,20 +1907,100 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_2TH-oNCeEeSCELejsM6hMg" name="Design">
       <packagedElement xmi:type="uml:Package" xmi:id="_9Lrx4NCeEeSCELejsM6hMg" name="EMF/GMF Filter">
-        <packagedElement xmi:type="uml:Package" xmi:id="__WLTgNCeEeSCELejsM6hMg" name="CPS Model"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="__WLTgNCeEeSCELejsM6hMg" name="CPS Model">
+          <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_N24mQNNEEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N4cFcNNEEeSR6ILMHLKSGg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFcdNEEeSR6ILMHLKSGg" key="Version" value="0.0.1"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFctNEEeSR6ILMHLKSGg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFc9NEEeSR6ILMHLKSGg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFdNNEEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFddNEEeSR6ILMHLKSGg" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N4beYNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_Lfq3QNNEEeSR6ILMHLKSGg"/>
+            </eAnnotations>
+            <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
+          </profileApplication>
+        </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_AanzENCfEeSCELejsM6hMg" name="CPS View">
           <packagedElement xmi:type="uml:Dependency" xmi:id="_6NOKwNCgEeSCELejsM6hMg" client="_AanzENCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
+          <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XLp9QNNEEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XM7voNNEEeSR6ILMHLKSGg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7vodNEEeSR6ILMHLKSGg" key="Version" value="0.0.2"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7votNEEeSR6ILMHLKSGg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7vo9NEEeSR6ILMHLKSGg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7vpNNEEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7vpdNEEeSR6ILMHLKSGg" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XM7IkNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ThzhsdNEEeSR6ILMHLKSGg"/>
+            </eAnnotations>
+            <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
+          </profileApplication>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_IrRaoNCfEeSCELejsM6hMg" name="CPS Controller">
           <packagedElement xmi:type="uml:Dependency" xmi:id="_7dL90NCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_8cQ1MNCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="_AanzENCfEeSCELejsM6hMg"/>
+          <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YtaD4NNEEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yunk0NNEEeSR6ILMHLKSGg" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk0dNEEeSR6ILMHLKSGg" key="Version" value="0.0.2"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk0tNEEeSR6ILMHLKSGg" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk09NEEeSR6ILMHLKSGg" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk1NNEEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk1dNEEeSR6ILMHLKSGg" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yum9wNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <references xmi:type="ecore:EPackage" href="MVC.profile.uml#_ThzhsdNEEeSR6ILMHLKSGg"/>
+            </eAnnotations>
+            <appliedProfile xmi:type="uml:Profile" href="MVC.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
+          </profileApplication>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_41T8oNCgEeSCELejsM6hMg" client="_9Lrx4NCeEeSCELejsM6hMg" supplier="_9g4l0NCeEeSCELejsM6hMg"/>
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vxv-sNNDEeSR6ILMHLKSGg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vzm_4NNDEeSR6ILMHLKSGg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_4dNDEeSR6ILMHLKSGg" key="Version" value="0.0.2"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_4tNDEeSR6ILMHLKSGg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_49NDEeSR6ILMHLKSGg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_5NNDEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_5dNDEeSR6ILMHLKSGg" key="Author" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vzmY0NNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_spRK0NNDEeSR6ILMHLKSGg"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
+        </profileApplication>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_9g4l0NCeEeSCELejsM6hMg" name="X-CProvML Filter">
         <packagedElement xmi:type="uml:Dependency" xmi:id="_5LEKMNCgEeSCELejsM6hMg" client="_9g4l0NCeEeSCELejsM6hMg" supplier="_9wzRINCeEeSCELejsM6hMg"/>
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2Z1F8NNDEeSR6ILMHLKSGg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2bBYwNNDEeSR6ILMHLKSGg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYwdNDEeSR6ILMHLKSGg" key="Version" value="0.0.2"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYwtNDEeSR6ILMHLKSGg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYw9NDEeSR6ILMHLKSGg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYxNNDEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYxdNDEeSR6ILMHLKSGg" key="Author" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2bAxsNNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_spRK0NNDEeSR6ILMHLKSGg"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
+        </profileApplication>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_9wzRINCeEeSCELejsM6hMg" name="Cloud Service Calls Filter"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9wzRINCeEeSCELejsM6hMg" name="Cloud Service Calls Filter">
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5KWFwNNDEeSR6ILMHLKSGg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5MD9ANNDEeSR6ILMHLKSGg" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9AdNDEeSR6ILMHLKSGg" key="Version" value="0.0.2"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9AtNDEeSR6ILMHLKSGg" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9A9NDEeSR6ILMHLKSGg" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9BNNDEeSR6ILMHLKSGg" key="Date" value="2015-03-25"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9BdNDEeSR6ILMHLKSGg" key="Author" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5MDV8NNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_spRK0NNDEeSR6ILMHLKSGg"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
+        </profileApplication>
+      </packagedElement>
       <packagedElement xmi:type="uml:Component" xmi:id="_P1xE4NMwEeSR6ILMHLKSGg" name="X-CProv-XML"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_QLW6YNMwEeSR6ILMHLKSGg" name="G-CProv-XML">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_3XJkcNMwEeSR6ILMHLKSGg" name="Port1" aggregation="composite"/>
