@@ -2001,7 +2001,7 @@
           <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
         </profileApplication>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_P1xE4NMwEeSR6ILMHLKSGg" name="X-CProv-XML"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_P1xE4NMwEeSR6ILMHLKSGg" name="L-CProv-XML"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_QLW6YNMwEeSR6ILMHLKSGg" name="G-CProv-XML">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_3XJkcNMwEeSR6ILMHLKSGg" name="Port1" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_4C-vsNMwEeSR6ILMHLKSGg" name="Port2" aggregation="composite"/>
@@ -2009,7 +2009,7 @@
       <packagedElement xmi:type="uml:Interface" xmi:id="_eNSuoNMxEeSR6ILMHLKSGg" name="G-CProv-XML-Writer">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_MD-0UNM7EeSR6ILMHLKSGg" name="TranslateToXML_G"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_n16OsNMxEeSR6ILMHLKSGg" name="X-CProv-XML-Writer">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_n16OsNMxEeSR6ILMHLKSGg" name="L-CProv-XML-Writer">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_L0OhENM7EeSR6ILMHLKSGg" name="TranslateToXML_X"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_GXHuQNMyEeSR6ILMHLKSGg" client="_P1xE4NMwEeSR6ILMHLKSGg" supplier="_n16OsNMxEeSR6ILMHLKSGg"/>
@@ -2019,23 +2019,23 @@
       <packagedElement xmi:type="uml:Component" xmi:id="_S4PL0NM6EeSR6ILMHLKSGg" name="CPSDiagram"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_WnNX8NM6EeSR6ILMHLKSGg" client="_S4PL0NM6EeSR6ILMHLKSGg" supplier="_QLW6YNMwEeSR6ILMHLKSGg"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_W5HnUNM6EeSR6ILMHLKSGg" client="_S4PL0NM6EeSR6ILMHLKSGg" supplier="_P1xE4NMwEeSR6ILMHLKSGg"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_dgzF8NM6EeSR6ILMHLKSGg" name="CProv-XML-Source">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dgzF8NM6EeSR6ILMHLKSGg" name="G-CProv-XML-Source">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_Ca0hsNM7EeSR6ILMHLKSGg" name="getSource"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Component" xmi:id="_oMJ1YNM6EeSR6ILMHLKSGg" name="CProv-XMLTranslator">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_BHCJINM8EeSR6ILMHLKSGg" name="Port_in" type="_dgzF8NM6EeSR6ILMHLKSGg" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_Bmr5kNM8EeSR6ILMHLKSGg" name="Port_out" type="_wH7ZINM6EeSR6ILMHLKSGg" aggregation="composite"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_wH7ZINM6EeSR6ILMHLKSGg" name="CProv-XML-Out">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_wH7ZINM6EeSR6ILMHLKSGg" name="X-CProv-XML-Out">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_EOllYNM7EeSR6ILMHLKSGg" name="ToXML"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_88vIYNM6EeSR6ILMHLKSGg" client="_oMJ1YNM6EeSR6ILMHLKSGg" supplier="_dgzF8NM6EeSR6ILMHLKSGg"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_9TCvkNM6EeSR6ILMHLKSGg" client="_oMJ1YNM6EeSR6ILMHLKSGg" supplier="_wH7ZINM6EeSR6ILMHLKSGg"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_nFHfYNM7EeSR6ILMHLKSGg" name="CPS Call translator">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_SQpVcNM8EeSR6ILMHLKSGg" name="Port_in" type="_pQtNMNM7EeSR6ILMHLKSGg" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_SxDT0NM8EeSR6ILMHLKSGg" name="Port_out" type="_phc-8NM7EeSR6ILMHLKSGg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_q5E3ENTZEeSzdZ9Pbr8hbw" name="Port0" aggregation="composite"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_pQtNMNM7EeSR6ILMHLKSGg" name="XML_in">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_pQtNMNM7EeSR6ILMHLKSGg" name="X-CProv-XML_in">
         <ownedOperation xmi:type="uml:Operation" xmi:id="_xwZWUNM7EeSR6ILMHLKSGg" name="getXMLFileSource"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_phc-8NM7EeSR6ILMHLKSGg" name="CPS_Call_out">
