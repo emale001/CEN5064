@@ -2598,7 +2598,7 @@
   <PipeAndFilter:CP_Source xmi:id="_yqHP0NTsEeSTJPeNpLnvLA" base_Class="_WQBnFNTnEeSTJPeNpLnvLA"/>
   <PipeAndFilter:CP_Output xmi:id="_VWvm8NTtEeSTJPeNpLnvLA" base_Class="_SJtDMNTtEeSTJPeNpLnvLA"/>
   <PipeAndFilter:CP_Output xmi:id="_6diTYNTtEeSTJPeNpLnvLA" base_Class="_3zXMINTtEeSTJPeNpLnvLA"/>
-  <PipeAndFilter:CP_Output xmi:id="_DAkrcNTuEeSTJPeNpLnvLA" base_Class="_-drvENTtEeSTJPeNpLnvLA"/>
+  <PipeAndFilter:CP_Output xmi:id="_DAkrcNTuEeSTJPeNpLnvLA" base_Class="_-drvENTtEeSTJPeNpLnvLA" FileType="Text" fileType="Text"/>
   <PipeAndFilter:CP_Sink xmi:id="_DAwRoNTuEeSTJPeNpLnvLA" base_Class="_-drvENTtEeSTJPeNpLnvLA"/>
   <PipeAndFilter:CP_Filter xmi:id="_CnNTwNTvEeSTJPeNpLnvLA" base_Class="_WP7gcNTnEeSTJPeNpLnvLA"/>
   <PipeAndFilter:CP_Filter xmi:id="_DjA0sNTvEeSTJPeNpLnvLA" base_Class="_wYtjANTuEeSTJPeNpLnvLA"/>
