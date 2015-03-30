@@ -58,10 +58,6 @@
         <children xmi:type="notation:Shape" xmi:id="_VFs7QNTiEeSTJPeNpLnvLA" type="1023">
           <children xmi:type="notation:DecorationNode" xmi:id="_VFs7QtTiEeSTJPeNpLnvLA" type="1046"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_VFs7Q9TiEeSTJPeNpLnvLA" type="1052">
-            <children xmi:type="notation:Node" xmi:id="_pEGjYNTiEeSTJPeNpLnvLA" type="3002">
-              <element xmi:type="uml:Property" href="GCProvFilter.profile.uml#_8FwBoNTdEeSTJPeNpLnvLA"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_pEGjYdTiEeSTJPeNpLnvLA" x="38" y="19"/>
-            </children>
             <styles xmi:type="notation:TitleStyle" xmi:id="_VFs7RNTiEeSTJPeNpLnvLA"/>
             <styles xmi:type="notation:SortingStyle" xmi:id="_VFs7RdTiEeSTJPeNpLnvLA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_VFs7RtTiEeSTJPeNpLnvLA"/>

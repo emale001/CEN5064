@@ -87,10 +87,6 @@
         <children xmi:type="notation:Shape" xmi:id="_y-G48NTjEeSTJPeNpLnvLA" type="1023">
           <children xmi:type="notation:DecorationNode" xmi:id="_y-G48tTjEeSTJPeNpLnvLA" type="1046"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_y-G489TjEeSTJPeNpLnvLA" type="1052">
-            <children xmi:type="notation:Node" xmi:id="_ZygWsNTkEeSTJPeNpLnvLA" type="3002">
-              <element xmi:type="uml:Property" href="PipeAndFilter.profile.uml#_ZyfIkNTkEeSTJPeNpLnvLA"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ZygWsdTkEeSTJPeNpLnvLA"/>
-            </children>
             <children xmi:type="notation:Node" xmi:id="_jeD2ANTkEeSTJPeNpLnvLA" type="3002">
               <element xmi:type="uml:Property" href="PipeAndFilter.profile.uml#_jeCn4NTkEeSTJPeNpLnvLA"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_jeD2AdTkEeSTJPeNpLnvLA"/>
@@ -242,7 +238,7 @@
     <edges xmi:type="notation:Connector" xmi:id="_ydC90NTkEeSTJPeNpLnvLA" type="8500" source="_yQpgkNTkEeSTJPeNpLnvLA" target="_y-G48NTjEeSTJPeNpLnvLA">
       <styles xmi:type="notation:FontStyle" xmi:id="_ydC90dTkEeSTJPeNpLnvLA"/>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ydC90tTkEeSTJPeNpLnvLA" points="[0, 0, -270, 62]$[0, -14, -270, 48]$[270, -14, 0, 48]$[270, -37, 0, 25]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ydC90tTkEeSTJPeNpLnvLA" points="[-9, 0, -253, 73]$[-9, -18, -253, 55]$[253, -18, 9, 55]$[253, -51, 9, 22]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ydGBINTkEeSTJPeNpLnvLA" id="(1.0,0.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ydGoMNTkEeSTJPeNpLnvLA" id="(0.2012987012987013,0.7899159663865546)"/>
     </edges>

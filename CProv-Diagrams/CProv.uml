@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:GCProvFilter="http:///schemas/GCProvFilter/_3gG58NTiEeSTJPeNpLnvLA/22" xmlns:PipeAndFilter="http:///schemas/PipeAndFilter/_CwxrANTlEeSTJPeNpLnvLA/3" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g http:///schemas/GCProvFilter/_3gG58NTiEeSTJPeNpLnvLA/22 GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA http:///schemas/PipeAndFilter/_CwxrANTlEeSTJPeNpLnvLA/3 PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:GCProvFilter="http:///schemas/GCProvFilter/_OoFhMNabEeSfqZ794LJNMQ/24" xmlns:PipeAndFilter="http:///schemas/PipeAndFilter/_SsYAkNacEeSfqZ794LJNMQ/6" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g http:///schemas/GCProvFilter/_OoFhMNabEeSfqZ794LJNMQ/24 GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ http:///schemas/PipeAndFilter/_SsYAkNacEeSfqZ794LJNMQ/6 PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ">
   <uml:Model xmi:id="_4wlW8K8dEeSB-YH5M4lDYQ" name="model">
     <packagedElement xmi:type="uml:Model" xmi:id="_PFTnQLAQEeSRNNZIuVQCyA" name="UseCase">
       <packagedElement xmi:type="uml:Actor" xmi:id="_8Tp1EK8dEeSB-YH5M4lDYQ" name="Cloud Administrator"/>
@@ -1910,6 +1910,13 @@
         <packagedElement xmi:type="uml:Package" xmi:id="_9Lrx4NCeEeSCELejsM6hMg" name="EMF/GMF Filter">
           <packagedElement xmi:type="uml:Package" xmi:id="__WLTgNCeEeSCELejsM6hMg" name="CPS Model">
             <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_N24mQNNEEeSR6ILMHLKSGg">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCpJ0NabEeSfqZ794LJNMQ" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpJ0dabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpJ0tabEeSfqZ794LJNMQ" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpJ09abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpJ1NabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpJ1dabEeSfqZ794LJNMQ" key="Author" value=""/>
+              </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHXuANTlEeSTJPeNpLnvLA" source="PapyrusVersion">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHXuAdTlEeSTJPeNpLnvLA" key="Version" value="0.0.23"/>
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHXuAtTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -1939,7 +1946,7 @@
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4cFddNEEeSR6ILMHLKSGg" key="Author" value=""/>
               </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N4beYNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
               </eAnnotations>
               <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
             </profileApplication>
@@ -1947,6 +1954,13 @@
           <packagedElement xmi:type="uml:Package" xmi:id="_AanzENCfEeSCELejsM6hMg" name="CPS View">
             <packagedElement xmi:type="uml:Dependency" xmi:id="_6NOKwNCgEeSCELejsM6hMg" client="_AanzENCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
             <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XLp9QNNEEeSR6ILMHLKSGg">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U_XMUNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_XMUdabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_XMUtabEeSfqZ794LJNMQ" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_XMU9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_XMVNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_XMVdabEeSfqZ794LJNMQ" key="Author" value=""/>
+              </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHV40NTlEeSTJPeNpLnvLA" source="PapyrusVersion">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHV40dTlEeSTJPeNpLnvLA" key="Version" value="0.0.23"/>
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHV40tTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -1969,7 +1983,7 @@
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XM7vpdNEEeSR6ILMHLKSGg" key="Author" value=""/>
               </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XM7IkNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
               </eAnnotations>
               <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
             </profileApplication>
@@ -1978,6 +1992,13 @@
             <packagedElement xmi:type="uml:Dependency" xmi:id="_7dL90NCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="__WLTgNCeEeSCELejsM6hMg"/>
             <packagedElement xmi:type="uml:Dependency" xmi:id="_8cQ1MNCgEeSCELejsM6hMg" client="_IrRaoNCfEeSCELejsM6hMg" supplier="_AanzENCfEeSCELejsM6hMg"/>
             <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YtaD4NNEEeSR6ILMHLKSGg">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCpw4NabEeSfqZ794LJNMQ" source="PapyrusVersion">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpw4dabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpw4tabEeSfqZ794LJNMQ" key="Comment" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpw49abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpw5NabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCpw5dabEeSfqZ794LJNMQ" key="Author" value=""/>
+              </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHWf4NTlEeSTJPeNpLnvLA" source="PapyrusVersion">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHWf4dTlEeSTJPeNpLnvLA" key="Version" value="0.0.23"/>
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHWf4tTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -2000,13 +2021,27 @@
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yunk1dNEEeSR6ILMHLKSGg" key="Author" value=""/>
               </eAnnotations>
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yum9wNNEEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+                <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
               </eAnnotations>
               <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
             </profileApplication>
           </packagedElement>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_41T8oNCgEeSCELejsM6hMg" client="_9Lrx4NCeEeSCELejsM6hMg" supplier="_9g4l0NCeEeSCELejsM6hMg"/>
           <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vxv-sNNDEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ut3XNtacEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XN9acEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XONacEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XOdacEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XOtacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XO9acEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7TzXoNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TzXodabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TzXotabEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TzXo9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TzXpNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TzXpdabEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHXG8NTlEeSTJPeNpLnvLA" source="PapyrusVersion">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHXG8dTlEeSTJPeNpLnvLA" key="Version" value="0.0.4"/>
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHXG8tTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -2029,7 +2064,7 @@
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vzm_5dNDEeSR6ILMHLKSGg" key="Author" value=""/>
             </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vzmY0NNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
             </eAnnotations>
             <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
           </profileApplication>
@@ -2037,6 +2072,20 @@
         <packagedElement xmi:type="uml:Package" xmi:id="_9g4l0NCeEeSCELejsM6hMg" name="X-CProvML Filter">
           <packagedElement xmi:type="uml:Dependency" xmi:id="_5LEKMNCgEeSCELejsM6hMg" client="_9g4l0NCeEeSCELejsM6hMg" supplier="_9wzRINCeEeSCELejsM6hMg"/>
           <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2Z1F8NNDEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ut3XMNacEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XMdacEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XMtacEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XM9acEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XNNacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut3XNdacEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7W_1kNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W_1kdabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W_1ktabEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W_1k9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W_1lNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W_1ldabEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHUDoNTlEeSTJPeNpLnvLA" source="PapyrusVersion">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHUDodTlEeSTJPeNpLnvLA" key="Version" value="0.0.4"/>
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHUDotTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -2059,13 +2108,27 @@
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2bBYxdNDEeSR6ILMHLKSGg" key="Author" value=""/>
             </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2bAxsNNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
             </eAnnotations>
             <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
           </profileApplication>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_9wzRINCeEeSCELejsM6hMg" name="Cloud Service Calls Filter">
           <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5KWFwNNDEeSR6ILMHLKSGg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ut1iANacEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut1iAdacEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut1iAtacEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut1iA9acEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut1iBNacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut1iBdacEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7T3CANabEeSfqZ794LJNMQ" source="PapyrusVersion">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T3CAdabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T3CAtabEeSfqZ794LJNMQ" key="Comment" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T3CA9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T3CBNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T3CBdabEeSfqZ794LJNMQ" key="Author" value=""/>
+            </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHVRwNTlEeSTJPeNpLnvLA" source="PapyrusVersion">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHVRwdTlEeSTJPeNpLnvLA" key="Version" value="0.0.4"/>
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHVRwtTlEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -2088,7 +2151,7 @@
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5MD9BdNDEeSR6ILMHLKSGg" key="Author" value=""/>
             </eAnnotations>
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5MDV8NNDEeSR6ILMHLKSGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+              <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
             </eAnnotations>
             <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
           </profileApplication>
@@ -2281,10 +2344,11 @@
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_WQCOINTnEeSTJPeNpLnvLA" name="ModelElement" isAbstract="true">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WQCOIdTnEeSTJPeNpLnvLA" name="Name">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dm4K0NaSEeSfqZ794LJNMQ" name="element" type="_WQCOINTnEeSTJPeNpLnvLA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8HqIYNaZEeSfqZ794LJNMQ" name="Name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_IgKWINaaEeSfqZ794LJNMQ" name="nonEmptyString" value="test"/>
+          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_WQCOItTnEeSTJPeNpLnvLA" name="viewProperties"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_WQCOI9TnEeSTJPeNpLnvLA" name="addConnection" visibility="package"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_WQCOJNTnEeSTJPeNpLnvLA" name="setName">
@@ -2951,7 +3015,165 @@
           <message xmi:type="uml:Message" xmi:id="_1_FkcNaVEeSfqZ794LJNMQ" name="setName_Message" receiveEvent="_1_HZoNaVEeSfqZ794LJNMQ" sendEvent="_1_GykNaVEeSfqZ794LJNMQ" signature="_WQCOJNTnEeSTJPeNpLnvLA"/>
           <message xmi:type="uml:Message" xmi:id="_9fv5gNaVEeSfqZ794LJNMQ" name="render_Message0" receiveEvent="_9fyVwNaVEeSfqZ794LJNMQ" sendEvent="_9fxHoNaVEeSfqZ794LJNMQ" signature="_VucnENZzEeSTJPeNpLnvLA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Interaction" xmi:id="_MKoHoNaYEeSfqZ794LJNMQ" name="CPROVME014-AddConnection-SequenceDiagram">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MKoHodaYEeSfqZ794LJNMQ" name="" type="_8Tp1EK8dEeSB-YH5M4lDYQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_MKoHotaYEeSfqZ794LJNMQ" name="Model" represents="_vAI_sNZxEeSTJPeNpLnvLA" coveredBy="_MKoH2NaYEeSfqZ794LJNMQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_MKoHo9aYEeSfqZ794LJNMQ" name="ModelEditor" represents="_kpfbUNZ5EeSfqZ794LJNMQ" coveredBy="_wuXKUdaYEeSfqZ794LJNMQ _wuXKUNaYEeSfqZ794LJNMQ _6Fl_cNaYEeSfqZ794LJNMQ _Ct8VUNaZEeSfqZ794LJNMQ _Ct7uQNaZEeSfqZ794LJNMQ _FxY4MNaZEeSfqZ794LJNMQ _O-drwNaZEeSfqZ794LJNMQ _W-VsYNaZEeSfqZ794LJNMQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_MKoHpNaYEeSfqZ794LJNMQ" name="" represents="_MKoHodaYEeSfqZ794LJNMQ" coveredBy="_MKoH2daYEeSfqZ794LJNMQ _MKoHq9aYEeSfqZ794LJNMQ _MKoHqtaYEeSfqZ794LJNMQ _6FlYYNaYEeSfqZ794LJNMQ _8BtG0NaYEeSfqZ794LJNMQ _8BsfwNaYEeSfqZ794LJNMQ _FxYRINaZEeSfqZ794LJNMQ _GZmuwNaZEeSfqZ794LJNMQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_MKoHpdaYEeSfqZ794LJNMQ" name="CreateConnectionCommand" represents="_Wm3hMNaREeSfqZ794LJNMQ" coveredBy="_MKoH1NaYEeSfqZ794LJNMQ _JI60sdaZEeSfqZ794LJNMQ _JI60sNaZEeSfqZ794LJNMQ _O-eS0NaZEeSfqZ794LJNMQ _T8vjodaZEeSfqZ794LJNMQ _T8vjoNaZEeSfqZ794LJNMQ _W-WTcNaZEeSfqZ794LJNMQ"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_MKoHp9aYEeSfqZ794LJNMQ" name="ViewStrategy" represents="_NAI7sNaKEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_W-WTcNaZEeSfqZ794LJNMQ" name="execute_MessageRecv" covered="_MKoHpdaYEeSfqZ794LJNMQ" message="_W-UeQNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_MKoHqtaYEeSfqZ794LJNMQ" name="ActionExecSpec6Start" covered="_MKoHpNaYEeSfqZ794LJNMQ" execution="_MKoHq9aYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_MKoHq9aYEeSfqZ794LJNMQ" name="ActionExecSpec6" covered="_MKoHpNaYEeSfqZ794LJNMQ" finish="_MKoH2daYEeSfqZ794LJNMQ" start="_MKoHqtaYEeSfqZ794LJNMQ" action="_v8UpYNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6FlYYNaYEeSfqZ794LJNMQ" name="setSourceElement_MessageSend" covered="_MKoHpNaYEeSfqZ794LJNMQ" message="_6FkKQNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_wuXKUNaYEeSfqZ794LJNMQ" name="ActionExecSpec28" covered="_MKoHo9aYEeSfqZ794LJNMQ" finish="_wuXKUdaYEeSfqZ794LJNMQ" start="_6Fl_cNaYEeSfqZ794LJNMQ" action="_v8UpYNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6Fl_cNaYEeSfqZ794LJNMQ" name="setSourceElement_MessageRecv" covered="_MKoHo9aYEeSfqZ794LJNMQ" message="_6FkKQNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wuXKUdaYEeSfqZ794LJNMQ" name="ActionExecSpec28Finish" covered="_MKoHo9aYEeSfqZ794LJNMQ" execution="_wuXKUNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_MKoH2daYEeSfqZ794LJNMQ" name="ActionExecSpec6Finish" covered="_MKoHpNaYEeSfqZ794LJNMQ" execution="_MKoHq9aYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_GZmuwNaZEeSfqZ794LJNMQ" name="ActionExecSpec29Start" covered="_MKoHpNaYEeSfqZ794LJNMQ" execution="_8BsfwNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_8BsfwNaYEeSfqZ794LJNMQ" name="ActionExecSpec29" covered="_MKoHpNaYEeSfqZ794LJNMQ" finish="_8BtG0NaYEeSfqZ794LJNMQ" start="_GZmuwNaZEeSfqZ794LJNMQ" action="_BS23YNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FxYRINaZEeSfqZ794LJNMQ" name="setDestinationElement_MessageSend" covered="_MKoHpNaYEeSfqZ794LJNMQ" message="_FxXDANaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Ct7uQNaZEeSfqZ794LJNMQ" name="ActionExecSpec30" covered="_MKoHo9aYEeSfqZ794LJNMQ" finish="_Ct8VUNaZEeSfqZ794LJNMQ" start="_FxY4MNaZEeSfqZ794LJNMQ" action="_BS23YNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FxY4MNaZEeSfqZ794LJNMQ" name="setDestinationElement_MessageRecv" covered="_MKoHo9aYEeSfqZ794LJNMQ" message="_FxXDANaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O-drwNaZEeSfqZ794LJNMQ" name="construct_MessageSend" covered="_MKoHo9aYEeSfqZ794LJNMQ" message="_O-dEsNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_JI60sNaZEeSfqZ794LJNMQ" name="ActionExecSpec31" covered="_MKoHpdaYEeSfqZ794LJNMQ" finish="_JI60sdaZEeSfqZ794LJNMQ" start="_O-eS0NaZEeSfqZ794LJNMQ" action="_N3_L4NaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_O-eS0NaZEeSfqZ794LJNMQ" name="construct_MessageRecv" covered="_MKoHpdaYEeSfqZ794LJNMQ" message="_O-dEsNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JI60sdaZEeSfqZ794LJNMQ" name="ActionExecSpec31Finish" covered="_MKoHpdaYEeSfqZ794LJNMQ" execution="_JI60sNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_T8vjoNaZEeSfqZ794LJNMQ" name="ActionExecSpec32" covered="_MKoHpdaYEeSfqZ794LJNMQ" finish="_T8vjodaZEeSfqZ794LJNMQ" start="_W-WTcNaZEeSfqZ794LJNMQ" action="_MKoH_taYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_W-VsYNaZEeSfqZ794LJNMQ" name="execute_MessageSend" covered="_MKoHo9aYEeSfqZ794LJNMQ" message="_W-UeQNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8BtG0NaYEeSfqZ794LJNMQ" name="ActionExecSpec29Finish" covered="_MKoHpNaYEeSfqZ794LJNMQ" execution="_8BsfwNaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MKoH1NaYEeSfqZ794LJNMQ" name="construct_Message0Send0" covered="_MKoHpdaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_T8vjodaZEeSfqZ794LJNMQ" name="ActionExecSpec32Finish" covered="_MKoHpdaYEeSfqZ794LJNMQ" execution="_T8vjoNaZEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MKoH2NaYEeSfqZ794LJNMQ" name="construct_Message0Recv0" covered="_MKoHotaYEeSfqZ794LJNMQ"/>
+          <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Ct8VUNaZEeSfqZ794LJNMQ" name="ActionExecSpec30Finish" covered="_MKoHo9aYEeSfqZ794LJNMQ" execution="_Ct7uQNaZEeSfqZ794LJNMQ"/>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH7NaYEeSfqZ794LJNMQ" name="createModel" operation="_MsTGgLAmEeSRNNZIuVQCyA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH7daYEeSfqZ794LJNMQ" name="workspace">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH7taYEeSfqZ794LJNMQ" name="workspace" value="workspace"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH79aYEeSfqZ794LJNMQ" name="initializePalette" operation="_WP8umtTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH8NaYEeSfqZ794LJNMQ" name="palette">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH8daYEeSfqZ794LJNMQ" name="palette" value="palette"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH8taYEeSfqZ794LJNMQ" name="initialize" operation="_wG4MULVWEeS3K750VyEYWw">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH89aYEeSfqZ794LJNMQ" name="modelEditorAction">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH9NaYEeSfqZ794LJNMQ" name="modelEditorAction" value="modelEditorAction"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH9daYEeSfqZ794LJNMQ" name="setModel" operation="_x-fOMLVWEeS3K750VyEYWw">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH9taYEeSfqZ794LJNMQ" name="setModel">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH99aYEeSfqZ794LJNMQ" name="setModel" value="setModel"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH-NaYEeSfqZ794LJNMQ" name="createNewModel" operation="_aMPDMNaCEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH-daYEeSfqZ794LJNMQ" name="createNewModel">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH-taYEeSfqZ794LJNMQ" name="createNewModel" value="createNewModel"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH-9aYEeSfqZ794LJNMQ" name="constructCommand" operation="_4Xq_sNaFEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH_NaYEeSfqZ794LJNMQ" name="constructCommand">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoH_daYEeSfqZ794LJNMQ" name="constructCommand" value="constructCommand"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoH_taYEeSfqZ794LJNMQ" name="commandExecute" operation="_5uZAMNZzEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoH_9aYEeSfqZ794LJNMQ" name="commandExecute">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIANaYEeSfqZ794LJNMQ" name="commandExecute" value="commandExecute"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIAdaYEeSfqZ794LJNMQ" name="constructModel" operation="_WQBnHdTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIAtaYEeSfqZ794LJNMQ" name="constructModel">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIA9aYEeSfqZ794LJNMQ" name="constructModel" value="constructModel"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIBNaYEeSfqZ794LJNMQ" name="loadModel" operation="_WQCOP9TnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIBdaYEeSfqZ794LJNMQ" name="loadModel">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIBtaYEeSfqZ794LJNMQ" name="loadModel" value="loadModel"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIB9aYEeSfqZ794LJNMQ" name="renderView" operation="_VucnENZzEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoICNaYEeSfqZ794LJNMQ" name="renderView">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoICdaYEeSfqZ794LJNMQ" name="renderView" value="renderView"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoICtaYEeSfqZ794LJNMQ" name="getSelectedElement" operation="_0f7_gNaNEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIC9aYEeSfqZ794LJNMQ" name="getSelectedElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIDNaYEeSfqZ794LJNMQ" name="getSelectedElement" value="getSelectedElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIDdaYEeSfqZ794LJNMQ" name="selectModelElement" operation="_WP8umNTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIDtaYEeSfqZ794LJNMQ" name="selectModelElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoID9aYEeSfqZ794LJNMQ" name="selectModelElement" value="selectModelElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIENaYEeSfqZ794LJNMQ" name="selectElement" operation="_C_JJINaQEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIEdaYEeSfqZ794LJNMQ" name="selectElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIEtaYEeSfqZ794LJNMQ" name="selectElement" value="selectElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIE9aYEeSfqZ794LJNMQ" name="addElement" operation="_WP-jydTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIFNaYEeSfqZ794LJNMQ" name="addElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIFdaYEeSfqZ794LJNMQ" name="addElement" value="addElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIFtaYEeSfqZ794LJNMQ" name="constructAddNodeCommand" operation="_aFQZ0NZ0EeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIF9aYEeSfqZ794LJNMQ" name="constructAddNodeCommand">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIGNaYEeSfqZ794LJNMQ" name="constructAddNodeCommand" value="constructAddNodeCommand"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIGdaYEeSfqZ794LJNMQ" name="constructInstance" operation="_WQEDYtTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIGtaYEeSfqZ794LJNMQ" name="constructInstance">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIG9aYEeSfqZ794LJNMQ" name="constructInstance" value="constructInstance"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIHNaYEeSfqZ794LJNMQ" name="addModelElementToModel" operation="_WQBnG9TnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIHdaYEeSfqZ794LJNMQ" name="addModelElementToModel">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIHtaYEeSfqZ794LJNMQ" name="addModelElementToModel" value="addModelElementToModel"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIH9aYEeSfqZ794LJNMQ" name="setElementName" operation="_WP-jzNTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIINaYEeSfqZ794LJNMQ" name="setElementName">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIIdaYEeSfqZ794LJNMQ" name="setElementName" value="setElementName"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIItaYEeSfqZ794LJNMQ" name="constructRenameElementCommand" operation="_XHUmENaVEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoII9aYEeSfqZ794LJNMQ" name="constructRenameElementCommand">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIJNaYEeSfqZ794LJNMQ" name="constructRenameElementCommand" value="constructRenameElementCommand"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_MKoIJdaYEeSfqZ794LJNMQ" name="setInstanceName" operation="_WQCOJNTnEeSTJPeNpLnvLA">
+            <target xmi:type="uml:ValuePin" xmi:id="_MKoIJtaYEeSfqZ794LJNMQ" name="setInstanceName">
+              <value xmi:type="uml:LiteralString" xmi:id="_MKoIJ9aYEeSfqZ794LJNMQ" name="setInstanceName" value="setInstanceName"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_v8UpYNaYEeSfqZ794LJNMQ" name="setSourceElement" operation="_qIW8INaXEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_v8UpYdaYEeSfqZ794LJNMQ" name="setSourceElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_v8UpYtaYEeSfqZ794LJNMQ" name="setSourceElement" value="setSourceElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_BS23YNaZEeSfqZ794LJNMQ" name="setDestinationElement" operation="_tJ_hINaXEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_BS23YdaZEeSfqZ794LJNMQ" name="setDestinationElement">
+              <value xmi:type="uml:LiteralString" xmi:id="_BS23YtaZEeSfqZ794LJNMQ" name="setDestinationElement" value="setDestinationElement"/>
+            </target>
+          </action>
+          <action xmi:type="uml:CallOperationAction" xmi:id="_N3_L4NaZEeSfqZ794LJNMQ" name="constructCreateConnectionCommand" operation="_yIO8wNaXEeSfqZ794LJNMQ">
+            <target xmi:type="uml:ValuePin" xmi:id="_N3_L4daZEeSfqZ794LJNMQ" name="constructCreateConnectionCommand">
+              <value xmi:type="uml:LiteralString" xmi:id="_N3_L4taZEeSfqZ794LJNMQ" name="constructCreateConnectionCommand" value="constructCreateConnectionCommand"/>
+            </target>
+          </action>
+          <message xmi:type="uml:Message" xmi:id="_6FkKQNaYEeSfqZ794LJNMQ" name="setSourceElement_Message" receiveEvent="_6Fl_cNaYEeSfqZ794LJNMQ" sendEvent="_6FlYYNaYEeSfqZ794LJNMQ" signature="_qIW8INaXEeSfqZ794LJNMQ"/>
+          <message xmi:type="uml:Message" xmi:id="_FxXDANaZEeSfqZ794LJNMQ" name="setDestinationElement_Message" receiveEvent="_FxY4MNaZEeSfqZ794LJNMQ" sendEvent="_FxYRINaZEeSfqZ794LJNMQ" signature="_tJ_hINaXEeSfqZ794LJNMQ"/>
+          <message xmi:type="uml:Message" xmi:id="_O-dEsNaZEeSfqZ794LJNMQ" name="construct_Message" receiveEvent="_O-eS0NaZEeSfqZ794LJNMQ" sendEvent="_O-drwNaZEeSfqZ794LJNMQ" signature="_yIO8wNaXEeSfqZ794LJNMQ"/>
+          <message xmi:type="uml:Message" xmi:id="_W-UeQNaZEeSfqZ794LJNMQ" name="execute_Message" receiveEvent="_W-WTcNaZEeSfqZ794LJNMQ" sendEvent="_W-VsYNaZEeSfqZ794LJNMQ" signature="_AuN5ENZ0EeSfqZ794LJNMQ"/>
+        </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1qD00NaDEeSfqZ794LJNMQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCq_ANabEeSfqZ794LJNMQ" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_AdabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_AtabEeSfqZ794LJNMQ" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_A9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_BNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_BdabEeSfqZ794LJNMQ" key="Author" value=""/>
+          </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1qHfMNaDEeSfqZ794LJNMQ" source="PapyrusVersion">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qHfMdaDEeSfqZ794LJNMQ" key="Version" value="0.0.23"/>
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qHfMtaDEeSfqZ794LJNMQ" key="Comment" value=""/>
@@ -2960,11 +3182,25 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qHfNdaDEeSfqZ794LJNMQ" key="Author" value=""/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1qG4INaDEeSfqZ794LJNMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+            <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
           </eAnnotations>
           <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
         </profileApplication>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1qIGQNaDEeSfqZ794LJNMQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ut2wINacEeSfqZ794LJNMQ" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut2wIdacEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut2wItacEeSfqZ794LJNMQ" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut2wI9acEeSfqZ794LJNMQ" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut2wJNacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ut2wJdacEeSfqZ794LJNMQ" key="Author" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7T2a8NabEeSfqZ794LJNMQ" source="PapyrusVersion">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T2a8dabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T2a8tabEeSfqZ794LJNMQ" key="Comment" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T2a89abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T2a9NabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7T2a9dabEeSfqZ794LJNMQ" key="Author" value=""/>
+          </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1qJUYNaDEeSfqZ794LJNMQ" source="PapyrusVersion">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qJUYdaDEeSfqZ794LJNMQ" key="Version" value="0.0.4"/>
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qJUYtaDEeSfqZ794LJNMQ" key="Comment" value=""/>
@@ -2973,12 +3209,19 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1qJUZdaDEeSfqZ794LJNMQ" key="Author" value=""/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1qItUNaDEeSfqZ794LJNMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+            <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
           </eAnnotations>
           <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
         </profileApplication>
       </packagedElement>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_9AOxINaDEeSfqZ794LJNMQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCoiwNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCoiwdabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCoiwtabEeSfqZ794LJNMQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCoiw9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCoixNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCoixdabEeSfqZ794LJNMQ" key="Author" value=""/>
+        </eAnnotations>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9Apn4NaDEeSfqZ794LJNMQ" source="PapyrusVersion">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Apn4daDEeSfqZ794LJNMQ" key="Version" value="0.0.23"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Apn4taDEeSfqZ794LJNMQ" key="Comment" value=""/>
@@ -2987,11 +3230,25 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Apn5daDEeSfqZ794LJNMQ" key="Author" value=""/>
         </eAnnotations>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9APYMNaDEeSfqZ794LJNMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+          <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
       </profileApplication>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_9Aq2ANaDEeSfqZ794LJNMQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UuBvQNacEeSfqZ794LJNMQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UuBvQdacEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UuBvQtacEeSfqZ794LJNMQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UuBvQ9acEeSfqZ794LJNMQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UuBvRNacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UuBvRdacEeSfqZ794LJNMQ" key="Author" value=""/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7XKNoNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7XKNodabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7XKNotabEeSfqZ794LJNMQ" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7XKNo9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7XKNpNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7XKNpdabEeSfqZ794LJNMQ" key="Author" value=""/>
+        </eAnnotations>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9A4RYNaDEeSfqZ794LJNMQ" source="PapyrusVersion">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9A4RYdaDEeSfqZ794LJNMQ" key="Version" value="0.0.4"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9A4RYtaDEeSfqZ794LJNMQ" key="Comment" value=""/>
@@ -3000,7 +3257,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9A4RZdaDEeSfqZ794LJNMQ" key="Author" value=""/>
         </eAnnotations>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9ArdENaDEeSfqZ794LJNMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+          <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
       </profileApplication>
@@ -3012,6 +3269,13 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vEQ8wNTnEeSTJPeNpLnvLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCXdANabEeSfqZ794LJNMQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCXdAdabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCXdAtabEeSfqZ794LJNMQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCXdA9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCXdBNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCXdBdabEeSfqZ794LJNMQ" key="Author" value=""/>
+      </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vEb74NTnEeSTJPeNpLnvLA" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEb74dTnEeSTJPeNpLnvLA" key="Version" value="0.0.23"/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEb74tTnEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -3020,11 +3284,25 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEb75dTnEeSTJPeNpLnvLA" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vETZANTnEeSTJPeNpLnvLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_3gG58dTiEeSTJPeNpLnvLA"/>
+        <references xmi:type="ecore:EPackage" href="GCProvFilter.profile.uml#_OoFhMdabEeSfqZ794LJNMQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="GCProvFilter.profile.uml#__jL3INNDEeSR6ILMHLKSGg"/>
     </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vEci8NTnEeSTJPeNpLnvLA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UtyesNacEeSfqZ794LJNMQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtyesdacEeSfqZ794LJNMQ" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtyestacEeSfqZ794LJNMQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Utyes9acEeSfqZ794LJNMQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtyetNacEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtyetdacEeSfqZ794LJNMQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7W-ncNabEeSfqZ794LJNMQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W-ncdabEeSfqZ794LJNMQ" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W-nctabEeSfqZ794LJNMQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W-nc9abEeSfqZ794LJNMQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W-ndNabEeSfqZ794LJNMQ" key="Date" value="2015-03-30"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7W-nddabEeSfqZ794LJNMQ" key="Author" value=""/>
+      </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vEj3sNTnEeSTJPeNpLnvLA" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEj3sdTnEeSTJPeNpLnvLA" key="Version" value="0.0.4"/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEj3stTnEeSTJPeNpLnvLA" key="Comment" value=""/>
@@ -3033,7 +3311,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vEj3tdTnEeSTJPeNpLnvLA" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vEdKANTnEeSTJPeNpLnvLA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_CwxrAdTlEeSTJPeNpLnvLA"/>
+        <references xmi:type="ecore:EPackage" href="PipeAndFilter.profile.uml#_SsYAkdacEeSfqZ794LJNMQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="PipeAndFilter.profile.uml#_5YUFwNNCEeSR6ILMHLKSGg"/>
     </profileApplication>
