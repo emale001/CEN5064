@@ -17,7 +17,7 @@ Nodes:
 		Type   { NAT, Bridge, Host Only }
 
 Connections:
-	Environment   [1..*]    Environment
+	Environment   [0..*]    Environment
 	Environment   [1..*]    Instance
 	Environment   [1..1]    Security Group
 	Instance      [1..*]	Storage
