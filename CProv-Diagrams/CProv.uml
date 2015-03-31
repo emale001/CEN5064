@@ -3591,14 +3591,15 @@
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx0tdNEeS8A4j2rd_FUg" name="ModelEditor" represents="_kpfbUNZ5EeSfqZ794LJNMQ" coveredBy="_5GaXINdYEeSharG7-omagw _5GZwENdYEeSharG7-omagw _7-BdcNdYEeSharG7-omagw _F6On4NdZEeSharG7-omagw _R_AoYNdZEeSharG7-omagw _n5imANdZEeSharG7-omagw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx09dNEeS8A4j2rd_FUg" name="" represents="_3Egx0ddNEeS8A4j2rd_FUg" coveredBy="_XE4ygNdYEeSharG7-omagw _XE6AoddYEeSharG7-omagw _XE6AoNdYEeSharG7-omagw _7-A2YNdYEeSharG7-omagw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx1NdNEeS8A4j2rd_FUg" name="TransformCommand" represents="_K6MesNaREeSfqZ794LJNMQ" coveredBy="__n68UddYEeSharG7-omagw __n68UNdYEeSharG7-omagw _F6On4ddZEeSharG7-omagw _O5SNkNdZEeSharG7-omagw _O5RmgNdZEeSharG7-omagw _R_BPcNdZEeSharG7-omagw"/>
-          <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx1tdNEeS8A4j2rd_FUg" name="GCProvMLFilter" represents="_3EsKQNdIEeS8A4j2rd_FUg"/>
-          <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx19dNEeS8A4j2rd_FUg" name="gcProvML" represents="_YrEecNTtEeSTJPeNpLnvLA"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx1tdNEeS8A4j2rd_FUg" name="GCProvMLFilter" represents="_3EsKQNdIEeS8A4j2rd_FUg" coveredBy="_tdNp8NdZEeSharG7-omagw _LfvCYNdaEeSharG7-omagw _T4eO8NdaEeSharG7-omagw _VWK8ANdaEeSharG7-omagw"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx19dNEeS8A4j2rd_FUg" name="gcProvML" represents="_YrEecNTtEeSTJPeNpLnvLA" coveredBy="_N6RLINdaEeSharG7-omagw _T4e2ANdaEeSharG7-omagw _VWKU8NdaEeSharG7-omagw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx2NdNEeS8A4j2rd_FUg" name="xcProvMLFilter" represents="_7muLANdIEeS8A4j2rd_FUg"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx2ddNEeS8A4j2rd_FUg" name="XCProvML" represents="_8fmRwNTtEeSTJPeNpLnvLA"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_jEajwNdREeS8A4j2rd_FUg" name="CloudCalls" represents="_hOw-0NdTEeS8A4j2rd_FUg"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_PfpcQNdUEeS8A4j2rd_FUg" name="TextWriter" represents="_SEEYUNZ5EeSfqZ794LJNMQ"/>
-          <lifeline xmi:type="uml:Lifeline" xmi:id="_jsucwNdYEeSharG7-omagw" name="PipelineFacade" represents="_tSqQkNZ5EeSfqZ794LJNMQ" coveredBy="_TOfTQddZEeSharG7-omagw _TOfTQNdZEeSharG7-omagw _n5jNENdZEeSharG7-omagw"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_jsucwNdYEeSharG7-omagw" name="PipelineFacade" represents="_tSqQkNZ5EeSfqZ794LJNMQ" coveredBy="_TOfTQddZEeSharG7-omagw _TOfTQNdZEeSharG7-omagw _n5jNENdZEeSharG7-omagw _LfubUNdaEeSharG7-omagw _XsbowNdaEeSharG7-omagw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_v2GpYNdYEeSharG7-omagw" name="AmazonCallFilter" represents="_PuLSYNdSEeS8A4j2rd_FUg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XsbowNdaEeSharG7-omagw" name="transform_Message1Recv" covered="_jsucwNdYEeSharG7-omagw" message="_XsbBsNdaEeSharG7-omagw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XE4ygNdYEeSharG7-omagw" name="ActionExecSpecStart" covered="_3Egx09dNEeS8A4j2rd_FUg" execution="_XE6AoNdYEeSharG7-omagw"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_XE6AoNdYEeSharG7-omagw" name="ActionExecSpec" covered="_3Egx09dNEeS8A4j2rd_FUg" finish="_XE6AoddYEeSharG7-omagw" start="_XE4ygNdYEeSharG7-omagw" action="_3EhY7tdNEeS8A4j2rd_FUg"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7-A2YNdYEeSharG7-omagw" name="transform_MessageSend" covered="_3Egx09dNEeS8A4j2rd_FUg" message="_79_BMNdYEeSharG7-omagw"/>
@@ -3615,6 +3616,14 @@
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n5imANdZEeSharG7-omagw" name="transformModelToCloudCalls_MessageSend" covered="_3Egx0tdNEeS8A4j2rd_FUg" message="_n5hX4NdZEeSharG7-omagw"/>
           <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_TOfTQNdZEeSharG7-omagw" name="ActionExecSpec3" covered="_jsucwNdYEeSharG7-omagw" finish="_TOfTQddZEeSharG7-omagw" start="_n5jNENdZEeSharG7-omagw" action="_mYxW0NdZEeSharG7-omagw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n5jNENdZEeSharG7-omagw" name="transformModelToCloudCalls_MessageRecv" covered="_jsucwNdYEeSharG7-omagw" message="_n5hX4NdZEeSharG7-omagw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LfubUNdaEeSharG7-omagw" name="transform_Message0Send" covered="_jsucwNdYEeSharG7-omagw" message="_LftNMNdaEeSharG7-omagw"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_tdNp8NdZEeSharG7-omagw" name="ActionExecSpec4" covered="_3Egx1tdNEeS8A4j2rd_FUg" finish="_VWK8ANdaEeSharG7-omagw" start="_LfvCYNdaEeSharG7-omagw" action="_cOOosNdJEeS8A4j2rd_FUg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LfvCYNdaEeSharG7-omagw" name="transform_Message0Recv" covered="_3Egx1tdNEeS8A4j2rd_FUg" message="_LftNMNdaEeSharG7-omagw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T4eO8NdaEeSharG7-omagw" name="construct_Message0Send" covered="_3Egx1tdNEeS8A4j2rd_FUg" message="_T4dA0NdaEeSharG7-omagw"/>
+          <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_N6RLINdaEeSharG7-omagw" name="ActionExecSpec5" covered="_3Egx19dNEeS8A4j2rd_FUg" finish="_VWKU8NdaEeSharG7-omagw" start="_T4e2ANdaEeSharG7-omagw" action="_3EhY99dNEeS8A4j2rd_FUg"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T4e2ANdaEeSharG7-omagw" name="construct_Message0Recv" covered="_3Egx19dNEeS8A4j2rd_FUg" message="_T4dA0NdaEeSharG7-omagw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VWK8ANdaEeSharG7-omagw" name="construct_Message1Recv" covered="_3Egx1tdNEeS8A4j2rd_FUg" message="_XsbBsNdaEeSharG7-omagw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VWKU8NdaEeSharG7-omagw" name="construct_Message1Send" covered="_3Egx19dNEeS8A4j2rd_FUg" message="_VWJG0NdaEeSharG7-omagw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_TOfTQddZEeSharG7-omagw" name="ActionExecSpec3Finish" covered="_jsucwNdYEeSharG7-omagw" execution="_TOfTQNdZEeSharG7-omagw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5GaXINdYEeSharG7-omagw" name="ActionExecSpec0Finish" covered="_3Egx0tdNEeS8A4j2rd_FUg" execution="_5GZwENdYEeSharG7-omagw"/>
           <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XE6AoddYEeSharG7-omagw" name="ActionExecSpecFinish" covered="_3Egx09dNEeS8A4j2rd_FUg" execution="_XE6AoNdYEeSharG7-omagw"/>
@@ -3807,6 +3816,10 @@
           <message xmi:type="uml:Message" xmi:id="_F6NZwNdZEeSharG7-omagw" name="construct_Message" receiveEvent="_F6On4ddZEeSharG7-omagw" sendEvent="_F6On4NdZEeSharG7-omagw" signature="_Hf0K0NdHEeSwUqyN6cGQsQ"/>
           <message xmi:type="uml:Message" xmi:id="_R-_aQNdZEeSharG7-omagw" name="execute_Message" receiveEvent="_R_BPcNdZEeSharG7-omagw" sendEvent="_R_AoYNdZEeSharG7-omagw" signature="_JG-60NZ0EeSfqZ794LJNMQ"/>
           <message xmi:type="uml:Message" xmi:id="_n5hX4NdZEeSharG7-omagw" name="transformModelToCloudCalls_Message" receiveEvent="_n5jNENdZEeSharG7-omagw" sendEvent="_n5imANdZEeSharG7-omagw" signature="_ffrTwNZ3EeSfqZ794LJNMQ"/>
+          <message xmi:type="uml:Message" xmi:id="_LftNMNdaEeSharG7-omagw" name="transform_Message0" receiveEvent="_LfvCYNdaEeSharG7-omagw" sendEvent="_LfubUNdaEeSharG7-omagw" signature="_yDBTINZ3EeSfqZ794LJNMQ"/>
+          <message xmi:type="uml:Message" xmi:id="_T4dA0NdaEeSharG7-omagw" name="construct_Message0" receiveEvent="_T4e2ANdaEeSharG7-omagw" sendEvent="_T4eO8NdaEeSharG7-omagw" signature="_Aji04NdKEeS8A4j2rd_FUg"/>
+          <message xmi:type="uml:Message" xmi:id="_VWJG0NdaEeSharG7-omagw" name="construct_Message1" messageSort="reply" receiveEvent="_VWK8ANdaEeSharG7-omagw" sendEvent="_VWKU8NdaEeSharG7-omagw" signature="_Aji04NdKEeS8A4j2rd_FUg"/>
+          <message xmi:type="uml:Message" xmi:id="_XsbBsNdaEeSharG7-omagw" name="transform_Message1" messageSort="reply" receiveEvent="_XsbowNdaEeSharG7-omagw" sendEvent="_VWK8ANdaEeSharG7-omagw" signature="_yDBTINZ3EeSfqZ794LJNMQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:StateMachine" xmi:id="_eS7-UNc8EeScXurvrsorAA" name="EMF/GMF Filter">
           <region xmi:type="uml:Region" xmi:id="_phQ38Nc8EeScXurvrsorAA" name="Region1">
