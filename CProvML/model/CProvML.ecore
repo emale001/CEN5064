@@ -13,6 +13,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" eType="#//Network"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CPU" eType="#//CPUType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="OS" eType="#//OSType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RAM" lowerBound="1" upperBound="16"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Storage" eSuperTypes="#//Node">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Size" lowerBound="3" upperBound="2000"
