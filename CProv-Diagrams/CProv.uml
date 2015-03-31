@@ -3182,6 +3182,166 @@
           <message xmi:type="uml:Message" xmi:id="_9oz1QNadEeSfqZ794LJNMQ" name="render_Message" receiveEvent="_9o2RgNadEeSfqZ794LJNMQ" sendEvent="_9o1DYNadEeSfqZ794LJNMQ" signature="_VucnENZzEeSTJPeNpLnvLA"/>
           <message xmi:type="uml:Message" xmi:id="_jHdoENaeEeSfqZ794LJNMQ" name="addConnection_Message" receiveEvent="_jHfdQNaeEeSfqZ794LJNMQ" sendEvent="_jHe2MNaeEeSfqZ794LJNMQ" signature="_WQBnH9TnEeSTJPeNpLnvLA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_eS7-UNc8EeScXurvrsorAA" name="EMF/GMF Filter">
+          <region xmi:type="uml:Region" xmi:id="_phQ38Nc8EeScXurvrsorAA" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_H2kssNdBEeScXurvrsorAA" guard="_PZKw4NdAEeScXurvrsorAA" source="_4fH3ANc_EeScXurvrsorAA" target="_EtmwoNdBEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_PZKw4NdAEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_PZKw4ddAEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_MiQ_wNdBEeScXurvrsorAA" name="writetofile" event="_MR6PkNdBEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_iQ6BANdCEeScXurvrsorAA" source="_5fxjENc8EeScXurvrsorAA" target="_EaYPcNc9EeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_JpUx0NdDEeScXurvrsorAA" name="openModel" event="_I8VwANdDEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_ktXcYNdCEeScXurvrsorAA" source="_EaYPcNc9EeScXurvrsorAA" target="_cL808NdCEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ky0usNdDEeScXurvrsorAA" name="success2">
+                <specification xmi:type="uml:LiteralString" xmi:id="_ky0usddDEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_DscjsNdDEeScXurvrsorAA" name="editModel" event="_zEHqENdDEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_qhDSQNdCEeScXurvrsorAA" guard="_ZGecUNdDEeScXurvrsorAA" source="_cL808NdCEeScXurvrsorAA" target="_8TT6UNc_EeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ZGecUNdDEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_ZGecUddDEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_TxDPwNdDEeScXurvrsorAA" name="validateModel" event="_R5qQUNdDEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rDTD_tdCEeScXurvrsorAA" guard="_GHyIQNdEEeScXurvrsorAA" source="_cL808NdCEeScXurvrsorAA" target="_oc4bENdCEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_GHyIQNdEEeScXurvrsorAA" name="fail">
+                <specification xmi:type="uml:LiteralString" xmi:id="_GHyIQddEEeScXurvrsorAA" name="failure" value="failure"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_CcTVANdEEeScXurvrsorAA" name="validateModel" event="_CFBdcNdEEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_vRLZYNdCEeScXurvrsorAA" guard="_2ARcsNdEEeScXurvrsorAA" source="_8TT6UNc_EeScXurvrsorAA" target="_4fH3ANc_EeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_2ARcsNdEEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_2ARcsddEEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_yD7i8NdEEeScXurvrsorAA" name="transformToGProvML" event="_x0bHUNdEEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_xYsfgNdCEeScXurvrsorAA" source="_oc4bENdCEeScXurvrsorAA" target="_cL808NdCEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_Ooe-ANdEEeScXurvrsorAA" name="editModel" event="_OXnQcNdEEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_4s9-YNdCEeScXurvrsorAA" source="_EtmwoNdBEeScXurvrsorAA" target="_4KCQcNdCEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_gdrd8NdEEeScXurvrsorAA" name="exit" event="_gN0dANdEEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_WEN6UNdFEeScXurvrsorAA" source="_8TT6UNc_EeScXurvrsorAA" target="_cL808NdCEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_bBu9MNdFEeScXurvrsorAA" name="editModel" event="_awgqUNdFEeScXurvrsorAA"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_5fxjENc8EeScXurvrsorAA" name="initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_EaYPcNc9EeScXurvrsorAA" name="Model opened"/>
+            <subvertex xmi:type="uml:State" xmi:id="_4fH3ANc_EeScXurvrsorAA" name="Model to G-CProvML"/>
+            <subvertex xmi:type="uml:State" xmi:id="_8TT6UNc_EeScXurvrsorAA" name="Valid Model"/>
+            <subvertex xmi:type="uml:State" xmi:id="_EtmwoNdBEeScXurvrsorAA" name="Output to File"/>
+            <subvertex xmi:type="uml:State" xmi:id="_cL808NdCEeScXurvrsorAA" name="Model Changed"/>
+            <subvertex xmi:type="uml:State" xmi:id="_oc4bENdCEeScXurvrsorAA" name="Invalid Model"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_4KCQcNdCEeScXurvrsorAA" name="FinalState"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_6-yz4Nc-EeScXurvrsorAA" name="SaveModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_mwU6ANc_EeScXurvrsorAA" name="SaveModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_LSEYoNdAEeScXurvrsorAA" name="validate"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_hYZWkNdAEeScXurvrsorAA" name="savemodel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_xe-_oNdAEeScXurvrsorAA" name="transformToGProvML"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_MR6PkNdBEeScXurvrsorAA" name="writeToFile"/>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_7h6nsNdBEeScXurvrsorAA" name="X-CProvML Filter">
+          <region xmi:type="uml:Region" xmi:id="_8zBqQNdBEeScXurvrsorAA" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_-Mw9ANdEEeScXurvrsorAA" source="_ADtX4NdCEeScXurvrsorAA" target="_7gWaENdEEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_1yhfINdFEeScXurvrsorAA" name="saveG-CProvML" event="_1eHVYNdFEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Gp2eENdFEeScXurvrsorAA" guard="_B9xUANdGEeScXurvrsorAA" source="_7gWaENdEEeScXurvrsorAA" target="__JHQgNdEEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_B9xUANdGEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_B9xUAddGEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_9gkI4NdFEeScXurvrsorAA" name="transformToX-CProvML" event="_9OndQNdFEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_K0ddUNdFEeScXurvrsorAA" guard="_OyyeoNdGEeScXurvrsorAA" source="__JHQgNdEEeScXurvrsorAA" target="_HvAIQNdFEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_OyyeoNdGEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OyyeoddGEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_EJ7pkNdGEeScXurvrsorAA" name="witeToFile" event="_MR6PkNdBEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_MMiqkNdFEeScXurvrsorAA" source="_HvAIQNdFEeScXurvrsorAA" target="_LihdMNdFEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_bT09UNdGEeScXurvrsorAA" name="exit" event="_bElncNdGEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_609hcNdJEeSe0q53HXvdiA" guard="_KfW9wNdKEeSe0q53HXvdiA" source="__JHQgNdEEeScXurvrsorAA" target="_4iE40NdJEeSe0q53HXvdiA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_KfW9wNdKEeSe0q53HXvdiA" name="fail">
+                <specification xmi:type="uml:LiteralString" xmi:id="_KfW9wddKEeSe0q53HXvdiA" name="failure" value="failure"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_F1J4cNdKEeSe0q53HXvdiA" name="transformToX-CProvML" event="_E058YNdKEeSe0q53HXvdiA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_WTodENdKEeSe0q53HXvdiA" source="_4iE40NdJEeSe0q53HXvdiA" target="_LihdMNdFEeScXurvrsorAA"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_ADtX4NdCEeScXurvrsorAA" name="initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_7gWaENdEEeScXurvrsorAA" name="G-CProvML Saved"/>
+            <subvertex xmi:type="uml:State" xmi:id="__JHQgNdEEeScXurvrsorAA" name="G-CProvML to X-CProvML"/>
+            <subvertex xmi:type="uml:State" xmi:id="_HvAIQNdFEeScXurvrsorAA" name="output to X-CProvML file"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_LihdMNdFEeScXurvrsorAA" name="FinalState"/>
+            <subvertex xmi:type="uml:State" xmi:id="_4iE40NdJEeSe0q53HXvdiA" name="Error"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_Ctm84NdDEeScXurvrsorAA" name="openModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_I8VwANdDEeScXurvrsorAA" name="openModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_R5qQUNdDEeScXurvrsorAA" name="validateModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_zEHqENdDEeScXurvrsorAA" name="editModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_CFBdcNdEEeScXurvrsorAA" name="validateModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_OXnQcNdEEeScXurvrsorAA" name="editModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_Wb_WkNdEEeScXurvrsorAA" name="editModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_gN0dANdEEeScXurvrsorAA" name="exit"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_x0bHUNdEEeScXurvrsorAA" name="transformToGProvML"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_awgqUNdFEeScXurvrsorAA" name="editModel"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_1eHVYNdFEeScXurvrsorAA" name="saveG-CProvML"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_9OndQNdFEeScXurvrsorAA" name="transformToX-CProvML"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_bElncNdGEeScXurvrsorAA" name="exit"/>
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_lyGTANdGEeScXurvrsorAA" name="CPSCallsFilter">
+          <region xmi:type="uml:Region" xmi:id="_oIOc4NdGEeScXurvrsorAA" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_6CMIENdGEeScXurvrsorAA" source="_zd3fcNdGEeScXurvrsorAA" target="_5M43wNdGEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_zaAdsNdHEeScXurvrsorAA" name="chooseProvider" event="_zDEkYNdHEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_6kPsQNdGEeScXurvrsorAA" guard="_HK2K8NdIEeScXurvrsorAA" source="_5M43wNdGEeScXurvrsorAA" target="_3mAZgNdGEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_HK2K8NdIEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_HK2K8ddIEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Dnn70NdIEeScXurvrsorAA" name="generateEC2Calls" event="_DVyk8NdIEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_7BsdQNdGEeScXurvrsorAA" guard="_SAcbgNdIEeScXurvrsorAA" source="_5M43wNdGEeScXurvrsorAA" target="_34c0YNdGEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_SAcbgNdIEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_SAdCkNdIEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_OL2vkNdIEeScXurvrsorAA" name="generateGoogleCalls" event="_N-EyQNdIEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_EAbS0NdHEeScXurvrsorAA" guard="_jrpucNdHEeScXurvrsorAA" source="_urDQsNdGEeScXurvrsorAA" target="_zd3fcNdGEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_jrpucNdHEeScXurvrsorAA" name="success">
+                <specification xmi:type="uml:LiteralString" xmi:id="_jrpucddHEeScXurvrsorAA" name="successful" value="successful"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_f8MaINdHEeScXurvrsorAA" name="transformToCPSCalls" event="_ftQmQNdHEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_EZO0YNdHEeScXurvrsorAA" source="_tev1oNdGEeScXurvrsorAA" target="_urDQsNdGEeScXurvrsorAA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_VEpo0NdHEeScXurvrsorAA" name="saveX-CProvML" event="_UwmEYNdHEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_GApeINdHEeScXurvrsorAA" source="_3mAZgNdGEeScXurvrsorAA" target="_FFbMANdHEeScXurvrsorAA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_HFDhcNdHEeScXurvrsorAA" source="_34c0YNdGEeScXurvrsorAA" target="_FFbMANdHEeScXurvrsorAA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_nTwBENdIEeScXurvrsorAA" guard="_225l4NdIEeScXurvrsorAA" source="_zd3fcNdGEeScXurvrsorAA" target="_jVJdgNdIEeScXurvrsorAA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_225l4NdIEeScXurvrsorAA" name="failure">
+                <specification xmi:type="uml:LiteralString" xmi:id="_225l4ddIEeScXurvrsorAA" name="failure" value="failure"/>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_uvJboNdIEeScXurvrsorAA" name="transformToCPSCalls" event="_uegXkNdIEeScXurvrsorAA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_4ClV4NdIEeScXurvrsorAA" source="_jVJdgNdIEeScXurvrsorAA" target="_FFbMANdHEeScXurvrsorAA"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_tev1oNdGEeScXurvrsorAA" name="Initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_urDQsNdGEeScXurvrsorAA" name="X-CProvML Saved"/>
+            <subvertex xmi:type="uml:State" xmi:id="_zd3fcNdGEeScXurvrsorAA" name="X-CProvML to Cloud Calls"/>
+            <subvertex xmi:type="uml:State" xmi:id="_3mAZgNdGEeScXurvrsorAA" name="output to Amazon EC2 Calls"/>
+            <subvertex xmi:type="uml:State" xmi:id="_34c0YNdGEeScXurvrsorAA" name="output to Google Cloud Calls"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_5M43wNdGEeScXurvrsorAA" name="CPS Provider" kind="choice"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_FFbMANdHEeScXurvrsorAA" name="FinalState"/>
+            <subvertex xmi:type="uml:State" xmi:id="_jVJdgNdIEeScXurvrsorAA" name="Error"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_UwmEYNdHEeScXurvrsorAA" name="saveX-CProvML"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_ftQmQNdHEeScXurvrsorAA" name="transformToCPSCalls"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_zDEkYNdHEeScXurvrsorAA" name="chooseProvider"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_DVyk8NdIEeScXurvrsorAA" name="generateEC2Calls"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_N-EyQNdIEeScXurvrsorAA" name="generateGoogleCalls"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_uegXkNdIEeScXurvrsorAA" name="transformToCPSCalls"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_E058YNdKEeSe0q53HXvdiA" name="tranformToX-CProvML"/>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1qD00NaDEeSfqZ794LJNMQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VCq_ANabEeSfqZ794LJNMQ" source="PapyrusVersion">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VCq_AdabEeSfqZ794LJNMQ" key="Version" value="0.0.25"/>
@@ -3374,4 +3534,5 @@
   <PipeAndFilter:CP_Filter xmi:id="_EOKqgNTvEeSTJPeNpLnvLA" base_Class="_0MogkNTuEeSTJPeNpLnvLA"/>
   <GCProvFilter:CP_Controller xmi:id="_hO1b4NaFEeSfqZ794LJNMQ" base_Class="_vwNQENaEEeSfqZ794LJNMQ"/>
   <GCProvFilter:CP_Controller xmi:id="_D1zSENaVEeSfqZ794LJNMQ" base_Class="_u24oINaUEeSfqZ794LJNMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_AnVe0NdBEeScXurvrsorAA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
 </xmi:XMI>
