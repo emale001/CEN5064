@@ -3586,7 +3586,7 @@
           <message xmi:type="uml:Message" xmi:id="_YJKwcNdMEeS8A4j2rd_FUg" name="getDocument_Message0" messageSort="reply" receiveEvent="_YJL-kNdMEeS8A4j2rd_FUg" sendEvent="_YJNMsNdMEeS8A4j2rd_FUg" signature="_rSTbANZ8EeSfqZ794LJNMQ"/>
           <message xmi:type="uml:Message" xmi:id="_tDEiENdNEeS8A4j2rd_FUg" name="persistXmlFile_Message" receiveEvent="_tDG-UNdNEeS8A4j2rd_FUg" sendEvent="_tDFwMNdNEeS8A4j2rd_FUg" signature="_WQBACtTnEeSTJPeNpLnvLA"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interaction" xmi:id="_3Egx0NdNEeS8A4j2rd_FUg" name="CPROVME001-SubmitRequestForInstanceDeployment-SequenceDiagram">
+        <packagedElement xmi:type="uml:Interaction" xmi:id="_3Egx0NdNEeS8A4j2rd_FUg" name="CPROVEE001-SubmitRequestForInstanceDeployment-SequenceDiagram">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3Egx0ddNEeS8A4j2rd_FUg" name="" type="_8Tp1EK8dEeSB-YH5M4lDYQ"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx0tdNEeS8A4j2rd_FUg" name="ModelEditor" represents="_kpfbUNZ5EeSfqZ794LJNMQ" coveredBy="_5GaXINdYEeSharG7-omagw _5GZwENdYEeSharG7-omagw _7-BdcNdYEeSharG7-omagw _F6On4NdZEeSharG7-omagw _R_AoYNdZEeSharG7-omagw"/>
           <lifeline xmi:type="uml:Lifeline" xmi:id="_3Egx09dNEeS8A4j2rd_FUg" name="" represents="_3Egx0ddNEeS8A4j2rd_FUg" coveredBy="_XE4ygNdYEeSharG7-omagw _XE6AoddYEeSharG7-omagw _XE6AoNdYEeSharG7-omagw _7-A2YNdYEeSharG7-omagw"/>

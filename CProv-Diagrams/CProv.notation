@@ -14348,7 +14348,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tDbucddNEeS8A4j2rd_FUg" id="(0.0,0.0){8}"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_8hHkcNdNEeS8A4j2rd_FUg" type="PapyrusUMLSequenceDiagram" name="CProv-CPROVME001-SubmitRequestForInstanceDeployment-SequenceDiagram" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_8hHkcNdNEeS8A4j2rd_FUg" type="PapyrusUMLSequenceDiagram" name="CProv-CPROVEE001-SubmitRequestForInstanceDeployment-SequenceDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_8hHkcddNEeS8A4j2rd_FUg" type="2001">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8hHkctdNEeS8A4j2rd_FUg" source="Stereotype_Annotation">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8hHkc9dNEeS8A4j2rd_FUg" key="StereotypeWithQualifiedNameList" value=""/>
@@ -14513,7 +14513,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hILytdNEeS8A4j2rd_FUg"/>
       </children>
       <element xmi:type="uml:Interaction" href="CProv.uml#_3Egx0NdNEeS8A4j2rd_FUg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hILy9dNEeS8A4j2rd_FUg" x="-97" y="17" width="2102" height="1067"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hILy9dNEeS8A4j2rd_FUg" x="-97" y="17" width="2102" height="1075"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_8hILzNdNEeS8A4j2rd_FUg" name="diagram_compatibility_version" stringValue="1.0.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_8hILzddNEeS8A4j2rd_FUg"/>
