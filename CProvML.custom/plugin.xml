@@ -4,10 +4,6 @@
 
    <extension
          point="org.eclipse.ui.commands">
-      <category
-            name="Sample Category"
-            id="CProvML.custom.commands.category">
-      </category>
       <command
             name="Transform to X-CProvML"
             categoryId="CProvML.custom.commands.category"
@@ -58,18 +54,6 @@
                </with>
             </visibleWhen>
          </menu>
-      </menuContribution>
-      <menuContribution
-            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
-         <toolbar
-               id="CProvML.custom.toolbars.sampleToolbar">
-            <command
-                  commandId="CProvML.custom.commands.sampleCommand"
-                  icon="icons/sample.gif"
-                  tooltip="Say hello world"
-                  id="CProvML.custom.toolbars.sampleCommand">
-            </command>
-         </toolbar>
       </menuContribution>
    </extension>
 
