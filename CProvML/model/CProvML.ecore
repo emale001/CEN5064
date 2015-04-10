@@ -9,8 +9,9 @@
         eType="#//Connection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Instance" eSuperTypes="#//Node">
-    <eStructuralFeatures xsi:type="ecore:EReference" upperBound="-1" eType="#//Storage"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" eType="#//Network"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Storage" upperBound="-1"
+        eType="#//Storage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Network" eType="#//Network"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CPU" eType="#//CPUType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="OS" eType="#//OSType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="RAM" lowerBound="1" upperBound="16"
@@ -39,15 +40,16 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//NetworkType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Environment" eSuperTypes="#//Node">
-    <eStructuralFeatures xsi:type="ecore:EReference" upperBound="5" eType="#//Instance"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" eType="#//SecurityGroup"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" upperBound="-1" eType="#//Environment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Instance" upperBound="5"
+        eType="#//Instance" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SecurityGroup" eType="#//SecurityGroup"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Environment" upperBound="-1"
+        eType="#//Environment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="OSType">
     <eLiterals name="Windows"/>
     <eLiterals name="Linux"/>
-    <eLiterals name="OS X"/>
+    <eLiterals name="OSX"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CPUType">
     <eLiterals name="Intel"/>

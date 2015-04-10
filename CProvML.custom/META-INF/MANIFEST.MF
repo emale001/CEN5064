@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Custom
+Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: CProvML.custom;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: cprovml.custom.Activator
