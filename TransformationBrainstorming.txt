@@ -1,0 +1,78 @@
+<nodes type="instance" name="instances 1">
+	<sourceConnections source="node0" target="node1"/>
+</nodes>
+<nodes type="storage" name="storage 1">
+</nodes>
+
+// Read XML, and transform it into our meta model by creating instances of each class in our metamodel.
+LinkedList<Node> Nodes;
+Nodes[0] = new Instance("instances 1", ...);
+Nodes[1] = new Storage("a hard drive");
+
+Nodes[0].AddChild(Nodes[1]);
+
+// Now we have the G-CProvML completely loaded into our meta model.
+// Write some transformation code to work with our meta model and produce the
+	X-CProvML
+	
+<environments>
+	<environment name="Test">
+		<network name="MyNetwork">
+			<instance name="Instance 1">
+				<storage id="S1" name="A hard drive" size="" type=""/>
+			</instance>
+			<instance name="Instance 2">
+				<storageReference id="S1"/>
+			</instance>
+		</network>
+	</environment>
+</environments>
+
+<environments>
+	
+	<environment id="E1" name="E1">
+		<storage id="S1" name="A hard drive">
+		</storage>
+		
+		<instance id="I1" name="Instance 1">
+			<connections>
+				<storage id="S1"/>
+				<instance id="I2"/>
+				<network id="N1"/>
+			</connections>
+		</instance>
+		
+		<network id="N1">
+		</network>
+		
+		<instance id="I2" name="Instance 2">
+			<connections>
+				<storage id="S1"/>
+				<instance id="I1"/>
+				<network id="N1"/>
+			</connections>
+		</instance>
+		
+		<connections>
+			<environment id="E2"/>
+		</connections>
+	</environment>
+	
+</environments>
+
+CREATE http://ec2.amazon.com/api/createEnvironment
+	PARAMS:
+		name: 
+		instances:
+		
+
+
+Create an environment with:
+	1) A hard drive.
+	2) A network.
+	3) Two instances connected to each other AND to the network, both sharing the hard drive.
+
+Create a second environment with:
+	...
+	
+Connect the two environments together
