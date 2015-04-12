@@ -15,21 +15,8 @@ Nodes[0].AddChild(Nodes[1]);
 // Write some transformation code to work with our meta model and produce the
 	X-CProvML
 	
-<environments>
-	<environment name="Test">
-		<network name="MyNetwork">
-			<instance name="Instance 1">
-				<storage id="S1" name="A hard drive" size="" type=""/>
-			</instance>
-			<instance name="Instance 2">
-				<storageReference id="S1"/>
-			</instance>
-		</network>
-	</environment>
-</environments>
 
-<environments>
-	
+<cloudProvision>
 	<environment id="E1" name="E1">
 		<storage id="S1" name="A hard drive">
 		</storage>
@@ -57,8 +44,8 @@ Nodes[0].AddChild(Nodes[1]);
 			<environment id="E2"/>
 		</connections>
 	</environment>
-	
-</environments>
+</cloudProvision>
+
 
 CREATE http://ec2.amazon.com/api/createEnvironment
 	PARAMS:
@@ -76,3 +63,45 @@ Create a second environment with:
 	...
 	
 Connect the two environments together
+
+
+See the example diagram (ExampleDiagram.png). This is the corresponding X-CProvML XML:
+
+<cloudProvision>
+
+	<storage name="storage">
+		<connections>
+			<instance name="sql"/>
+			<instance name="web2"/>
+		</connections>
+	</storage>
+	
+	<storage name="webstorage">
+		<connections>
+			<instance name="web"/>
+		</connections>
+	</storage>
+	
+	<environment name="environment">
+		
+		<instance name="site">
+			<connections>
+				<instance name="web"/>
+			</connections>
+		</instance>
+		
+		<instance name="sql">
+			<connections>
+				<instance name="web"/>
+			</connections>
+		</instance>
+		
+		<instance name="web2">
+		</instance>
+		
+	</environment>
+	
+	<instance name="web">
+	</instance>
+	
+</cloudProvision>
