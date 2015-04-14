@@ -17,9 +17,12 @@ public class CProvMLModelingAssistantProviderOfNodesDiagramEditPart extends
 	 */
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
-		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
+		List<IElementType> types = new ArrayList<IElementType>(5);
 		types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
+		types.add(CProvML.diagram.providers.CProvMLElementTypes.Network_2004);
+		types.add(CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003);
+		types.add(CProvML.diagram.providers.CProvMLElementTypes.Environment_2005);
+		types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
 		return types;
 	}
 

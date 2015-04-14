@@ -88,6 +88,18 @@ public class CProvMLAdapterFactory extends AdapterFactoryImpl {
 				return createConnectionAdapter();
 			}
 			@Override
+			public Adapter caseSecurityGroup(SecurityGroup object) {
+				return createSecurityGroupAdapter();
+			}
+			@Override
+			public Adapter caseNetwork(Network object) {
+				return createNetworkAdapter();
+			}
+			@Override
+			public Adapter caseEnvironment(Environment object) {
+				return createEnvironmentAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -174,6 +186,48 @@ public class CProvMLAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConnectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link CProvML.SecurityGroup <em>Security Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see CProvML.SecurityGroup
+	 * @generated
+	 */
+	public Adapter createSecurityGroupAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link CProvML.Network <em>Network</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see CProvML.Network
+	 * @generated
+	 */
+	public Adapter createNetworkAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link CProvML.Environment <em>Environment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see CProvML.Environment
+	 * @generated
+	 */
+	public Adapter createEnvironmentAdapter() {
 		return null;
 	}
 

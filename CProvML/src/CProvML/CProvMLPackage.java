@@ -4,6 +4,7 @@ package CProvML;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -149,13 +150,40 @@ public interface CProvMLPackage extends EPackage {
 	int INSTANCE__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
 
 	/**
+	 * The feature id for the '<em><b>CPU</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE__CPU = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>OS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE__OS = NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>RAM</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE__RAM = NODE_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Instance</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INSTANCE_FEATURE_COUNT = NODE_FEATURE_COUNT + 0;
+	int INSTANCE_FEATURE_COUNT = NODE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Instance</em>' class.
@@ -204,13 +232,31 @@ public interface CProvMLPackage extends EPackage {
 	int STORAGE__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
 
 	/**
+	 * The feature id for the '<em><b>Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE__SIZE = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE__TYPE = NODE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Storage</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STORAGE_FEATURE_COUNT = NODE_FEATURE_COUNT + 0;
+	int STORAGE_FEATURE_COUNT = NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Storage</em>' class.
@@ -306,6 +352,239 @@ public interface CProvMLPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link CProvML.impl.SecurityGroupImpl <em>Security Group</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.impl.SecurityGroupImpl
+	 * @see CProvML.impl.CProvMLPackageImpl#getSecurityGroup()
+	 * @generated
+	 */
+	int SECURITY_GROUP = 5;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__NAME = NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>IP Range</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__IP_RANGE = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>VPC Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__VPC_NAME = NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Security Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_FEATURE_COUNT = NODE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Security Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_OPERATION_COUNT = NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link CProvML.impl.NetworkImpl <em>Network</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.impl.NetworkImpl
+	 * @see CProvML.impl.CProvMLPackageImpl#getNetwork()
+	 * @generated
+	 */
+	int NETWORK = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK__NAME = NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK__TYPE = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Network</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_FEATURE_COUNT = NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Network</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_OPERATION_COUNT = NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link CProvML.impl.EnvironmentImpl <em>Environment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.impl.EnvironmentImpl
+	 * @see CProvML.impl.CProvMLPackageImpl#getEnvironment()
+	 * @generated
+	 */
+	int ENVIRONMENT = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT__NAME = NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
+
+	/**
+	 * The number of structural features of the '<em>Environment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_FEATURE_COUNT = NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Environment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_OPERATION_COUNT = NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link CProvML.OSType <em>OS Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.OSType
+	 * @see CProvML.impl.CProvMLPackageImpl#getOSType()
+	 * @generated
+	 */
+	int OS_TYPE = 8;
+
+	/**
+	 * The meta object id for the '{@link CProvML.CPUType <em>CPU Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.CPUType
+	 * @see CProvML.impl.CProvMLPackageImpl#getCPUType()
+	 * @generated
+	 */
+	int CPU_TYPE = 9;
+
+	/**
+	 * The meta object id for the '{@link CProvML.StorageType <em>Storage Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.StorageType
+	 * @see CProvML.impl.CProvMLPackageImpl#getStorageType()
+	 * @generated
+	 */
+	int STORAGE_TYPE = 10;
+
+	/**
+	 * The meta object id for the '{@link CProvML.NetworkType <em>Network Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see CProvML.NetworkType
+	 * @see CProvML.impl.CProvMLPackageImpl#getNetworkType()
+	 * @generated
+	 */
+	int NETWORK_TYPE = 11;
+
+
+	/**
 	 * Returns the meta object for class '{@link CProvML.Node <em>Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -359,6 +638,39 @@ public interface CProvMLPackage extends EPackage {
 	EClass getInstance();
 
 	/**
+	 * Returns the meta object for the attribute '{@link CProvML.Instance#getCPU <em>CPU</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>CPU</em>'.
+	 * @see CProvML.Instance#getCPU()
+	 * @see #getInstance()
+	 * @generated
+	 */
+	EAttribute getInstance_CPU();
+
+	/**
+	 * Returns the meta object for the attribute '{@link CProvML.Instance#getOS <em>OS</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>OS</em>'.
+	 * @see CProvML.Instance#getOS()
+	 * @see #getInstance()
+	 * @generated
+	 */
+	EAttribute getInstance_OS();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link CProvML.Instance#getRAM <em>RAM</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>RAM</em>'.
+	 * @see CProvML.Instance#getRAM()
+	 * @see #getInstance()
+	 * @generated
+	 */
+	EAttribute getInstance_RAM();
+
+	/**
 	 * Returns the meta object for class '{@link CProvML.Storage <em>Storage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -367,6 +679,28 @@ public interface CProvMLPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getStorage();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link CProvML.Storage#getSize <em>Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Size</em>'.
+	 * @see CProvML.Storage#getSize()
+	 * @see #getStorage()
+	 * @generated
+	 */
+	EAttribute getStorage_Size();
+
+	/**
+	 * Returns the meta object for the attribute '{@link CProvML.Storage#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see CProvML.Storage#getType()
+	 * @see #getStorage()
+	 * @generated
+	 */
+	EAttribute getStorage_Type();
 
 	/**
 	 * Returns the meta object for class '{@link CProvML.NodesDiagram <em>Nodes Diagram</em>}'.
@@ -420,6 +754,109 @@ public interface CProvMLPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getConnection_Target();
+
+	/**
+	 * Returns the meta object for class '{@link CProvML.SecurityGroup <em>Security Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Security Group</em>'.
+	 * @see CProvML.SecurityGroup
+	 * @generated
+	 */
+	EClass getSecurityGroup();
+
+	/**
+	 * Returns the meta object for the attribute '{@link CProvML.SecurityGroup#getIPRange <em>IP Range</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>IP Range</em>'.
+	 * @see CProvML.SecurityGroup#getIPRange()
+	 * @see #getSecurityGroup()
+	 * @generated
+	 */
+	EAttribute getSecurityGroup_IPRange();
+
+	/**
+	 * Returns the meta object for the attribute '{@link CProvML.SecurityGroup#getVPCName <em>VPC Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>VPC Name</em>'.
+	 * @see CProvML.SecurityGroup#getVPCName()
+	 * @see #getSecurityGroup()
+	 * @generated
+	 */
+	EAttribute getSecurityGroup_VPCName();
+
+	/**
+	 * Returns the meta object for class '{@link CProvML.Network <em>Network</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Network</em>'.
+	 * @see CProvML.Network
+	 * @generated
+	 */
+	EClass getNetwork();
+
+	/**
+	 * Returns the meta object for the attribute '{@link CProvML.Network#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see CProvML.Network#getType()
+	 * @see #getNetwork()
+	 * @generated
+	 */
+	EAttribute getNetwork_Type();
+
+	/**
+	 * Returns the meta object for class '{@link CProvML.Environment <em>Environment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Environment</em>'.
+	 * @see CProvML.Environment
+	 * @generated
+	 */
+	EClass getEnvironment();
+
+	/**
+	 * Returns the meta object for enum '{@link CProvML.OSType <em>OS Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>OS Type</em>'.
+	 * @see CProvML.OSType
+	 * @generated
+	 */
+	EEnum getOSType();
+
+	/**
+	 * Returns the meta object for enum '{@link CProvML.CPUType <em>CPU Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>CPU Type</em>'.
+	 * @see CProvML.CPUType
+	 * @generated
+	 */
+	EEnum getCPUType();
+
+	/**
+	 * Returns the meta object for enum '{@link CProvML.StorageType <em>Storage Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Storage Type</em>'.
+	 * @see CProvML.StorageType
+	 * @generated
+	 */
+	EEnum getStorageType();
+
+	/**
+	 * Returns the meta object for enum '{@link CProvML.NetworkType <em>Network Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Network Type</em>'.
+	 * @see CProvML.NetworkType
+	 * @generated
+	 */
+	EEnum getNetworkType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -489,6 +926,30 @@ public interface CProvMLPackage extends EPackage {
 		EClass INSTANCE = eINSTANCE.getInstance();
 
 		/**
+		 * The meta object literal for the '<em><b>CPU</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE__CPU = eINSTANCE.getInstance_CPU();
+
+		/**
+		 * The meta object literal for the '<em><b>OS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE__OS = eINSTANCE.getInstance_OS();
+
+		/**
+		 * The meta object literal for the '<em><b>RAM</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE__RAM = eINSTANCE.getInstance_RAM();
+
+		/**
 		 * The meta object literal for the '{@link CProvML.impl.StorageImpl <em>Storage</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -497,6 +958,22 @@ public interface CProvMLPackage extends EPackage {
 		 * @generated
 		 */
 		EClass STORAGE = eINSTANCE.getStorage();
+
+		/**
+		 * The meta object literal for the '<em><b>Size</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STORAGE__SIZE = eINSTANCE.getStorage_Size();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STORAGE__TYPE = eINSTANCE.getStorage_Type();
 
 		/**
 		 * The meta object literal for the '{@link CProvML.impl.NodesDiagramImpl <em>Nodes Diagram</em>}' class.
@@ -541,6 +1018,100 @@ public interface CProvMLPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CONNECTION__TARGET = eINSTANCE.getConnection_Target();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.impl.SecurityGroupImpl <em>Security Group</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.impl.SecurityGroupImpl
+		 * @see CProvML.impl.CProvMLPackageImpl#getSecurityGroup()
+		 * @generated
+		 */
+		EClass SECURITY_GROUP = eINSTANCE.getSecurityGroup();
+
+		/**
+		 * The meta object literal for the '<em><b>IP Range</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP__IP_RANGE = eINSTANCE.getSecurityGroup_IPRange();
+
+		/**
+		 * The meta object literal for the '<em><b>VPC Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP__VPC_NAME = eINSTANCE.getSecurityGroup_VPCName();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.impl.NetworkImpl <em>Network</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.impl.NetworkImpl
+		 * @see CProvML.impl.CProvMLPackageImpl#getNetwork()
+		 * @generated
+		 */
+		EClass NETWORK = eINSTANCE.getNetwork();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETWORK__TYPE = eINSTANCE.getNetwork_Type();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.impl.EnvironmentImpl <em>Environment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.impl.EnvironmentImpl
+		 * @see CProvML.impl.CProvMLPackageImpl#getEnvironment()
+		 * @generated
+		 */
+		EClass ENVIRONMENT = eINSTANCE.getEnvironment();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.OSType <em>OS Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.OSType
+		 * @see CProvML.impl.CProvMLPackageImpl#getOSType()
+		 * @generated
+		 */
+		EEnum OS_TYPE = eINSTANCE.getOSType();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.CPUType <em>CPU Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.CPUType
+		 * @see CProvML.impl.CProvMLPackageImpl#getCPUType()
+		 * @generated
+		 */
+		EEnum CPU_TYPE = eINSTANCE.getCPUType();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.StorageType <em>Storage Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.StorageType
+		 * @see CProvML.impl.CProvMLPackageImpl#getStorageType()
+		 * @generated
+		 */
+		EEnum STORAGE_TYPE = eINSTANCE.getStorageType();
+
+		/**
+		 * The meta object literal for the '{@link CProvML.NetworkType <em>Network Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see CProvML.NetworkType
+		 * @see CProvML.impl.CProvMLPackageImpl#getNetworkType()
+		 * @generated
+		 */
+		EEnum NETWORK_TYPE = eINSTANCE.getNetworkType();
 
 	}
 

@@ -83,8 +83,15 @@ public class NodesDiagramCanonicalEditPolicy extends CanonicalEditPolicy {
 	private boolean isMyDiagramElement(View view) {
 		int visualID = CProvML.diagram.part.CProvMLVisualIDRegistry
 				.getVisualID(view);
-		return visualID == CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID
-				|| visualID == CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID;
+		switch (visualID) {
+		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
+		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID:
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
+		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -245,18 +252,42 @@ public class NodesDiagramCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
-						.getInstance_2002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
 						.getStorage_2001ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
+						.getNetwork_2004ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
+						.getSecurityGroup_2003ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
+						.getEnvironment_2005ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(CProvML.diagram.part.CProvMLDiagramUpdater
+						.getInstance_2002ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

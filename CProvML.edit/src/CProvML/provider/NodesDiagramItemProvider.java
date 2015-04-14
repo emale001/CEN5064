@@ -162,6 +162,21 @@ public class NodesDiagramItemProvider
 			(createChildParameter
 				(CProvMLPackage.Literals.NODES_DIAGRAM__NODES,
 				 CProvMLFactory.eINSTANCE.createStorage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CProvMLPackage.Literals.NODES_DIAGRAM__NODES,
+				 CProvMLFactory.eINSTANCE.createSecurityGroup()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CProvMLPackage.Literals.NODES_DIAGRAM__NODES,
+				 CProvMLFactory.eINSTANCE.createNetwork()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CProvMLPackage.Literals.NODES_DIAGRAM__NODES,
+				 CProvMLFactory.eINSTANCE.createEnvironment()));
 	}
 
 	/**

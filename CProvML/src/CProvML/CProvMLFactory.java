@@ -67,6 +67,33 @@ public interface CProvMLFactory extends EFactory {
 	Connection createConnection();
 
 	/**
+	 * Returns a new object of class '<em>Security Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Security Group</em>'.
+	 * @generated
+	 */
+	SecurityGroup createSecurityGroup();
+
+	/**
+	 * Returns a new object of class '<em>Network</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network</em>'.
+	 * @generated
+	 */
+	Network createNetwork();
+
+	/**
+	 * Returns a new object of class '<em>Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Environment</em>'.
+	 * @generated
+	 */
+	Environment createEnvironment();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

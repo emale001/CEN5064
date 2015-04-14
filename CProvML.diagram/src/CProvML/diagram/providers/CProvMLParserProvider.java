@@ -41,20 +41,77 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser instanceName_5002Parser;
+	private IParser networkName_5002Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getInstanceName_5002Parser() {
-		if (instanceName_5002Parser == null) {
+	private IParser getNetworkName_5002Parser() {
+		if (networkName_5002Parser == null) {
 			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
 					.getNode_Name() };
 			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
 					features);
-			instanceName_5002Parser = parser;
+			networkName_5002Parser = parser;
 		}
-		return instanceName_5002Parser;
+		return networkName_5002Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser securityGroupName_5003Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getSecurityGroupName_5003Parser() {
+		if (securityGroupName_5003Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			securityGroupName_5003Parser = parser;
+		}
+		return securityGroupName_5003Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser environmentName_5004Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getEnvironmentName_5004Parser() {
+		if (environmentName_5004Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			environmentName_5004Parser = parser;
+		}
+		return environmentName_5004Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser instanceName_5005Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getInstanceName_5005Parser() {
+		if (instanceName_5005Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			instanceName_5005Parser = parser;
+		}
+		return instanceName_5005Parser;
 	}
 
 	/**
@@ -62,10 +119,16 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-			return getInstanceName_5002Parser();
 		case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
 			return getStorageName_5001Parser();
+		case CProvML.diagram.edit.parts.NetworkNameEditPart.VISUAL_ID:
+			return getNetworkName_5002Parser();
+		case CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID:
+			return getSecurityGroupName_5003Parser();
+		case CProvML.diagram.edit.parts.EnvironmentNameEditPart.VISUAL_ID:
+			return getEnvironmentName_5004Parser();
+		case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
+			return getInstanceName_5005Parser();
 		}
 		return null;
 	}

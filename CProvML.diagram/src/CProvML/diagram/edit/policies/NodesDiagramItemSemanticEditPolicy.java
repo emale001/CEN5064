@@ -24,14 +24,29 @@ public class NodesDiagramItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (CProvML.diagram.providers.CProvMLElementTypes.Instance_2002 == req
-				.getElementType()) {
-			return getGEFWrapper(new CProvML.diagram.edit.commands.InstanceCreateCommand(
-					req));
-		}
 		if (CProvML.diagram.providers.CProvMLElementTypes.Storage_2001 == req
 				.getElementType()) {
 			return getGEFWrapper(new CProvML.diagram.edit.commands.StorageCreateCommand(
+					req));
+		}
+		if (CProvML.diagram.providers.CProvMLElementTypes.Network_2004 == req
+				.getElementType()) {
+			return getGEFWrapper(new CProvML.diagram.edit.commands.NetworkCreateCommand(
+					req));
+		}
+		if (CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003 == req
+				.getElementType()) {
+			return getGEFWrapper(new CProvML.diagram.edit.commands.SecurityGroupCreateCommand(
+					req));
+		}
+		if (CProvML.diagram.providers.CProvMLElementTypes.Environment_2005 == req
+				.getElementType()) {
+			return getGEFWrapper(new CProvML.diagram.edit.commands.EnvironmentCreateCommand(
+					req));
+		}
+		if (CProvML.diagram.providers.CProvMLElementTypes.Instance_2002 == req
+				.getElementType()) {
+			return getGEFWrapper(new CProvML.diagram.edit.commands.InstanceCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

@@ -225,19 +225,42 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
-							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+							.getType(CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
 							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			links.addChildren(createNavigatorItems(connectedViews, links, false));
+			connectedViews = getDiagramLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			if (!links.isEmpty()) {
 				result.add(links);
@@ -265,6 +288,12 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
 							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
 					outgoinglinks, true));
 			if (!incominglinks.isEmpty()) {
@@ -298,6 +327,123 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
 					outgoinglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID: {
+			LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem> result = new LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			CProvML.diagram.navigator.CProvMLNavigatorGroup incominglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_SecurityGroup_2003_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			CProvML.diagram.navigator.CProvMLNavigatorGroup outgoinglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_SecurityGroup_2003_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID: {
+			LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem> result = new LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			CProvML.diagram.navigator.CProvMLNavigatorGroup incominglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_Network_2004_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			CProvML.diagram.navigator.CProvMLNavigatorGroup outgoinglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_Network_2004_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID: {
+			LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem> result = new LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			CProvML.diagram.navigator.CProvMLNavigatorGroup incominglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_Environment_2005_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			CProvML.diagram.navigator.CProvMLNavigatorGroup outgoinglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_Environment_2005_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
 			}
@@ -316,18 +462,63 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 			CProvML.diagram.navigator.CProvMLNavigatorGroup source = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
 					CProvML.diagram.part.Messages.NavigatorGroupName_Connection_4001_source,
 					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			CProvML.diagram.navigator.CProvMLNavigatorGroup incominglinks = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_Connection_4001_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
 			connectedViews = getLinksTargetByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
 							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target,
 					true));
-			connectedViews = getLinksTargetByType(
+			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
 							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
 			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
@@ -335,10 +526,56 @@ public class CProvMLNavigatorContentProvider implements ICommonContentProvider {
 							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
+			if (!target.isEmpty()) {
+				result.add(target);
+			}
+			if (!source.isEmpty()) {
+				result.add(source);
+			}
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			return result.toArray();
+		}
+
+		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID: {
+			LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem> result = new LinkedList<CProvML.diagram.navigator.CProvMLAbstractNavigatorItem>();
+			Edge sv = (Edge) view;
+			CProvML.diagram.navigator.CProvMLNavigatorGroup target = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_NodeTargetConnections_4002_target,
+					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			CProvML.diagram.navigator.CProvMLNavigatorGroup source = new CProvML.diagram.navigator.CProvMLNavigatorGroup(
+					CProvML.diagram.part.Messages.NavigatorGroupName_NodeTargetConnections_4002_source,
+					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
 			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
 					CProvML.diagram.part.CProvMLVisualIDRegistry
 							.getType(CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					CProvML.diagram.part.CProvMLVisualIDRegistry
+							.getType(CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
 			if (!target.isEmpty()) {

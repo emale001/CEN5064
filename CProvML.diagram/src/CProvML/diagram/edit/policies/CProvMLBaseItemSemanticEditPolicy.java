@@ -332,9 +332,31 @@ public class CProvMLBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		/**
 		 * @generated
 		 */
+		public boolean canCreateNodeTargetConnections_4002(CProvML.Node source,
+				CProvML.Connection target) {
+			if (source != null) {
+				if (source.getTargetConnections() != null) {
+					return false;
+				}
+			}
+
+			return canExistNodeTargetConnections_4002(source, target);
+		}
+
+		/**
+		 * @generated
+		 */
 		public boolean canExistConnection_4001(CProvML.Node container,
 				CProvML.Connection linkInstance, CProvML.Node source,
 				CProvML.Node target) {
+			return true;
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistNodeTargetConnections_4002(CProvML.Node source,
+				CProvML.Connection target) {
 			return true;
 		}
 	}

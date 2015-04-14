@@ -1,48 +1,35 @@
 package CProvML.diagram.edit.parts;
 
-import java.util.Collections;
-import java.util.List;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.GridData;
 import org.eclipse.draw2d.GridLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.Label;
-import org.eclipse.draw2d.PositionConstants;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
-import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
-import org.eclipse.gef.GraphicalEditPart;
 import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
 import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
-import org.eclipse.gef.handles.MoveHandle;
 import org.eclipse.gef.requests.CreateRequest;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.AbstractBorderedShapeEditPart;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.IBorderItemEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
-import org.eclipse.gmf.runtime.diagram.ui.editpolicies.BorderItemSelectionEditPolicy;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
-import org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemLocator;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
-import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
-import org.osgi.framework.Bundle;
 import cprovml.custom.figures.InstanceShape;
 
 /**
  * @generated
  */
-public class InstanceEditPart extends AbstractBorderedShapeEditPart {
+public class InstanceEditPart extends ShapeNodeEditPart {
 
 	/**
 	 * @generated
@@ -86,20 +73,6 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
 			protected EditPolicy createChildEditPolicy(EditPart child) {
-				View childView = (View) child.getModel();
-				switch (CProvML.diagram.part.CProvMLVisualIDRegistry
-						.getVisualID(childView)) {
-				case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-					return new BorderItemSelectionEditPolicy() {
-
-						protected List createSelectionHandles() {
-							MoveHandle mh = new MoveHandle(
-									(GraphicalEditPart) getHost());
-							mh.setBorder(null);
-							return Collections.singletonList(mh);
-						}
-					};
-				}
 				EditPolicy result = child
 						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
 				if (result == null) {
@@ -136,16 +109,50 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 	/**
 	 * @generated
 	 */
-	protected void addBorderItem(IFigure borderItemContainer,
-			IBorderItemEditPart borderItemEditPart) {
-		if (borderItemEditPart instanceof CProvML.diagram.edit.parts.InstanceNameEditPart) {
-			BorderItemLocator locator = new BorderItemLocator(getMainFigure(),
-					PositionConstants.SOUTH);
-			locator.setBorderItemOffset(new Dimension(-20, -20));
-			borderItemContainer.add(borderItemEditPart.getFigure(), locator);
-		} else {
-			super.addBorderItem(borderItemContainer, borderItemEditPart);
+	protected boolean addFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof CProvML.diagram.edit.parts.InstanceNameEditPart) {
+			((CProvML.diagram.edit.parts.InstanceNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape().getFigureInstanceNameFigure());
+			return true;
 		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean removeFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof CProvML.diagram.edit.parts.InstanceNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void removeChildVisual(EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)) {
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		return getContentPane();
 	}
 
 	/**
@@ -164,7 +171,7 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 	 * 
 	 * @generated
 	 */
-	protected NodeFigure createMainFigure() {
+	protected NodeFigure createNodeFigure() {
 		NodeFigure figure = createNodePlate();
 		figure.setLayoutManager(new StackLayout());
 		IFigure shape = createNodeShape();
@@ -180,6 +187,11 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 	 * @generated
 	 */
 	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			ConstrainedToolbarLayout layout = new ConstrainedToolbarLayout();
+			layout.setSpacing(5);
+			nodeShape.setLayoutManager(layout);
+		}
 		return nodeShape; // use nodeShape itself as contentPane
 	}
 
@@ -245,7 +257,7 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 		/**
 		 * @generated
 		 */
-		private Label fFigureInstanceNameLabel;
+		private Label fFigureInstanceNameFigure;
 
 		/**
 		 * @generated
@@ -254,7 +266,7 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 
 			GridLayout layoutThis = new GridLayout();
 			layoutThis.numColumns = 2;
-			layoutThis.makeColumnsEqualWidth = false;
+			layoutThis.makeColumnsEqualWidth = true;
 			this.setLayoutManager(layoutThis);
 
 			createContents();
@@ -265,28 +277,28 @@ public class InstanceEditPart extends AbstractBorderedShapeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureInstanceNameLabel = new Label();
+			fFigureInstanceNameFigure = new Label();
 
-			fFigureInstanceNameLabel.setText("");
+			fFigureInstanceNameFigure.setText("<..>");
 
-			GridData constraintFFigureInstanceNameLabel = new GridData();
-			constraintFFigureInstanceNameLabel.verticalAlignment = GridData.BEGINNING;
-			constraintFFigureInstanceNameLabel.horizontalAlignment = GridData.BEGINNING;
-			constraintFFigureInstanceNameLabel.horizontalIndent = 0;
-			constraintFFigureInstanceNameLabel.horizontalSpan = 1;
-			constraintFFigureInstanceNameLabel.verticalSpan = 1;
-			constraintFFigureInstanceNameLabel.grabExcessHorizontalSpace = false;
-			constraintFFigureInstanceNameLabel.grabExcessVerticalSpace = false;
-			this.add(fFigureInstanceNameLabel,
-					constraintFFigureInstanceNameLabel);
+			GridData constraintFFigureInstanceNameFigure = new GridData();
+			constraintFFigureInstanceNameFigure.verticalAlignment = GridData.BEGINNING;
+			constraintFFigureInstanceNameFigure.horizontalAlignment = GridData.BEGINNING;
+			constraintFFigureInstanceNameFigure.horizontalIndent = 0;
+			constraintFFigureInstanceNameFigure.horizontalSpan = 1;
+			constraintFFigureInstanceNameFigure.verticalSpan = 1;
+			constraintFFigureInstanceNameFigure.grabExcessHorizontalSpace = false;
+			constraintFFigureInstanceNameFigure.grabExcessVerticalSpace = false;
+			this.add(fFigureInstanceNameFigure,
+					constraintFFigureInstanceNameFigure);
 
 		}
 
 		/**
 		 * @generated
 		 */
-		public Label getFigureInstanceNameLabel() {
-			return fFigureInstanceNameLabel;
+		public Label getFigureInstanceNameFigure() {
+			return fFigureInstanceNameFigure;
 		}
 
 	}

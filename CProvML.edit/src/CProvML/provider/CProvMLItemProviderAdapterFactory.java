@@ -187,6 +187,75 @@ public class CProvMLItemProviderAdapterFactory extends CProvMLAdapterFactory imp
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link CProvML.SecurityGroup} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SecurityGroupItemProvider securityGroupItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link CProvML.SecurityGroup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSecurityGroupAdapter() {
+		if (securityGroupItemProvider == null) {
+			securityGroupItemProvider = new SecurityGroupItemProvider(this);
+		}
+
+		return securityGroupItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link CProvML.Network} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NetworkItemProvider networkItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link CProvML.Network}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createNetworkAdapter() {
+		if (networkItemProvider == null) {
+			networkItemProvider = new NetworkItemProvider(this);
+		}
+
+		return networkItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link CProvML.Environment} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EnvironmentItemProvider environmentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link CProvML.Environment}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEnvironmentAdapter() {
+		if (environmentItemProvider == null) {
+			environmentItemProvider = new EnvironmentItemProvider(this);
+		}
+
+		return environmentItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -290,6 +359,9 @@ public class CProvMLItemProviderAdapterFactory extends CProvMLAdapterFactory imp
 		if (storageItemProvider != null) storageItemProvider.dispose();
 		if (nodesDiagramItemProvider != null) nodesDiagramItemProvider.dispose();
 		if (connectionItemProvider != null) connectionItemProvider.dispose();
+		if (securityGroupItemProvider != null) securityGroupItemProvider.dispose();
+		if (networkItemProvider != null) networkItemProvider.dispose();
+		if (environmentItemProvider != null) environmentItemProvider.dispose();
 	}
 
 }

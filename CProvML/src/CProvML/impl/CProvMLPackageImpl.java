@@ -2,16 +2,24 @@
  */
 package CProvML.impl;
 
+import CProvML.CPUType;
 import CProvML.CProvMLFactory;
 import CProvML.CProvMLPackage;
 import CProvML.Connection;
+import CProvML.Environment;
 import CProvML.Instance;
+import CProvML.Network;
+import CProvML.NetworkType;
 import CProvML.Node;
 import CProvML.NodesDiagram;
+import CProvML.OSType;
+import CProvML.SecurityGroup;
 import CProvML.Storage;
 
+import CProvML.StorageType;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -58,6 +66,55 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 	 * @generated
 	 */
 	private EClass connectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass securityGroupEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass environmentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum osTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cpuTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum storageTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum networkTypeEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -170,8 +227,53 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getInstance_CPU() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_OS() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getInstance_RAM() {
+		return (EAttribute)instanceEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getStorage() {
 		return storageEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getStorage_Size() {
+		return (EAttribute)storageEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getStorage_Type() {
+		return (EAttribute)storageEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -224,6 +326,96 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSecurityGroup() {
+		return securityGroupEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSecurityGroup_IPRange() {
+		return (EAttribute)securityGroupEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSecurityGroup_VPCName() {
+		return (EAttribute)securityGroupEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNetwork() {
+		return networkEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNetwork_Type() {
+		return (EAttribute)networkEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEnvironment() {
+		return environmentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getOSType() {
+		return osTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getCPUType() {
+		return cpuTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getStorageType() {
+		return storageTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getNetworkType() {
+		return networkTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CProvMLFactory getCProvMLFactory() {
 		return (CProvMLFactory)getEFactoryInstance();
 	}
@@ -253,8 +445,13 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 		createEReference(nodeEClass, NODE__TARGET_CONNECTIONS);
 
 		instanceEClass = createEClass(INSTANCE);
+		createEAttribute(instanceEClass, INSTANCE__CPU);
+		createEAttribute(instanceEClass, INSTANCE__OS);
+		createEAttribute(instanceEClass, INSTANCE__RAM);
 
 		storageEClass = createEClass(STORAGE);
+		createEAttribute(storageEClass, STORAGE__SIZE);
+		createEAttribute(storageEClass, STORAGE__TYPE);
 
 		nodesDiagramEClass = createEClass(NODES_DIAGRAM);
 		createEReference(nodesDiagramEClass, NODES_DIAGRAM__NODES);
@@ -262,6 +459,21 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 		connectionEClass = createEClass(CONNECTION);
 		createEReference(connectionEClass, CONNECTION__SOURCE);
 		createEReference(connectionEClass, CONNECTION__TARGET);
+
+		securityGroupEClass = createEClass(SECURITY_GROUP);
+		createEAttribute(securityGroupEClass, SECURITY_GROUP__IP_RANGE);
+		createEAttribute(securityGroupEClass, SECURITY_GROUP__VPC_NAME);
+
+		networkEClass = createEClass(NETWORK);
+		createEAttribute(networkEClass, NETWORK__TYPE);
+
+		environmentEClass = createEClass(ENVIRONMENT);
+
+		// Create enums
+		osTypeEEnum = createEEnum(OS_TYPE);
+		cpuTypeEEnum = createEEnum(CPU_TYPE);
+		storageTypeEEnum = createEEnum(STORAGE_TYPE);
+		networkTypeEEnum = createEEnum(NETWORK_TYPE);
 	}
 
 	/**
@@ -294,6 +506,9 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 		// Add supertypes to classes
 		instanceEClass.getESuperTypes().add(this.getNode());
 		storageEClass.getESuperTypes().add(this.getNode());
+		securityGroupEClass.getESuperTypes().add(this.getNode());
+		networkEClass.getESuperTypes().add(this.getNode());
+		environmentEClass.getESuperTypes().add(this.getNode());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(nodeEClass, Node.class, "Node", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -302,8 +517,13 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 		initEReference(getNode_TargetConnections(), this.getConnection(), null, "targetConnections", null, 0, -2, Node.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(instanceEClass, Instance.class, "Instance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getInstance_CPU(), this.getCPUType(), "CPU", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_OS(), this.getOSType(), "OS", null, 0, 1, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstance_RAM(), ecorePackage.getEInt(), "RAM", null, 1, 16, Instance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(storageEClass, Storage.class, "Storage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStorage_Size(), ecorePackage.getEInt(), "Size", null, 3, 2000, Storage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStorage_Type(), this.getStorageType(), "Type", null, 0, 1, Storage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(nodesDiagramEClass, NodesDiagram.class, "NodesDiagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getNodesDiagram_Nodes(), this.getNode(), null, "nodes", null, 0, -1, NodesDiagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -311,6 +531,34 @@ public class CProvMLPackageImpl extends EPackageImpl implements CProvMLPackage {
 		initEClass(connectionEClass, Connection.class, "Connection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getConnection_Source(), this.getNode(), null, "source", null, 1, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConnection_Target(), this.getNode(), null, "target", null, 1, 1, Connection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(securityGroupEClass, SecurityGroup.class, "SecurityGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSecurityGroup_IPRange(), ecorePackage.getEString(), "IPRange", null, 0, 1, SecurityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecurityGroup_VPCName(), ecorePackage.getEString(), "VPCName", null, 0, 1, SecurityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkEClass, Network.class, "Network", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNetwork_Type(), this.getNetworkType(), "Type", null, 0, 1, Network.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(environmentEClass, Environment.class, "Environment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Initialize enums and add enum literals
+		initEEnum(osTypeEEnum, OSType.class, "OSType");
+		addEEnumLiteral(osTypeEEnum, OSType.WINDOWS);
+		addEEnumLiteral(osTypeEEnum, OSType.LINUX);
+		addEEnumLiteral(osTypeEEnum, OSType.OSX);
+
+		initEEnum(cpuTypeEEnum, CPUType.class, "CPUType");
+		addEEnumLiteral(cpuTypeEEnum, CPUType.INTEL);
+		addEEnumLiteral(cpuTypeEEnum, CPUType.AMD);
+
+		initEEnum(storageTypeEEnum, StorageType.class, "StorageType");
+		addEEnumLiteral(storageTypeEEnum, StorageType.SSD);
+		addEEnumLiteral(storageTypeEEnum, StorageType.HDD);
+
+		initEEnum(networkTypeEEnum, NetworkType.class, "NetworkType");
+		addEEnumLiteral(networkTypeEEnum, NetworkType.HOST_ONLY);
+		addEEnumLiteral(networkTypeEEnum, NetworkType.BRIDGE);
+		addEEnumLiteral(networkTypeEEnum, NetworkType.NAT);
 
 		// Create resource
 		createResource(eNS_URI);

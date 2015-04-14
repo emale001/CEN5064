@@ -85,9 +85,21 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?CProvML?Instance", CProvML.diagram.providers.CProvMLElementTypes.Instance_2002); //$NON-NLS-1$
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?CProvML?SecurityGroup", CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003); //$NON-NLS-1$
+		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?CProvML?Network", CProvML.diagram.providers.CProvMLElementTypes.Network_2004); //$NON-NLS-1$
+		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?CProvML?Environment", CProvML.diagram.providers.CProvMLElementTypes.Environment_2005); //$NON-NLS-1$
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Link?CProvML?Connection", CProvML.diagram.providers.CProvMLElementTypes.Connection_4001); //$NON-NLS-1$
+		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Link?CProvML?Node?targetConnections", CProvML.diagram.providers.CProvMLElementTypes.NodeTargetConnections_4002); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -149,8 +161,16 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 			return getStorage_2001Text(view);
 		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
 			return getInstance_2002Text(view);
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+			return getSecurityGroup_2003Text(view);
+		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID:
+			return getNetwork_2004Text(view);
+		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
+			return getEnvironment_2005Text(view);
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getConnection_4001Text(view);
+		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
+			return getNodeTargetConnections_4002Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -199,6 +219,48 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 					ParserOptions.NONE.intValue());
 		} else {
 			CProvML.diagram.part.CProvMLDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5005); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getSecurityGroup_2003Text(View view) {
+		IParser parser = CProvML.diagram.providers.CProvMLParserProvider
+				.getParser(
+						CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003,
+						view.getElement() != null ? view.getElement() : view,
+						CProvML.diagram.part.CProvMLVisualIDRegistry
+								.getType(CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			CProvML.diagram.part.CProvMLDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5003); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getNetwork_2004Text(View view) {
+		IParser parser = CProvML.diagram.providers.CProvMLParserProvider
+				.getParser(
+						CProvML.diagram.providers.CProvMLElementTypes.Network_2004,
+						view.getElement() != null ? view.getElement() : view,
+						CProvML.diagram.part.CProvMLVisualIDRegistry
+								.getType(CProvML.diagram.edit.parts.NetworkNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			CProvML.diagram.part.CProvMLDiagramEditorPlugin.getInstance()
 					.logError("Parser was not found for label " + 5002); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
@@ -207,7 +269,35 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
+	private String getEnvironment_2005Text(View view) {
+		IParser parser = CProvML.diagram.providers.CProvMLParserProvider
+				.getParser(
+						CProvML.diagram.providers.CProvMLElementTypes.Environment_2005,
+						view.getElement() != null ? view.getElement() : view,
+						CProvML.diagram.part.CProvMLVisualIDRegistry
+								.getType(CProvML.diagram.edit.parts.EnvironmentNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			CProvML.diagram.part.CProvMLDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5004); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
 	private String getConnection_4001Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getNodeTargetConnections_4002Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

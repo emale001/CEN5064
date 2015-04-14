@@ -248,32 +248,62 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Instance1CreationTool_title;
+	public static String Environment1CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Instance1CreationTool_desc;
+	public static String Environment1CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Storage2CreationTool_title;
+	public static String SecurityGroup2CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Storage2CreationTool_desc;
+	public static String SecurityGroup2CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Connection3CreationTool_title;
+	public static String Network3CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Connection3CreationTool_desc;
+	public static String Network3CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Instance4CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Instance4CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Storage5CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Storage5CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Connection6CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Connection6CreationTool_desc;
 
 	/**
 	 * @generated
@@ -308,12 +338,57 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String NavigatorGroupName_SecurityGroup_2003_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_SecurityGroup_2003_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Network_2004_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Network_2004_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Environment_2005_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Environment_2005_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
 	public static String NavigatorGroupName_Connection_4001_target;
 
 	/**
 	 * @generated
 	 */
 	public static String NavigatorGroupName_Connection_4001_source;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Connection_4001_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_NodeTargetConnections_4002_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_NodeTargetConnections_4002_source;
 
 	/**
 	 * @generated

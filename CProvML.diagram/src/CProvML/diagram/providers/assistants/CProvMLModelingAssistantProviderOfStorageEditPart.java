@@ -56,10 +56,19 @@ public class CProvMLModelingAssistantProviderOfStorageEditPart extends
 			CProvML.diagram.edit.parts.StorageEditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
-		if (targetEditPart instanceof CProvML.diagram.edit.parts.InstanceEditPart) {
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.StorageEditPart) {
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
 		}
-		if (targetEditPart instanceof CProvML.diagram.edit.parts.StorageEditPart) {
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.NetworkEditPart) {
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
+		}
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.SecurityGroupEditPart) {
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
+		}
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.EnvironmentEditPart) {
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
+		}
+		if (targetEditPart instanceof CProvML.diagram.edit.parts.InstanceEditPart) {
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
 		}
 		return types;
@@ -86,8 +95,11 @@ public class CProvMLModelingAssistantProviderOfStorageEditPart extends
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == CProvML.diagram.providers.CProvMLElementTypes.Connection_4001) {
-			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Network_2004);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Environment_2005);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
 		}
 		return types;
 	}
@@ -133,8 +145,11 @@ public class CProvMLModelingAssistantProviderOfStorageEditPart extends
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == CProvML.diagram.providers.CProvMLElementTypes.Connection_4001) {
-			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
 			types.add(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Network_2004);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Environment_2005);
+			types.add(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002);
 		}
 		return types;
 	}
