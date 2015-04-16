@@ -12,6 +12,8 @@ import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.jface.dialogs.MessageDialog;
 
+import cprovml.custom.transformations.XMLParser;
+
 /**
  * Our sample handler extends AbstractHandler, an IHandler base class.
  * @see org.eclipse.core.commands.IHandler
@@ -35,6 +37,8 @@ public class CProvHandler extends AbstractHandler {
 		IEditorInput input = editor.getEditorInput();
 		IPath path = ((FileEditorInput)input).getPath();
 		String cprovmlPath = path.toString().replace(".cprovml_diagram", ".cprovml");
+		
+		XMLParser.transformCprovml(cprovmlPath);
 		
 		MessageDialog.openInformation(
 				window.getShell(),
