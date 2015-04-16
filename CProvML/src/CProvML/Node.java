@@ -2,6 +2,7 @@
  */
 package CProvML;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -25,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface Node extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
@@ -34,7 +36,7 @@ public interface Node extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see CProvML.CProvMLPackage#getNode_Name()
-	 * @model
+	 * @model default="" id="true" required="true"
 	 * @generated
 	 */
 	String getName();
@@ -50,55 +52,35 @@ public interface Node extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Connections</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Source Connections</b></em>' containment reference list.
+	 * The list contents are of type {@link CProvML.Connection}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Source Connections</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Connections</em>' containment reference.
-	 * @see #setSourceConnections(Connection)
+	 * @return the value of the '<em>Source Connections</em>' containment reference list.
 	 * @see CProvML.CProvMLPackage#getNode_SourceConnections()
-	 * @model containment="true" upper="-2"
+	 * @model containment="true"
 	 * @generated
 	 */
-	Connection getSourceConnections();
+	EList<Connection> getSourceConnections();
 
 	/**
-	 * Sets the value of the '{@link CProvML.Node#getSourceConnections <em>Source Connections</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Connections</em>' containment reference.
-	 * @see #getSourceConnections()
-	 * @generated
-	 */
-	void setSourceConnections(Connection value);
-
-	/**
-	 * Returns the value of the '<em><b>Target Connections</b></em>' reference.
+	 * Returns the value of the '<em><b>Target Connections</b></em>' reference list.
+	 * The list contents are of type {@link CProvML.Connection}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Target Connections</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Connections</em>' reference.
-	 * @see #setTargetConnections(Connection)
+	 * @return the value of the '<em>Target Connections</em>' reference list.
 	 * @see CProvML.CProvMLPackage#getNode_TargetConnections()
-	 * @model upper="-2"
+	 * @model
 	 * @generated
 	 */
-	Connection getTargetConnections();
-
-	/**
-	 * Sets the value of the '{@link CProvML.Node#getTargetConnections <em>Target Connections</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Connections</em>' reference.
-	 * @see #getTargetConnections()
-	 * @generated
-	 */
-	void setTargetConnections(Connection value);
+	EList<Connection> getTargetConnections();
 
 } // Node

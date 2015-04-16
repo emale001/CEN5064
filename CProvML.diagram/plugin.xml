@@ -217,8 +217,8 @@
       <viewProvider class="CProvML.diagram.providers.CProvMLViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="CProvML"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2004,2003,2005,2002"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2003,2002,2001,2004,2005"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
 
@@ -230,13 +230,13 @@
             <method name="getType()" value="CProvML"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,2004,2003,2005,2002"/>
+            <method name="getType()" value="2003,2002,2001,2004,2005"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002"/>
+            <method name="getType()" value="4001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5001,5002,5003,5004,5005"/>
+            <method name="getType()" value="5003,5005,5001,5002,5004"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value=""/>
@@ -253,6 +253,16 @@
          <object class="CProvML.diagram.edit.parts.NodesDiagramEditPart" id="NodesDiagram_1000"/>
          <context elements="NodesDiagram_1000"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfSecurityGroupEditPart">
+         <Priority name="Lowest"/>
+         <object class="CProvML.diagram.edit.parts.SecurityGroupEditPart" id="SecurityGroup_2003"/>
+         <context elements="SecurityGroup_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfInstanceEditPart">
+         <Priority name="Lowest"/>
+         <object class="CProvML.diagram.edit.parts.InstanceEditPart" id="Instance_2002"/>
+         <context elements="Instance_2002"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfStorageEditPart">
          <Priority name="Lowest"/>
          <object class="CProvML.diagram.edit.parts.StorageEditPart" id="Storage_2001"/>
@@ -263,20 +273,10 @@
          <object class="CProvML.diagram.edit.parts.NetworkEditPart" id="Network_2004"/>
          <context elements="Network_2004"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfSecurityGroupEditPart">
-         <Priority name="Lowest"/>
-         <object class="CProvML.diagram.edit.parts.SecurityGroupEditPart" id="SecurityGroup_2003"/>
-         <context elements="SecurityGroup_2003"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfEnvironmentEditPart">
          <Priority name="Lowest"/>
          <object class="CProvML.diagram.edit.parts.EnvironmentEditPart" id="Environment_2005"/>
          <context elements="Environment_2005"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="CProvML.diagram.providers.assistants.CProvMLModelingAssistantProviderOfInstanceEditPart">
-         <Priority name="Lowest"/>
-         <object class="CProvML.diagram.edit.parts.InstanceEditPart" id="Instance_2002"/>
-         <context elements="Instance_2002"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -310,6 +310,26 @@
       </metamodel>
       <metamodel nsURI="CProvML">
          <metamodelType
+               id="CProvML.diagram.SecurityGroup_2003"
+               name="%metatype.name.SecurityGroup_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="SecurityGroup"
+               edithelper="CProvML.diagram.edit.helpers.SecurityGroupEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="CProvML">
+         <metamodelType
+               id="CProvML.diagram.Instance_2002"
+               name="%metatype.name.Instance_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Instance"
+               edithelper="CProvML.diagram.edit.helpers.InstanceEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="CProvML">
+         <metamodelType
                id="CProvML.diagram.Storage_2001"
                name="%metatype.name.Storage_2001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -330,32 +350,12 @@
       </metamodel>
       <metamodel nsURI="CProvML">
          <metamodelType
-               id="CProvML.diagram.SecurityGroup_2003"
-               name="%metatype.name.SecurityGroup_2003"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="SecurityGroup"
-               edithelper="CProvML.diagram.edit.helpers.SecurityGroupEditHelper">
-            <param name="semanticHint" value="2003"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="CProvML">
-         <metamodelType
                id="CProvML.diagram.Environment_2005"
                name="%metatype.name.Environment_2005"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Environment"
                edithelper="CProvML.diagram.edit.helpers.EnvironmentEditHelper">
             <param name="semanticHint" value="2005"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="CProvML">
-         <metamodelType
-               id="CProvML.diagram.Instance_2002"
-               name="%metatype.name.Instance_2002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Instance"
-               edithelper="CProvML.diagram.edit.helpers.InstanceEditHelper">
-            <param name="semanticHint" value="2002"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="CProvML">
@@ -367,15 +367,6 @@
                edithelper="CProvML.diagram.edit.helpers.ConnectionEditHelper">
             <param name="semanticHint" value="4001"/>
          </metamodelType>
-      </metamodel>
-      <metamodel nsURI="CProvML">
-         <specializationType
-               id="CProvML.diagram.NodeTargetConnections_4002"
-               name="%metatype.name.NodeTargetConnections_4002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
-            <param name="semanticHint" value="4002"/>
-         </specializationType>
       </metamodel>
    </extension>
 
@@ -390,13 +381,12 @@
       </clientContext> 
       <binding context="CProvML.diagram.TypeContext">
          <elementType ref="CProvML.diagram.NodesDiagram_1000"/>
+         <elementType ref="CProvML.diagram.SecurityGroup_2003"/>
+         <elementType ref="CProvML.diagram.Instance_2002"/>
          <elementType ref="CProvML.diagram.Storage_2001"/>
          <elementType ref="CProvML.diagram.Network_2004"/>
-         <elementType ref="CProvML.diagram.SecurityGroup_2003"/>
          <elementType ref="CProvML.diagram.Environment_2005"/>
-         <elementType ref="CProvML.diagram.Instance_2002"/>
          <elementType ref="CProvML.diagram.Connection_4001"/>
-         <elementType ref="CProvML.diagram.NodeTargetConnections_4002"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>
@@ -564,6 +554,52 @@
    <extension point="org.eclipse.ui.handlers" id="menu-handlers">
       <?gmfgen generated="true"?>
    </extension>
+<extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <?gmfgen generated="true"?>
+      <MarkerNavigationProvider class="CProvML.diagram.providers.CProvMLMarkerNavigationProvider">
+         <MarkerType name="CProvML.diagram.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+<extension id="diagnostic" name="CProvML Plugin problems" point="org.eclipse.core.resources.markers">
+      <?gmfgen generated="true"?>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension><extension point="org.eclipse.emf.validation.constraintProviders">
+      <?gmfgen generated="true"?>
+            <category id="CProvConstraints" mandatory="false" name="CProvConstraints">
+         <![CDATA[CProvConstraints]]>
+      </category>
+      <constraintProvider cache="true">
+         <package namespaceUri="CProvML"/>
+               <constraints categories="CProvConstraints">
+                  <constraint id="NameCannotBeEmpty"
+            lang="OCL"
+            name="The name cannot be empty."
+            mode="Batch"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.nodes->forAll(n | n.name.size() > 0)]]>
+            <description><![CDATA[The name cannot be empty.]]></description>
+            <message><![CDATA[The name cannot be empty.]]></message>
+            <target class="CProvML.NodesDiagram"/>
+         </constraint>
+                  </constraints>
+      </constraintProvider>
+   </extension>
+
+<extension point="org.eclipse.emf.validation.constraintBindings">
+      <?gmfgen generated="true"?>
+      <clientContext default="false" id="CProvML.diagramDefaultCtx">
+         <selector class="CProvML.diagram.providers.CProvMLValidationProvider$DefaultCtx"/>
+      </clientContext>
+      <binding context="CProvML.diagramDefaultCtx">
+                  <constraint ref="CProvML.diagram.NameCannotBeEmpty"/>
+               </binding>
+
+   </extension>
+
 
    <!-- optionally, specify keybindings -->
 </plugin>

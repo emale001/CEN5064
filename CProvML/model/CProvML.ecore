@@ -2,10 +2,11 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="CProvML" nsURI="CProvML" nsPrefix="CProvML">
   <eClassifiers xsi:type="ecore:EClass" name="Node">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceConnections" upperBound="-2"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceConnections" upperBound="-1"
         eType="#//Connection" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="targetConnections" upperBound="-2"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetConnections" upperBound="-1"
         eType="#//Connection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Instance" eSuperTypes="#//Node">
@@ -16,7 +17,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Storage" eSuperTypes="#//Node">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Size" lowerBound="3" upperBound="2000"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" iD="true"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//StorageType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NodesDiagram">

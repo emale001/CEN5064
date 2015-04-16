@@ -1,13 +1,11 @@
 package CProvML.diagram.part;
 
-import java.util.ArrayList;
 import java.util.Collections;
 
 import org.eclipse.gef.palette.PaletteContainer;
 import org.eclipse.gef.palette.PaletteGroup;
 import org.eclipse.gef.palette.PaletteRoot;
 import org.eclipse.gef.palette.ToolEntry;
-import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.tooling.runtime.part.DefaultLinkToolEntry;
 import org.eclipse.gmf.tooling.runtime.part.DefaultNodeToolEntry;
 
@@ -129,13 +127,11 @@ public class CProvMLPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createConnection6CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001);
-		types.add(CProvML.diagram.providers.CProvMLElementTypes.NodeTargetConnections_4002);
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(
 				CProvML.diagram.part.Messages.Connection6CreationTool_title,
 				CProvML.diagram.part.Messages.Connection6CreationTool_desc,
-				types);
+				Collections
+						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001));
 		entry.setId("createConnection6CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
 				.findImageDescriptor("/CProvML.custom/icons/Connection.png")); //$NON-NLS-1$

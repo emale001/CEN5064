@@ -22,44 +22,6 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser storageName_5001Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getStorageName_5001Parser() {
-		if (storageName_5001Parser == null) {
-			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
-					.getNode_Name() };
-			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
-					features);
-			storageName_5001Parser = parser;
-		}
-		return storageName_5001Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser networkName_5002Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getNetworkName_5002Parser() {
-		if (networkName_5002Parser == null) {
-			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
-					.getNode_Name() };
-			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
-					features);
-			networkName_5002Parser = parser;
-		}
-		return networkName_5002Parser;
-	}
-
-	/**
-	 * @generated
-	 */
 	private IParser securityGroupName_5003Parser;
 
 	/**
@@ -117,18 +79,56 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+	private IParser storageName_5001Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getStorageName_5001Parser() {
+		if (storageName_5001Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			storageName_5001Parser = parser;
+		}
+		return storageName_5001Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser networkName_5002Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getNetworkName_5002Parser() {
+		if (networkName_5002Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			networkName_5002Parser = parser;
+		}
+		return networkName_5002Parser;
+	}
+
+	/**
+	 * @generated
+	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
+		case CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID:
+			return getSecurityGroupName_5003Parser();
+		case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
+			return getInstanceName_5005Parser();
 		case CProvML.diagram.edit.parts.StorageNameEditPart.VISUAL_ID:
 			return getStorageName_5001Parser();
 		case CProvML.diagram.edit.parts.NetworkNameEditPart.VISUAL_ID:
 			return getNetworkName_5002Parser();
-		case CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID:
-			return getSecurityGroupName_5003Parser();
 		case CProvML.diagram.edit.parts.EnvironmentNameEditPart.VISUAL_ID:
 			return getEnvironmentName_5004Parser();
-		case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-			return getInstanceName_5005Parser();
 		}
 		return null;
 	}

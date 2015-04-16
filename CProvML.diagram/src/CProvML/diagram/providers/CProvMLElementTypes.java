@@ -49,14 +49,6 @@ public class CProvMLElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Storage_2001 = getElementType("CProvML.diagram.Storage_2001"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Network_2004 = getElementType("CProvML.diagram.Network_2004"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
 	public static final IElementType SecurityGroup_2003 = getElementType("CProvML.diagram.SecurityGroup_2003"); //$NON-NLS-1$
 	/**
 	 * @generated
@@ -69,11 +61,15 @@ public class CProvMLElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Connection_4001 = getElementType("CProvML.diagram.Connection_4001"); //$NON-NLS-1$
+	public static final IElementType Storage_2001 = getElementType("CProvML.diagram.Storage_2001"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType NodeTargetConnections_4002 = getElementType("CProvML.diagram.NodeTargetConnections_4002"); //$NON-NLS-1$
+	public static final IElementType Network_2004 = getElementType("CProvML.diagram.Network_2004"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Connection_4001 = getElementType("CProvML.diagram.Connection_4001"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -116,27 +112,23 @@ public class CProvMLElementTypes {
 			elements.put(NodesDiagram_1000,
 					CProvML.CProvMLPackage.eINSTANCE.getNodesDiagram());
 
+			elements.put(SecurityGroup_2003,
+					CProvML.CProvMLPackage.eINSTANCE.getSecurityGroup());
+
+			elements.put(Instance_2002,
+					CProvML.CProvMLPackage.eINSTANCE.getInstance());
+
 			elements.put(Storage_2001,
 					CProvML.CProvMLPackage.eINSTANCE.getStorage());
 
 			elements.put(Network_2004,
 					CProvML.CProvMLPackage.eINSTANCE.getNetwork());
 
-			elements.put(SecurityGroup_2003,
-					CProvML.CProvMLPackage.eINSTANCE.getSecurityGroup());
-
 			elements.put(Environment_2005,
 					CProvML.CProvMLPackage.eINSTANCE.getEnvironment());
 
-			elements.put(Instance_2002,
-					CProvML.CProvMLPackage.eINSTANCE.getInstance());
-
 			elements.put(Connection_4001,
 					CProvML.CProvMLPackage.eINSTANCE.getConnection());
-
-			elements.put(NodeTargetConnections_4002,
-					CProvML.CProvMLPackage.eINSTANCE
-							.getNode_TargetConnections());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -155,13 +147,12 @@ public class CProvMLElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(NodesDiagram_1000);
+			KNOWN_ELEMENT_TYPES.add(SecurityGroup_2003);
+			KNOWN_ELEMENT_TYPES.add(Instance_2002);
 			KNOWN_ELEMENT_TYPES.add(Storage_2001);
 			KNOWN_ELEMENT_TYPES.add(Network_2004);
-			KNOWN_ELEMENT_TYPES.add(SecurityGroup_2003);
 			KNOWN_ELEMENT_TYPES.add(Environment_2005);
-			KNOWN_ELEMENT_TYPES.add(Instance_2002);
 			KNOWN_ELEMENT_TYPES.add(Connection_4001);
-			KNOWN_ELEMENT_TYPES.add(NodeTargetConnections_4002);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -173,20 +164,18 @@ public class CProvMLElementTypes {
 		switch (visualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
 			return NodesDiagram_1000;
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+			return SecurityGroup_2003;
+		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+			return Instance_2002;
 		case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
 			return Storage_2001;
 		case CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID:
 			return Network_2004;
-		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
-			return SecurityGroup_2003;
 		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			return Environment_2005;
-		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			return Instance_2002;
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return Connection_4001;
-		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
-			return NodeTargetConnections_4002;
 		}
 		return null;
 	}

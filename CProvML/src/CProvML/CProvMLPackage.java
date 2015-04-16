@@ -77,7 +77,7 @@ public interface CProvMLPackage extends EPackage {
 	int NODE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -86,7 +86,7 @@ public interface CProvMLPackage extends EPackage {
 	int NODE__SOURCE_CONNECTIONS = 1;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -132,7 +132,7 @@ public interface CProvMLPackage extends EPackage {
 	int INSTANCE__NAME = NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -141,7 +141,7 @@ public interface CProvMLPackage extends EPackage {
 	int INSTANCE__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -214,7 +214,7 @@ public interface CProvMLPackage extends EPackage {
 	int STORAGE__NAME = NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -223,7 +223,7 @@ public interface CProvMLPackage extends EPackage {
 	int STORAGE__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -371,7 +371,7 @@ public interface CProvMLPackage extends EPackage {
 	int SECURITY_GROUP__NAME = NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -380,7 +380,7 @@ public interface CProvMLPackage extends EPackage {
 	int SECURITY_GROUP__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -444,7 +444,7 @@ public interface CProvMLPackage extends EPackage {
 	int NETWORK__NAME = NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -453,7 +453,7 @@ public interface CProvMLPackage extends EPackage {
 	int NETWORK__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -508,7 +508,7 @@ public interface CProvMLPackage extends EPackage {
 	int ENVIRONMENT__NAME = NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference.
+	 * The feature id for the '<em><b>Source Connections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -517,7 +517,7 @@ public interface CProvMLPackage extends EPackage {
 	int ENVIRONMENT__SOURCE_CONNECTIONS = NODE__SOURCE_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Target Connections</b></em>' reference.
+	 * The feature id for the '<em><b>Target Connections</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -606,10 +606,10 @@ public interface CProvMLPackage extends EPackage {
 	EAttribute getNode_Name();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CProvML.Node#getSourceConnections <em>Source Connections</em>}'.
+	 * Returns the meta object for the containment reference list '{@link CProvML.Node#getSourceConnections <em>Source Connections</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Source Connections</em>'.
+	 * @return the meta object for the containment reference list '<em>Source Connections</em>'.
 	 * @see CProvML.Node#getSourceConnections()
 	 * @see #getNode()
 	 * @generated
@@ -617,10 +617,10 @@ public interface CProvMLPackage extends EPackage {
 	EReference getNode_SourceConnections();
 
 	/**
-	 * Returns the meta object for the reference '{@link CProvML.Node#getTargetConnections <em>Target Connections</em>}'.
+	 * Returns the meta object for the reference list '{@link CProvML.Node#getTargetConnections <em>Target Connections</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Target Connections</em>'.
+	 * @return the meta object for the reference list '<em>Target Connections</em>'.
 	 * @see CProvML.Node#getTargetConnections()
 	 * @see #getNode()
 	 * @generated
@@ -900,7 +900,7 @@ public interface CProvMLPackage extends EPackage {
 		EAttribute NODE__NAME = eINSTANCE.getNode_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Source Connections</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Source Connections</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -908,7 +908,7 @@ public interface CProvMLPackage extends EPackage {
 		EReference NODE__SOURCE_CONNECTIONS = eINSTANCE.getNode_SourceConnections();
 
 		/**
-		 * The meta object literal for the '<em><b>Target Connections</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Target Connections</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

@@ -4,6 +4,30 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel">
+  <audits>
+    <categories
+        id="CProvConstraints"
+        name="CProvConstraints"
+        description="CProvConstraints"
+        path="//@audits/@categories.0"
+        audits="//@audits/@rules.0"/>
+    <rules
+        name="The name cannot be empty."
+        description="The name cannot be empty."
+        id="NameCannotBeEmpty"
+        rule="//@expressionProviders/@providers.0/@expressions.1"
+        message="The name cannot be empty."
+        category="//@audits/@categories.0">
+      <target
+          xsi:type="gmfgen:GenDomainElementTarget"
+          contextSelector="//@audits/@clientContexts.0">
+        <element
+            href="CProvML.genmodel#//CProvML/NodesDiagram"/>
+      </target>
+    </rules>
+    <clientContexts
+        ruleTargets="//@audits/@rules.0/@target"/>
+  </audits>
   <diagram
       visualID="1000"
       editPartClassName="NodesDiagramEditPart"
@@ -22,102 +46,9 @@
     <domainDiagramElement
         href="CProvML.genmodel#//CProvML/NodesDiagram"/>
     <topLevelNodes
-        visualID="2001"
-        editPartClassName="StorageEditPart"
-        itemSemanticEditPolicyClassName="StorageItemSemanticEditPolicy"
-        notationViewFactoryClassName="StorageViewFactory"
-        canonicalEditPolicyClassName="StorageCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="StorageGraphicalNodeEditPolicy"
-        createCommandClassName="StorageCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="StorageEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="StorageFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StorageFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureStorageNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StorageFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStorageNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureStorageNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureStorageNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureStorageNameFigure() {&#xA;&#x9;&#x9;return fFigureStorageNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="CProvML.genmodel#//CProvML/Storage"/>
-        <containmentMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-        <childMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-      </modelFacet>
-      <labels
-          visualID="5001"
-          editPartClassName="StorageNameEditPart"
-          itemSemanticEditPolicyClassName="StorageNameItemSemanticEditPolicy"
-          notationViewFactoryClassName="StorageNameViewFactory"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureStorageNameFigure"
-            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="CProvML.genmodel#//CProvML/Node/name"/>
-        </modelFacet>
-      </labels>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2004"
-        editPartClassName="NetworkEditPart"
-        itemSemanticEditPolicyClassName="NetworkItemSemanticEditPolicy"
-        notationViewFactoryClassName="NetworkViewFactory"
-        canonicalEditPolicyClassName="NetworkCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="NetworkGraphicalNodeEditPolicy"
-        createCommandClassName="NetworkCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="NetworkEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="NetworkFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NetworkFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureNetworkNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NetworkFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNetworkNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureNetworkNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNetworkNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureNetworkNameFigure() {&#xA;&#x9;&#x9;return fFigureNetworkNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="CProvML.genmodel#//CProvML/Network"/>
-        <containmentMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-        <childMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-      </modelFacet>
-      <labels
-          visualID="5002"
-          editPartClassName="NetworkNameEditPart"
-          itemSemanticEditPolicyClassName="NetworkNameItemSemanticEditPolicy"
-          notationViewFactoryClassName="NetworkNameViewFactory"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureNetworkNameFigure"
-            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="CProvML.genmodel#//CProvML/Node/name"/>
-        </modelFacet>
-      </labels>
-    </topLevelNodes>
-    <topLevelNodes
         visualID="2003"
         editPartClassName="SecurityGroupEditPart"
         itemSemanticEditPolicyClassName="SecurityGroupItemSemanticEditPolicy"
-        notationViewFactoryClassName="SecurityGroupViewFactory"
         canonicalEditPolicyClassName="SecurityGroupCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="SecurityGroupGraphicalNodeEditPolicy"
         createCommandClassName="SecurityGroupCreateCommand">
@@ -143,7 +74,6 @@
           visualID="5003"
           editPartClassName="SecurityGroupNameEditPart"
           itemSemanticEditPolicyClassName="SecurityGroupNameItemSemanticEditPolicy"
-          notationViewFactoryClassName="SecurityGroupNameViewFactory"
           elementIcon="true">
         <diagramRunTimeClass
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -160,10 +90,140 @@
       </labels>
     </topLevelNodes>
     <topLevelNodes
+        visualID="2002"
+        editPartClassName="InstanceEditPart"
+        itemSemanticEditPolicyClassName="InstanceItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="InstanceCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="InstanceGraphicalNodeEditPolicy"
+        createCommandClassName="InstanceCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="InstanceEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="InstanceFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InstanceFigure extends cprovml.custom.figures.InstanceShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureInstanceNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InstanceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutThis = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutThis.numColumns = 2;&#xA;&#x9;layoutThis.makeColumnsEqualWidth = true;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureInstanceNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureInstanceNameFigure.setText(&quot;&lt;..>&quot;);&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureInstanceNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureInstanceNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.BEGINNING;&#xA;constraintFFigureInstanceNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.BEGINNING;&#xA;constraintFFigureInstanceNameFigure.horizontalIndent = 0;&#xA;constraintFFigureInstanceNameFigure.horizontalSpan = 1;&#xA;constraintFFigureInstanceNameFigure.verticalSpan = 1;&#xA;constraintFFigureInstanceNameFigure.grabExcessHorizontalSpace = false;&#xA;constraintFFigureInstanceNameFigure.grabExcessVerticalSpace = false;&#xA;this.add(fFigureInstanceNameFigure, constraintFFigureInstanceNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureInstanceNameFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="CProvML.genmodel#//CProvML/Instance"/>
+        <containmentMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+        <childMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+      </modelFacet>
+      <labels
+          visualID="5005"
+          editPartClassName="InstanceNameEditPart"
+          itemSemanticEditPolicyClassName="InstanceNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureInstanceNameFigure"
+            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="CProvML.genmodel#//CProvML/Node/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2001"
+        editPartClassName="StorageEditPart"
+        itemSemanticEditPolicyClassName="StorageItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="StorageCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="StorageGraphicalNodeEditPolicy"
+        createCommandClassName="StorageCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="StorageEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="FLOW_LAYOUT"
+          className="StorageFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StorageFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureStorageNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StorageFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStorageNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureStorageNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureStorageNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureStorageNameFigure() {&#xA;&#x9;&#x9;return fFigureStorageNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="CProvML.genmodel#//CProvML/Storage"/>
+        <containmentMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+        <childMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+      </modelFacet>
+      <labels
+          visualID="5001"
+          editPartClassName="StorageNameEditPart"
+          itemSemanticEditPolicyClassName="StorageNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureStorageNameFigure"
+            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="CProvML.genmodel#//CProvML/Node/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2004"
+        editPartClassName="NetworkEditPart"
+        itemSemanticEditPolicyClassName="NetworkItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="NetworkCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="NetworkGraphicalNodeEditPolicy"
+        createCommandClassName="NetworkCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="NetworkEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="FLOW_LAYOUT"
+          className="NetworkFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NetworkFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureNetworkNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NetworkFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNetworkNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureNetworkNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNetworkNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureNetworkNameFigure() {&#xA;&#x9;&#x9;return fFigureNetworkNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="CProvML.genmodel#//CProvML/Network"/>
+        <containmentMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+        <childMetaFeature
+            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
+      </modelFacet>
+      <labels
+          visualID="5002"
+          editPartClassName="NetworkNameEditPart"
+          itemSemanticEditPolicyClassName="NetworkNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureNetworkNameFigure"
+            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="CProvML.genmodel#//CProvML/Node/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
         visualID="2005"
         editPartClassName="EnvironmentEditPart"
         itemSemanticEditPolicyClassName="EnvironmentItemSemanticEditPolicy"
-        notationViewFactoryClassName="EnvironmentViewFactory"
         canonicalEditPolicyClassName="EnvironmentCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="EnvironmentGraphicalNodeEditPolicy"
         createCommandClassName="EnvironmentCreateCommand">
@@ -189,7 +249,6 @@
           visualID="5004"
           editPartClassName="EnvironmentNameEditPart"
           itemSemanticEditPolicyClassName="EnvironmentNameItemSemanticEditPolicy"
-          notationViewFactoryClassName="EnvironmentNameViewFactory"
           elementIcon="true">
         <diagramRunTimeClass
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -205,56 +264,10 @@
         </modelFacet>
       </labels>
     </topLevelNodes>
-    <topLevelNodes
-        visualID="2002"
-        editPartClassName="InstanceEditPart"
-        itemSemanticEditPolicyClassName="InstanceItemSemanticEditPolicy"
-        notationViewFactoryClassName="InstanceViewFactory"
-        canonicalEditPolicyClassName="InstanceCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="InstanceGraphicalNodeEditPolicy"
-        createCommandClassName="InstanceCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="InstanceEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="InstanceFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class InstanceFigure extends cprovml.custom.figures.InstanceShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Label fFigureInstanceNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public InstanceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.GridLayout layoutThis = new org.eclipse.draw2d.GridLayout();&#xA;&#x9;layoutThis.numColumns = 2;&#xA;&#x9;layoutThis.makeColumnsEqualWidth = true;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureInstanceNameFigure = new org.eclipse.draw2d.Label();&#xA;&#xA;fFigureInstanceNameFigure.setText(&quot;&lt;..>&quot;);&#xA;&#xA;&#xA;org.eclipse.draw2d.GridData constraintFFigureInstanceNameFigure = new org.eclipse.draw2d.GridData();&#xA;constraintFFigureInstanceNameFigure.verticalAlignment = org.eclipse.draw2d.GridData.BEGINNING;&#xA;constraintFFigureInstanceNameFigure.horizontalAlignment = org.eclipse.draw2d.GridData.BEGINNING;&#xA;constraintFFigureInstanceNameFigure.horizontalIndent = 0;&#xA;constraintFFigureInstanceNameFigure.horizontalSpan = 1;&#xA;constraintFFigureInstanceNameFigure.verticalSpan = 1;&#xA;constraintFFigureInstanceNameFigure.grabExcessHorizontalSpace = false;&#xA;constraintFFigureInstanceNameFigure.grabExcessVerticalSpace = false;&#xA;this.add(fFigureInstanceNameFigure, constraintFFigureInstanceNameFigure);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Label getFigureInstanceNameFigure() {&#xA;&#x9;&#x9;return fFigureInstanceNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="CProvML.genmodel#//CProvML/Instance"/>
-        <containmentMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-        <childMetaFeature
-            href="CProvML.genmodel#//CProvML/NodesDiagram/nodes"/>
-      </modelFacet>
-      <labels
-          visualID="5005"
-          editPartClassName="InstanceNameEditPart"
-          itemSemanticEditPolicyClassName="InstanceNameItemSemanticEditPolicy"
-          notationViewFactoryClassName="InstanceNameViewFactory"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureInstanceNameFigure"
-            figureQualifiedClassName="org.eclipse.draw2d.Label"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="CProvML.genmodel#//CProvML/Node/name"/>
-        </modelFacet>
-      </labels>
-    </topLevelNodes>
     <links
         visualID="4001"
         editPartClassName="ConnectionEditPart"
         itemSemanticEditPolicyClassName="ConnectionItemSemanticEditPolicy"
-        notationViewFactoryClassName="ConnectionViewFactory"
         createCommandClassName="ConnectionCreateCommand"
         reorientCommandClassName="ConnectionReorientCommand">
       <diagramRunTimeClass
@@ -278,26 +291,8 @@
         <targetMetaFeature
             href="CProvML.genmodel#//CProvML/Connection/target"/>
       </modelFacet>
-    </links>
-    <links
-        visualID="4002"
-        editPartClassName="NodeTargetConnectionsEditPart"
-        itemSemanticEditPolicyClassName="NodeTargetConnectionsItemSemanticEditPolicy"
-        notationViewFactoryClassName="NodeTargetConnectionsViewFactory"
-        createCommandClassName="NodeTargetConnectionsCreateCommand"
-        reorientCommandClassName="NodeTargetConnectionsReorientCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
-      <elementType
-          xsi:type="gmfgen:SpecializationType"/>
-      <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.PolylineConnection"/>
-      <modelFacet
-          xsi:type="gmfgen:FeatureLinkModelFacet">
-        <metaFeature
-            href="CProvML.genmodel#//CProvML/Node/targetConnections"/>
-      </modelFacet>
+      <creationConstraints
+          sourceEnd="//@expressionProviders/@providers.0/@expressions.0"/>
     </links>
     <palette>
       <groups
@@ -308,42 +303,42 @@
             description="Create new Environment"
             largeIconPath="/CProvML.custom/icons/Environment.png"
             smallIconPath="/CProvML.custom/icons/Environment.png"
-            genNodes="//@diagram/@topLevelNodes.3"/>
+            genNodes="//@diagram/@topLevelNodes.4"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Security Group"
             description="Create new SecurityGroup"
             largeIconPath="/CProvML.custom/icons/SecurityGroup.png"
             smallIconPath="/CProvML.custom/icons/SecurityGroup.png"
-            genNodes="//@diagram/@topLevelNodes.2"/>
+            genNodes="//@diagram/@topLevelNodes.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Network"
             description="Create new Network"
             largeIconPath="/CProvML.custom/icons/Network.png"
             smallIconPath="/CProvML.custom/icons/Network.png"
-            genNodes="//@diagram/@topLevelNodes.1"/>
+            genNodes="//@diagram/@topLevelNodes.3"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Instance"
             description="Create new Instance"
             largeIconPath="/CProvML.custom/icons/Instance.png"
             smallIconPath="/CProvML.custom/icons/Instance.png"
-            genNodes="//@diagram/@topLevelNodes.4"/>
+            genNodes="//@diagram/@topLevelNodes.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Storage"
             description="Create new Storage"
             largeIconPath="/CProvML.custom/icons/Storage.png"
             smallIconPath="/CProvML.custom/icons/Storage.png"
-            genNodes="//@diagram/@topLevelNodes.0"/>
+            genNodes="//@diagram/@topLevelNodes.2"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Connection"
             description="Create new Connection"
             largeIconPath="/CProvML.custom/icons/Connection.png"
             smallIconPath="/CProvML.custom/icons/Connection.png"
-            genLinks="//@diagram/@links.0 //@diagram/@links.1"/>
+            genLinks="//@diagram/@links.0"/>
       </groups>
     </palette>
     <preferencePages
@@ -375,7 +370,6 @@
   <plugin>
     <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
     <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
-    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
   </plugin>
   <editor/>
   <navigator>
@@ -521,83 +515,6 @@
         referenceType="out_target"
         groupName="outgoing links"
         groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram"
-        child="//@diagram/@links.1"
-        groupName="links"
-        groupIcon="icons/linksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@links.0"
-        referenceType="out_target"
-        groupName="target"
-        groupIcon="icons/linkTargetNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.0"
-        child="//@diagram/@links.1"
-        referenceType="in_source"
-        groupName="incoming links"
-        groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.0"
-        referenceType="in_source"
-        groupName="source"
-        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.0"
-        child="//@diagram/@links.1"
-        referenceType="out_target"
-        groupName="outgoing links"
-        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.1"
-        referenceType="in_source"
-        groupName="source"
-        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.1"
-        child="//@diagram/@links.1"
-        referenceType="out_target"
-        groupName="outgoing links"
-        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.2"
-        referenceType="in_source"
-        groupName="source"
-        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.2"
-        child="//@diagram/@links.1"
-        referenceType="out_target"
-        groupName="outgoing links"
-        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.3"
-        referenceType="in_source"
-        groupName="source"
-        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@links.1"
-        referenceType="out_target"
-        groupName="outgoing links"
-        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.4"
-        referenceType="in_source"
-        groupName="source"
-        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.4"
-        child="//@diagram/@links.1"
-        referenceType="out_target"
-        groupName="outgoing links"
-        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
   </navigator>
   <diagramUpdater/>
   <propertySheet>
@@ -621,6 +538,17 @@
   </propertySheet>
   <domainGenModel
       href="CProvML.genmodel#/"/>
+  <expressionProviders>
+    <providers
+        xsi:type="gmfgen:GenExpressionInterpreter">
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self &lt;> oppositeEnd and self.sourceConnections->forAll(c | c.target &lt;> oppositeEnd) and (oppositeEnd = null or oppositeEnd.sourceConnections->forAll(c | c.target &lt;> self))"/>
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="self.nodes->forAll(n | n.name.size() > 0)"/>
+    </providers>
+  </expressionProviders>
   <labelParsers
       extensibleViaService="true">
     <implementations

@@ -24,6 +24,20 @@ public class CProvMLEditPartFactory implements EditPartFactory {
 			case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.NodesDiagramEditPart(view);
 
+			case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.SecurityGroupEditPart(
+						view);
+
+			case CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.SecurityGroupNameEditPart(
+						view);
+
+			case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.InstanceEditPart(view);
+
+			case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
+				return new CProvML.diagram.edit.parts.InstanceNameEditPart(view);
+
 			case CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.StorageEditPart(view);
 
@@ -36,14 +50,6 @@ public class CProvMLEditPartFactory implements EditPartFactory {
 			case CProvML.diagram.edit.parts.NetworkNameEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.NetworkNameEditPart(view);
 
-			case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.SecurityGroupEditPart(
-						view);
-
-			case CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.SecurityGroupNameEditPart(
-						view);
-
 			case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.EnvironmentEditPart(view);
 
@@ -51,18 +57,8 @@ public class CProvMLEditPartFactory implements EditPartFactory {
 				return new CProvML.diagram.edit.parts.EnvironmentNameEditPart(
 						view);
 
-			case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.InstanceEditPart(view);
-
-			case CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.InstanceNameEditPart(view);
-
 			case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 				return new CProvML.diagram.edit.parts.ConnectionEditPart(view);
-
-			case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
-				return new CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart(
-						view);
 
 			}
 		}

@@ -5,12 +5,17 @@ package CProvML.impl;
 import CProvML.CProvMLPackage;
 import CProvML.Connection;
 import CProvML.Node;
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +41,7 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = "";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -49,24 +54,24 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getSourceConnections() <em>Source Connections</em>}' containment reference.
+	 * The cached value of the '{@link #getSourceConnections() <em>Source Connections</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSourceConnections()
 	 * @generated
 	 * @ordered
 	 */
-	protected Connection sourceConnections;
+	protected EList<Connection> sourceConnections;
 
 	/**
-	 * The cached value of the '{@link #getTargetConnections() <em>Target Connections</em>}' reference.
+	 * The cached value of the '{@link #getTargetConnections() <em>Target Connections</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTargetConnections()
 	 * @generated
 	 * @ordered
 	 */
-	protected Connection targetConnections;
+	protected EList<Connection> targetConnections;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,7 +118,10 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Connection getSourceConnections() {
+	public EList<Connection> getSourceConnections() {
+		if (sourceConnections == null) {
+			sourceConnections = new EObjectContainmentEList<Connection>(Connection.class, this, CProvMLPackage.NODE__SOURCE_CONNECTIONS);
+		}
 		return sourceConnections;
 	}
 
@@ -122,71 +130,11 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSourceConnections(Connection newSourceConnections, NotificationChain msgs) {
-		Connection oldSourceConnections = sourceConnections;
-		sourceConnections = newSourceConnections;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CProvMLPackage.NODE__SOURCE_CONNECTIONS, oldSourceConnections, newSourceConnections);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSourceConnections(Connection newSourceConnections) {
-		if (newSourceConnections != sourceConnections) {
-			NotificationChain msgs = null;
-			if (sourceConnections != null)
-				msgs = ((InternalEObject)sourceConnections).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CProvMLPackage.NODE__SOURCE_CONNECTIONS, null, msgs);
-			if (newSourceConnections != null)
-				msgs = ((InternalEObject)newSourceConnections).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CProvMLPackage.NODE__SOURCE_CONNECTIONS, null, msgs);
-			msgs = basicSetSourceConnections(newSourceConnections, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CProvMLPackage.NODE__SOURCE_CONNECTIONS, newSourceConnections, newSourceConnections));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Connection getTargetConnections() {
-		if (targetConnections != null && targetConnections.eIsProxy()) {
-			InternalEObject oldTargetConnections = (InternalEObject)targetConnections;
-			targetConnections = (Connection)eResolveProxy(oldTargetConnections);
-			if (targetConnections != oldTargetConnections) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CProvMLPackage.NODE__TARGET_CONNECTIONS, oldTargetConnections, targetConnections));
-			}
+	public EList<Connection> getTargetConnections() {
+		if (targetConnections == null) {
+			targetConnections = new EObjectResolvingEList<Connection>(Connection.class, this, CProvMLPackage.NODE__TARGET_CONNECTIONS);
 		}
 		return targetConnections;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Connection basicGetTargetConnections() {
-		return targetConnections;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTargetConnections(Connection newTargetConnections) {
-		Connection oldTargetConnections = targetConnections;
-		targetConnections = newTargetConnections;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CProvMLPackage.NODE__TARGET_CONNECTIONS, oldTargetConnections, targetConnections));
 	}
 
 	/**
@@ -198,7 +146,7 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CProvMLPackage.NODE__SOURCE_CONNECTIONS:
-				return basicSetSourceConnections(null, msgs);
+				return ((InternalEList<?>)getSourceConnections()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -216,8 +164,7 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 			case CProvMLPackage.NODE__SOURCE_CONNECTIONS:
 				return getSourceConnections();
 			case CProvMLPackage.NODE__TARGET_CONNECTIONS:
-				if (resolve) return getTargetConnections();
-				return basicGetTargetConnections();
+				return getTargetConnections();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -235,10 +182,12 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 				setName((String)newValue);
 				return;
 			case CProvMLPackage.NODE__SOURCE_CONNECTIONS:
-				setSourceConnections((Connection)newValue);
+				getSourceConnections().clear();
+				getSourceConnections().addAll((Collection<? extends Connection>)newValue);
 				return;
 			case CProvMLPackage.NODE__TARGET_CONNECTIONS:
-				setTargetConnections((Connection)newValue);
+				getTargetConnections().clear();
+				getTargetConnections().addAll((Collection<? extends Connection>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -256,10 +205,10 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 				setName(NAME_EDEFAULT);
 				return;
 			case CProvMLPackage.NODE__SOURCE_CONNECTIONS:
-				setSourceConnections((Connection)null);
+				getSourceConnections().clear();
 				return;
 			case CProvMLPackage.NODE__TARGET_CONNECTIONS:
-				setTargetConnections((Connection)null);
+				getTargetConnections().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -276,9 +225,9 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 			case CProvMLPackage.NODE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case CProvMLPackage.NODE__SOURCE_CONNECTIONS:
-				return sourceConnections != null;
+				return sourceConnections != null && !sourceConnections.isEmpty();
 			case CProvMLPackage.NODE__TARGET_CONNECTIONS:
-				return targetConnections != null;
+				return targetConnections != null && !targetConnections.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

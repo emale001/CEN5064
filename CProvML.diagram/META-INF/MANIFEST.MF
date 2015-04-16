@@ -36,7 +36,9 @@ Require-Bundle: org.eclipse.core.runtime,
  CProvML;visibility:=reexport,
  CProvML.edit;visibility:=reexport,
  org.eclipse.gef;visibility:=reexport,
- org.eclipse.gmf.runtime.draw2d.ui;visibility:=reexport,
- CProvML.custom
+ CProvML.custom,
+ org.eclipse.ocl.ecore;visibility:=reexport,
+ org.eclipse.emf.validation;visibility:=reexport,
+ org.eclipse.emf.validation.ocl;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

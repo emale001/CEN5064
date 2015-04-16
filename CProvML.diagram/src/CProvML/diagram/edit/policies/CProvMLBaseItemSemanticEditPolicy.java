@@ -1,7 +1,10 @@
 package CProvML.diagram.edit.policies;
 
+import java.util.Collections;
 import java.util.Iterator;
 
+import java.util.Map;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
@@ -321,26 +324,7 @@ public class CProvMLBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		 */
 		public boolean canCreateConnection_4001(CProvML.Node container,
 				CProvML.Node source, CProvML.Node target) {
-			if (container != null) {
-				if (container.getSourceConnections() != null) {
-					return false;
-				}
-			}
 			return canExistConnection_4001(container, null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canCreateNodeTargetConnections_4002(CProvML.Node source,
-				CProvML.Connection target) {
-			if (source != null) {
-				if (source.getTargetConnections() != null) {
-					return false;
-				}
-			}
-
-			return canExistNodeTargetConnections_4002(source, target);
 		}
 
 		/**
@@ -349,15 +333,31 @@ public class CProvMLBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		public boolean canExistConnection_4001(CProvML.Node container,
 				CProvML.Connection linkInstance, CProvML.Node source,
 				CProvML.Node target) {
-			return true;
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canExistNodeTargetConnections_4002(CProvML.Node source,
-				CProvML.Connection target) {
-			return true;
+			try {
+				if (source == null) {
+					return true;
+				} else {
+					Map<String, EClassifier> env = Collections
+							.<String, EClassifier> singletonMap(
+									"oppositeEnd", CProvML.CProvMLPackage.eINSTANCE.getNode()); //$NON-NLS-1$
+					Object sourceVal = CProvML.diagram.expressions.CProvMLOCLFactory
+							.getExpression(0,
+									CProvML.CProvMLPackage.eINSTANCE.getNode(),
+									env).evaluate(
+									source,
+									Collections.singletonMap(
+											"oppositeEnd", target)); //$NON-NLS-1$
+					if (false == sourceVal instanceof Boolean
+							|| !((Boolean) sourceVal).booleanValue()) {
+						return false;
+					} // else fall-through
+				}
+				return true;
+			} catch (Exception e) {
+				CProvML.diagram.part.CProvMLDiagramEditorPlugin.getInstance()
+						.logError("Link constraint evaluation error", e); //$NON-NLS-1$
+				return false;
+			}
 		}
 	}
 

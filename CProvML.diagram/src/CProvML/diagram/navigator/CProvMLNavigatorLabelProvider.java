@@ -97,9 +97,6 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Link?CProvML?Connection", CProvML.diagram.providers.CProvMLElementTypes.Connection_4001); //$NON-NLS-1$
-		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Link?CProvML?Node?targetConnections", CProvML.diagram.providers.CProvMLElementTypes.NodeTargetConnections_4002); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -169,8 +166,6 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 			return getEnvironment_2005Text(view);
 		case CProvML.diagram.edit.parts.ConnectionEditPart.VISUAL_ID:
 			return getConnection_4001Text(view);
-		case CProvML.diagram.edit.parts.NodeTargetConnectionsEditPart.VISUAL_ID:
-			return getNodeTargetConnections_4002Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -291,13 +286,6 @@ public class CProvMLNavigatorLabelProvider extends LabelProvider implements
 	 * @generated
 	 */
 	private String getConnection_4001Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getNodeTargetConnections_4002Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

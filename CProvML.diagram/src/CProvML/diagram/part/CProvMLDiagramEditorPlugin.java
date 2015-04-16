@@ -68,6 +68,11 @@ public class CProvMLDiagramEditorPlugin extends AbstractUIPlugin {
 	/**
 	 * @generated
 	 */
+	private CProvML.diagram.expressions.CProvMLOCLFactory oclFactory;
+
+	/**
+	 * @generated
+	 */
 	public CProvMLDiagramEditorPlugin() {
 	}
 
@@ -91,6 +96,7 @@ public class CProvMLDiagramEditorPlugin extends AbstractUIPlugin {
 		adapterFactory = null;
 		linkConstraints = null;
 		initializers = null;
+		oclFactory = null;
 		instance = null;
 		super.stop(context);
 	}
@@ -235,6 +241,21 @@ public class CProvMLDiagramEditorPlugin extends AbstractUIPlugin {
 	public void setElementInitializers(
 			CProvML.diagram.providers.ElementInitializers i) {
 		this.initializers = i;
+	}
+
+	/**
+	 * @generated
+	 */
+	public CProvML.diagram.expressions.CProvMLOCLFactory getCProvMLOCLFactory() {
+		return oclFactory;
+	}
+
+	/**
+	 * @generated
+	 */
+	public void setCProvMLOCLFactory(
+			CProvML.diagram.expressions.CProvMLOCLFactory f) {
+		this.oclFactory = f;
 	}
 
 	/**

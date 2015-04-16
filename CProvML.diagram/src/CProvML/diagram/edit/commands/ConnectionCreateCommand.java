@@ -80,7 +80,7 @@ public class ConnectionCreateCommand extends EditElementCommand {
 
 		CProvML.Connection newElement = CProvML.CProvMLFactory.eINSTANCE
 				.createConnection();
-		getContainer().setSourceConnections(newElement);
+		getContainer().getSourceConnections().add(newElement);
 		newElement.setSource(getSource());
 		newElement.setTarget(getTarget());
 		doConfigure(newElement, monitor, info);

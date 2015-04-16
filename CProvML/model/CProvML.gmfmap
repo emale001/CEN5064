@@ -11,6 +11,46 @@
         href="CProvML.ecore#//NodesDiagram/nodes"/>
     <ownedChild>
       <domainMetaElement
+          href="CProvML.ecore#//SecurityGroup"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="CProvML.gmfgraph#SecurityGroupName"/>
+        <features
+            href="CProvML.ecore#//Node/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
+      <diagramNode
+          href="CProvML.gmfgraph#SecurityGroup"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="CProvML.ecore#//NodesDiagram/nodes"/>
+    <ownedChild>
+      <domainMetaElement
+          href="CProvML.ecore#//Instance"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="CProvML.gmfgraph#InstanceName"/>
+        <features
+            href="CProvML.ecore#//Node/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="CProvML.gmftool#//@palette/@tools.0/@tools.3"/>
+      <diagramNode
+          href="CProvML.gmfgraph#Instance"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="CProvML.ecore#//NodesDiagram/nodes"/>
+    <ownedChild>
+      <domainMetaElement
           href="CProvML.ecore#//Storage"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -51,26 +91,6 @@
         href="CProvML.ecore#//NodesDiagram/nodes"/>
     <ownedChild>
       <domainMetaElement
-          href="CProvML.ecore#//SecurityGroup"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="CProvML.gmfgraph#SecurityGroupName"/>
-        <features
-            href="CProvML.ecore#//Node/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.1"/>
-      <diagramNode
-          href="CProvML.gmfgraph#SecurityGroup"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="CProvML.ecore#//NodesDiagram/nodes"/>
-    <ownedChild>
-      <domainMetaElement
           href="CProvML.ecore#//Environment"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -84,26 +104,6 @@
           href="CProvML.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="CProvML.gmfgraph#Environment"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="CProvML.ecore#//NodesDiagram/nodes"/>
-    <ownedChild>
-      <domainMetaElement
-          href="CProvML.ecore#//Instance"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="CProvML.gmfgraph#InstanceName"/>
-        <features
-            href="CProvML.ecore#//Node/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="CProvML.gmftool#//@palette/@tools.0/@tools.3"/>
-      <diagramNode
-          href="CProvML.gmfgraph#Instance"/>
     </ownedChild>
   </nodes>
   <links>
@@ -122,16 +122,10 @@
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="CProvML.ecore#//Connection/target"/>
-  </links>
-  <links>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="CProvML.gmftool#//@palette/@tools.0/@tools.5"/>
-    <diagramLink
-        href="CProvML.gmfgraph#Connection"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="CProvML.ecore#//Node/targetConnections"/>
+    <creationConstraints>
+      <sourceEnd
+          body="self &lt;> oppositeEnd and self.sourceConnections->forAll(c | c.target &lt;> oppositeEnd) and (oppositeEnd = null or oppositeEnd.sourceConnections->forAll(c | c.target &lt;> self))"/>
+    </creationConstraints>
   </links>
   <diagram>
     <diagramCanvas
@@ -143,4 +137,22 @@
     <palette
         href="CProvML.gmftool#//@palette"/>
   </diagram>
+  <audits
+      id="CProvConstraints"
+      name="CProvConstraints"
+      description="CProvConstraints">
+    <audits
+        name="The name cannot be empty."
+        description="The name cannot be empty."
+        id="NameCannotBeEmpty"
+        message="The name cannot be empty.">
+      <rule
+          body="self.nodes->forAll(n | n.name.size() > 0)"/>
+      <target
+          xsi:type="gmfmap:DomainElementTarget">
+        <element
+            href="CProvML.ecore#//NodesDiagram"/>
+      </target>
+    </audits>
+  </audits>
 </gmfmap:Mapping>

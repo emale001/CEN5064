@@ -119,6 +119,14 @@ public class CProvMLVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
+			if (CProvML.CProvMLPackage.eINSTANCE.getSecurityGroup()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID;
+			}
+			if (CProvML.CProvMLPackage.eINSTANCE.getInstance().isSuperTypeOf(
+					domainElement.eClass())) {
+				return CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
+			}
 			if (CProvML.CProvMLPackage.eINSTANCE.getStorage().isSuperTypeOf(
 					domainElement.eClass())) {
 				return CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID;
@@ -127,17 +135,9 @@ public class CProvMLVisualIDRegistry {
 					domainElement.eClass())) {
 				return CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID;
 			}
-			if (CProvML.CProvMLPackage.eINSTANCE.getSecurityGroup()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID;
-			}
 			if (CProvML.CProvMLPackage.eINSTANCE.getEnvironment()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID;
-			}
-			if (CProvML.CProvMLPackage.eINSTANCE.getInstance().isSuperTypeOf(
-					domainElement.eClass())) {
-				return CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -168,19 +168,29 @@ public class CProvMLVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CProvML.diagram.edit.parts.NodesDiagramEditPart.VISUAL_ID:
+			if (CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (CProvML.diagram.edit.parts.StorageEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (CProvML.diagram.edit.parts.NetworkEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
 			if (CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID == nodeVisualID) {
+			break;
+		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
+			if (CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
+			if (CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -194,18 +204,8 @@ public class CProvMLVisualIDRegistry {
 				return true;
 			}
 			break;
-		case CProvML.diagram.edit.parts.SecurityGroupEditPart.VISUAL_ID:
-			if (CProvML.diagram.edit.parts.SecurityGroupNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
 		case CProvML.diagram.edit.parts.EnvironmentEditPart.VISUAL_ID:
 			if (CProvML.diagram.edit.parts.EnvironmentNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case CProvML.diagram.edit.parts.InstanceEditPart.VISUAL_ID:
-			if (CProvML.diagram.edit.parts.InstanceNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;

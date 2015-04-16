@@ -35,7 +35,7 @@ public interface Storage extends Node {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Size</em>' attribute list.
 	 * @see CProvML.CProvMLPackage#getStorage_Size()
-	 * @model id="true" lower="3" upper="2000"
+	 * @model lower="3" upper="2000"
 	 * @generated
 	 */
 	EList<Integer> getSize();
