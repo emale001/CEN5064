@@ -200,7 +200,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_rZRsNtdtEeSharG7-omagw"/>
     </children>
     <element xmi:type="ecore:EEnum" href="CProvML.ecore#//OSType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rZRFIddtEeSharG7-omagw" x="840" y="48" width="97" height="108"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rZRFIddtEeSharG7-omagw" x="744" y="12" width="97" height="108"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_zzs60NdtEeSharG7-omagw" type="2005" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_zzth4NdtEeSharG7-omagw" type="5005"/>
@@ -221,7 +221,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_zzth5tdtEeSharG7-omagw"/>
     </children>
     <element xmi:type="ecore:EEnum" href="CProvML.ecore#//CPUType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zzs60ddtEeSharG7-omagw" x="948" y="60" width="85" height="84"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zzs60ddtEeSharG7-omagw" x="852" y="12" width="85" height="84"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_7XCJYNdtEeSharG7-omagw" type="2005" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_7XCJYtdtEeSharG7-omagw" type="5005"/>
@@ -242,7 +242,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_7XCwctdtEeSharG7-omagw"/>
     </children>
     <element xmi:type="ecore:EEnum" href="CProvML.ecore#//StorageType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XCJYddtEeSharG7-omagw" x="1044" y="60" height="80"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XCJYddtEeSharG7-omagw" x="948" y="12" height="80"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_RMCt0NduEeSharG7-omagw" type="2005" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_RMDU4NduEeSharG7-omagw" type="5005"/>
@@ -267,7 +267,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_RMDU5tduEeSharG7-omagw"/>
     </children>
     <element xmi:type="ecore:EEnum" href="CProvML.ecore#//NetworkType"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RMCt0dduEeSharG7-omagw" x="972" y="168" width="109" height="96"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RMCt0dduEeSharG7-omagw" x="876" y="108" width="109" height="96"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_FulSMcFYEeS5g95KaS4WAA"/>
   <element xmi:type="ecore:EPackage" href="CProvML.ecore#/"/>

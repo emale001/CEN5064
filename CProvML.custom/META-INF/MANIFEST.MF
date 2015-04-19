@@ -7,9 +7,15 @@ Bundle-Activator: cprovml.custom.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.workbench,
- org.eclipse.ui.ide;bundle-version="3.10.1"
+ org.eclipse.ui.ide;bundle-version="3.10.1",
+ org.eclipse.emf.common,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.jface
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.draw2d,
+ org.eclipse.emf.ecore.util,
+ org.eclipse.emf.ecore.xmi.impl,
  org.eclipse.gmf.runtime.diagram.ui.figures
 Export-Package: cprovml.custom.figures
