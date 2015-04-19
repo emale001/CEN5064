@@ -35,10 +35,8 @@ public class CProvMLOCLFactory {
 	 * @generated
 	 */
 	protected CProvMLOCLFactory() {
-		this.expressions = new CProvML.diagram.expressions.CProvMLAbstractExpression[2];
-		this.expressionBodies = new String[] {
-				"self <> oppositeEnd and self.sourceConnections->forAll(c | c.target <> oppositeEnd) and (oppositeEnd = null or oppositeEnd.sourceConnections->forAll(c | c.target <> self))", //$NON-NLS-1$
-				"self.nodes->forAll(n | n.name.size() > 0)", //$NON-NLS-1$
+		this.expressions = new CProvML.diagram.expressions.CProvMLAbstractExpression[1];
+		this.expressionBodies = new String[] { "self <> oppositeEnd and self.sourceConnections->forAll(c | c.target <> oppositeEnd) and (oppositeEnd = null or oppositeEnd.sourceConnections->forAll(c | c.target <> self))", //$NON-NLS-1$
 		};
 	}
 

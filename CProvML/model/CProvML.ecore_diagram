@@ -269,6 +269,24 @@
     <element xmi:type="ecore:EEnum" href="CProvML.ecore#//NetworkType"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RMCt0dduEeSharG7-omagw" x="876" y="108" width="109" height="96"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_uDfrYOZCEeS6c9oEr52ymg" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uDgScOZCEeS6c9oEr52ymg" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_uDgSceZCEeS6c9oEr52ymg" type="7009">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_uDgScuZCEeS6c9oEr52ymg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_uDgSc-ZCEeS6c9oEr52ymg"/>
+    </children>
+    <element xmi:type="ecore:EAnnotation" href="CProvML.ecore#//%http:%2F%2Fwww.eclipse.org%2FOCL%2FImport%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uDfrYeZCEeS6c9oEr52ymg" x="108" y="-60"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_uDgSdOZCEeS6c9oEr52ymg" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uDgSduZCEeS6c9oEr52ymg" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_uDgSd-ZCEeS6c9oEr52ymg" type="7009">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_uDgSeOZCEeS6c9oEr52ymg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_uDgSeeZCEeS6c9oEr52ymg"/>
+    </children>
+    <element xmi:type="ecore:EAnnotation" href="CProvML.ecore#//%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FEcore%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uDgSdeZCEeS6c9oEr52ymg" x="432" y="-84"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_FulSMcFYEeS5g95KaS4WAA"/>
   <element xmi:type="ecore:EPackage" href="CProvML.ecore#/"/>
   <edges xmi:type="notation:Connector" xmi:id="_aXyK0MFYEeS5g95KaS4WAA" type="4004" source="_X1M5UMFYEeS5g95KaS4WAA" target="_HznFAMFYEeS5g95KaS4WAA">

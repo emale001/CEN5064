@@ -22,6 +22,8 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see CProvML.CProvMLFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
  * @generated
  */
 public interface CProvMLPackage extends EPackage {
@@ -168,7 +170,7 @@ public interface CProvMLPackage extends EPackage {
 	int INSTANCE__OS = NODE_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>RAM</b></em>' attribute list.
+	 * The feature id for the '<em><b>RAM</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -232,7 +234,7 @@ public interface CProvMLPackage extends EPackage {
 	int STORAGE__TARGET_CONNECTIONS = NODE__TARGET_CONNECTIONS;
 
 	/**
-	 * The feature id for the '<em><b>Size</b></em>' attribute list.
+	 * The feature id for the '<em><b>Size</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -660,10 +662,10 @@ public interface CProvMLPackage extends EPackage {
 	EAttribute getInstance_OS();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link CProvML.Instance#getRAM <em>RAM</em>}'.
+	 * Returns the meta object for the attribute '{@link CProvML.Instance#getRAM <em>RAM</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>RAM</em>'.
+	 * @return the meta object for the attribute '<em>RAM</em>'.
 	 * @see CProvML.Instance#getRAM()
 	 * @see #getInstance()
 	 * @generated
@@ -681,10 +683,10 @@ public interface CProvMLPackage extends EPackage {
 	EClass getStorage();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link CProvML.Storage#getSize <em>Size</em>}'.
+	 * Returns the meta object for the attribute '{@link CProvML.Storage#getSize <em>Size</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Size</em>'.
+	 * @return the meta object for the attribute '<em>Size</em>'.
 	 * @see CProvML.Storage#getSize()
 	 * @see #getStorage()
 	 * @generated
@@ -942,7 +944,7 @@ public interface CProvMLPackage extends EPackage {
 		EAttribute INSTANCE__OS = eINSTANCE.getInstance_OS();
 
 		/**
-		 * The meta object literal for the '<em><b>RAM</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>RAM</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -960,7 +962,7 @@ public interface CProvMLPackage extends EPackage {
 		EClass STORAGE = eINSTANCE.getStorage();
 
 		/**
-		 * The meta object literal for the '<em><b>Size</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Size</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

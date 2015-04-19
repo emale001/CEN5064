@@ -6,12 +6,9 @@ import CProvML.CPUType;
 import CProvML.CProvMLPackage;
 import CProvML.Instance;
 import CProvML.OSType;
-import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -66,14 +63,23 @@ public class InstanceImpl extends NodeImpl implements Instance {
 	 */
 	protected OSType os = OS_EDEFAULT;
 	/**
-	 * The cached value of the '{@link #getRAM() <em>RAM</em>}' attribute list.
+	 * The default value of the '{@link #getRAM() <em>RAM</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRAM()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> ram;
+	protected static final int RAM_EDEFAULT = 0;
+	/**
+	 * The cached value of the '{@link #getRAM() <em>RAM</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRAM()
+	 * @generated
+	 * @ordered
+	 */
+	protected int ram = RAM_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,11 +147,20 @@ public class InstanceImpl extends NodeImpl implements Instance {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getRAM() {
-		if (ram == null) {
-			ram = new EDataTypeUniqueEList<Integer>(Integer.class, this, CProvMLPackage.INSTANCE__RAM);
-		}
+	public int getRAM() {
 		return ram;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRAM(int newRAM) {
+		int oldRAM = ram;
+		ram = newRAM;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CProvMLPackage.INSTANCE__RAM, oldRAM, ram));
 	}
 
 	/**
@@ -182,8 +197,7 @@ public class InstanceImpl extends NodeImpl implements Instance {
 				setOS((OSType)newValue);
 				return;
 			case CProvMLPackage.INSTANCE__RAM:
-				getRAM().clear();
-				getRAM().addAll((Collection<? extends Integer>)newValue);
+				setRAM((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -204,7 +218,7 @@ public class InstanceImpl extends NodeImpl implements Instance {
 				setOS(OS_EDEFAULT);
 				return;
 			case CProvMLPackage.INSTANCE__RAM:
-				getRAM().clear();
+				setRAM(RAM_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -223,7 +237,7 @@ public class InstanceImpl extends NodeImpl implements Instance {
 			case CProvMLPackage.INSTANCE__OS:
 				return os != OS_EDEFAULT;
 			case CProvMLPackage.INSTANCE__RAM:
-				return ram != null && !ram.isEmpty();
+				return ram != RAM_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

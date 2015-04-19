@@ -137,22 +137,4 @@
     <palette
         href="CProvML.gmftool#//@palette"/>
   </diagram>
-  <audits
-      id="CProvConstraints"
-      name="CProvConstraints"
-      description="CProvConstraints">
-    <audits
-        name="The name cannot be empty."
-        description="The name cannot be empty."
-        id="NameCannotBeEmpty"
-        message="The name cannot be empty.">
-      <rule
-          body="self.nodes->forAll(n | n.name.size() > 0)"/>
-      <target
-          xsi:type="gmfmap:DomainElementTarget">
-        <element
-            href="CProvML.ecore#//NodesDiagram"/>
-      </target>
-    </audits>
-  </audits>
 </gmfmap:Mapping>

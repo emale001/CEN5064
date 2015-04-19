@@ -4,14 +4,10 @@ package CProvML.impl;
 
 import CProvML.CProvMLPackage;
 import CProvML.Storage;
-
 import CProvML.StorageType;
-import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,14 +25,23 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class StorageImpl extends NodeImpl implements Storage {
 	/**
-	 * The cached value of the '{@link #getSize() <em>Size</em>}' attribute list.
+	 * The default value of the '{@link #getSize() <em>Size</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSize()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> size;
+	protected static final int SIZE_EDEFAULT = 0;
+	/**
+	 * The cached value of the '{@link #getSize() <em>Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSize()
+	 * @generated
+	 * @ordered
+	 */
+	protected int size = SIZE_EDEFAULT;
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -80,11 +85,20 @@ public class StorageImpl extends NodeImpl implements Storage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getSize() {
-		if (size == null) {
-			size = new EDataTypeUniqueEList<Integer>(Integer.class, this, CProvMLPackage.STORAGE__SIZE);
-		}
+	public int getSize() {
 		return size;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSize(int newSize) {
+		int oldSize = size;
+		size = newSize;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CProvMLPackage.STORAGE__SIZE, oldSize, size));
 	}
 
 	/**
@@ -134,8 +148,7 @@ public class StorageImpl extends NodeImpl implements Storage {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CProvMLPackage.STORAGE__SIZE:
-				getSize().clear();
-				getSize().addAll((Collection<? extends Integer>)newValue);
+				setSize((Integer)newValue);
 				return;
 			case CProvMLPackage.STORAGE__TYPE:
 				setType((StorageType)newValue);
@@ -153,7 +166,7 @@ public class StorageImpl extends NodeImpl implements Storage {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CProvMLPackage.STORAGE__SIZE:
-				getSize().clear();
+				setSize(SIZE_EDEFAULT);
 				return;
 			case CProvMLPackage.STORAGE__TYPE:
 				setType(TYPE_EDEFAULT);
@@ -171,7 +184,7 @@ public class StorageImpl extends NodeImpl implements Storage {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CProvMLPackage.STORAGE__SIZE:
-				return size != null && !size.isEmpty();
+				return size != SIZE_EDEFAULT;
 			case CProvMLPackage.STORAGE__TYPE:
 				return type != TYPE_EDEFAULT;
 		}

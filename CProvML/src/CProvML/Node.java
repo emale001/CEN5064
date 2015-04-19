@@ -20,7 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CProvML.CProvMLPackage#getNode()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NodeNameCannotBeEmpty NodesCannotBeConnectedToSelf NodesCannotBeConnectedMoreThanOnce'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot NodeNameCannotBeEmpty='Tuple {\n\tmessage : String = \'Name must not be empty.\',\n\tstatus : Boolean = \n\t\t\tif name.size() > 0 then true else null endif\n}.status' NodesCannotBeConnectedToSelf='Tuple {\n\tmessage : String = \'Node cannot connect to itself.\',\n\tstatus : Boolean = \n\t\t\tif sourceConnections->forAll(c | c.source <> c.target) then true else null endif\n}.status' NodesCannotBeConnectedMoreThanOnce='Tuple {\n\tmessage : String = \'Nodes may not connect more than once.\',\n\tstatus : Boolean = \n\t\t\tlet selfConnections : Boolean = sourceConnections->forAll(a | sourceConnections->forAll(b | a <> b implies a.target <> b.target)) in \n\t\t\tlet otherConnections : Boolean = sourceConnections->forAll(sc | sc.target.sourceConnections->forAll(tc | sc.source <> tc.target)) in\n\t\t\tif selfConnections and otherConnections then true else null endif\n}.status'"
  * @generated
  */
 public interface Node extends EObject {
@@ -36,7 +37,7 @@ public interface Node extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see CProvML.CProvMLPackage#getNode_Name()
-	 * @model default="" id="true" required="true"
+	 * @model default="" id="true"
 	 * @generated
 	 */
 	String getName();

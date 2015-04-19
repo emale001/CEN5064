@@ -4,30 +4,6 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel">
-  <audits>
-    <categories
-        id="CProvConstraints"
-        name="CProvConstraints"
-        description="CProvConstraints"
-        path="//@audits/@categories.0"
-        audits="//@audits/@rules.0"/>
-    <rules
-        name="The name cannot be empty."
-        description="The name cannot be empty."
-        id="NameCannotBeEmpty"
-        rule="//@expressionProviders/@providers.0/@expressions.1"
-        message="The name cannot be empty."
-        category="//@audits/@categories.0">
-      <target
-          xsi:type="gmfgen:GenDomainElementTarget"
-          contextSelector="//@audits/@clientContexts.0">
-        <element
-            href="CProvML.genmodel#//CProvML/NodesDiagram"/>
-      </target>
-    </rules>
-    <clientContexts
-        ruleTargets="//@audits/@rules.0/@target"/>
-  </audits>
   <diagram
       visualID="1000"
       editPartClassName="NodesDiagramEditPart"
@@ -544,9 +520,6 @@
       <expressions
           xsi:type="gmfgen:GenConstraint"
           body="self &lt;> oppositeEnd and self.sourceConnections->forAll(c | c.target &lt;> oppositeEnd) and (oppositeEnd = null or oppositeEnd.sourceConnections->forAll(c | c.target &lt;> self))"/>
-      <expressions
-          xsi:type="gmfgen:GenConstraint"
-          body="self.nodes->forAll(n | n.name.size() > 0)"/>
     </providers>
   </expressionProviders>
   <labelParsers

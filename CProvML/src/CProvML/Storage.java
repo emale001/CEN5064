@@ -2,7 +2,6 @@
  */
 package CProvML;
 
-import org.eclipse.emf.common.util.EList;
 
 
 /**
@@ -25,20 +24,30 @@ import org.eclipse.emf.common.util.EList;
 public interface Storage extends Node {
 
 	/**
-	 * Returns the value of the '<em><b>Size</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>Size</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Size</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Size</em>' attribute list.
+	 * @return the value of the '<em>Size</em>' attribute.
+	 * @see #setSize(int)
 	 * @see CProvML.CProvMLPackage#getStorage_Size()
-	 * @model lower="3" upper="2000"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getSize();
+	int getSize();
+
+	/**
+	 * Sets the value of the '{@link CProvML.Storage#getSize <em>Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Size</em>' attribute.
+	 * @see #getSize()
+	 * @generated
+	 */
+	void setSize(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
@@ -53,7 +62,7 @@ public interface Storage extends Node {
 	 * @see CProvML.StorageType
 	 * @see #setType(StorageType)
 	 * @see CProvML.CProvMLPackage#getStorage_Type()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	StorageType getType();

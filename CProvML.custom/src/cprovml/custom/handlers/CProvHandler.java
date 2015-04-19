@@ -6,23 +6,18 @@ import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.runtime.IPath;
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
-import org.eclipse.ui.IActionBars;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchActionConstants;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.WorkbenchPage;
 import org.eclipse.ui.part.FileEditorInput;
-import org.eclipse.jface.action.GroupMarker;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.dialogs.MessageDialog;
 
 import cprovml.custom.transformations.XMLParser;
@@ -51,24 +46,7 @@ public class CProvHandler extends AbstractHandler {
 		IPath path = ((FileEditorInput)input).getPath();
 		String cprovmlPath = path.toString().replace(".cprovml_diagram", ".cprovml");
 		
-		// Before we attempt to 
-		
-		XMLParser.transformCprovml(cprovmlPath);
-		
-		// Menu Manager stuff.
-//		MenuManager editMenu = bars.getMenuManager().findMenuUsingPath(
-//		IWorkbenchActionConstants.M_EDIT);
-		
-		
-		// Get action bars.
-		@SuppressWarnings("restriction")
-		IActionBars bars = ((WorkbenchPage)page).getActionBars();
-		IMenuManager editMenu = bars.getMenuManager().findMenuUsingPath(
-				IWorkbenchActionConstants.M_EDIT);
-		
-		IContributionItem validation = editMenu.find("validationGroup");
-		
-//		IAction validateAction = new CProvML.diagram.part.ValidateAction(page);
+		// Validate the CProvML prior to attempting to transform it.
 		
 		// Load XMI.
 		XMIResource resource = new XMIResourceImpl(URI.createFileURI(cprovmlPath));
@@ -77,12 +55,28 @@ public class CProvHandler extends AbstractHandler {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			MessageDialog.openError(window.getShell(), "CProvML Custom Editor", "Unable to read CProvML at path: " + cprovmlPath);
+			return null;
 		}
+		
+		// Get the root ECore object for this particular XML.
+		EObject root = resource.getContents().get(0);
+		
+		// Validate the ECore object.
+		Diagnostic diagnostic = Diagnostician.INSTANCE.validate(root);
+		
+		if(diagnostic.getSeverity() > 0)
+		{
+			MessageDialog.openError(window.getShell(), "CProvML Custom Editor", "There are validation errors for this CProv Model. Please correct the issues before transforming.");
+			return null;
+		}
+		
+		XMLParser.transformCprovml(cprovmlPath);
 		
 		MessageDialog.openInformation(
 				window.getShell(),
 				"CProvML Custom Editor",
-				"CProvML Path to be transformed:" + cprovmlPath);
+				"Transformation was successful.");
 		
 		return null;
 	}

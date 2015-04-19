@@ -32,7 +32,7 @@ public interface SecurityGroup extends Node {
 	 * @return the value of the '<em>IP Range</em>' attribute.
 	 * @see #setIPRange(String)
 	 * @see CProvML.CProvMLPackage#getSecurityGroup_IPRange()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getIPRange();
@@ -58,7 +58,7 @@ public interface SecurityGroup extends Node {
 	 * @return the value of the '<em>VPC Name</em>' attribute.
 	 * @see #setVPCName(String)
 	 * @see CProvML.CProvMLPackage#getSecurityGroup_VPCName()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getVPCName();

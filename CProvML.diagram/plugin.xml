@@ -554,51 +554,8 @@
    <extension point="org.eclipse.ui.handlers" id="menu-handlers">
       <?gmfgen generated="true"?>
    </extension>
-<extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
-      <?gmfgen generated="true"?>
-      <MarkerNavigationProvider class="CProvML.diagram.providers.CProvMLMarkerNavigationProvider">
-         <MarkerType name="CProvML.diagram.diagnostic"/>
-         <Priority name="Lowest"/>
-      </MarkerNavigationProvider>
-   </extension>
 
-<extension id="diagnostic" name="CProvML Plugin problems" point="org.eclipse.core.resources.markers">
-      <?gmfgen generated="true"?>
-      <super type="org.eclipse.core.resources.problemmarker"/>
-      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
-      <persistent value="true"/>
-   </extension><extension point="org.eclipse.emf.validation.constraintProviders">
-      <?gmfgen generated="true"?>
-            <category id="CProvConstraints" mandatory="false" name="CProvConstraints">
-         <![CDATA[CProvConstraints]]>
-      </category>
-      <constraintProvider cache="true">
-         <package namespaceUri="CProvML"/>
-               <constraints categories="CProvConstraints">
-                  <constraint id="NameCannotBeEmpty"
-            lang="OCL"
-            name="The name cannot be empty."
-            mode="Batch"
-            severity="ERROR" statusCode="200">
-            <![CDATA[self.nodes->forAll(n | n.name.size() > 0)]]>
-            <description><![CDATA[The name cannot be empty.]]></description>
-            <message><![CDATA[The name cannot be empty.]]></message>
-            <target class="CProvML.NodesDiagram"/>
-         </constraint>
-                  </constraints>
-      </constraintProvider>
-   </extension>
 
-<extension point="org.eclipse.emf.validation.constraintBindings">
-      <?gmfgen generated="true"?>
-      <clientContext default="false" id="CProvML.diagramDefaultCtx">
-         <selector class="CProvML.diagram.providers.CProvMLValidationProvider$DefaultCtx"/>
-      </clientContext>
-      <binding context="CProvML.diagramDefaultCtx">
-                  <constraint ref="CProvML.diagram.NameCannotBeEmpty"/>
-               </binding>
-
-   </extension>
 
 
    <!-- optionally, specify keybindings -->

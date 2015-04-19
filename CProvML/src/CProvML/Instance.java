@@ -2,7 +2,6 @@
  */
 package CProvML;
 
-import org.eclipse.emf.common.util.EList;
 
 
 /**
@@ -38,7 +37,7 @@ public interface Instance extends Node {
 	 * @see CProvML.CPUType
 	 * @see #setCPU(CPUType)
 	 * @see CProvML.CProvMLPackage#getInstance_CPU()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	CPUType getCPU();
@@ -67,7 +66,7 @@ public interface Instance extends Node {
 	 * @see CProvML.OSType
 	 * @see #setOS(OSType)
 	 * @see CProvML.CProvMLPackage#getInstance_OS()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	OSType getOS();
@@ -84,18 +83,28 @@ public interface Instance extends Node {
 	void setOS(OSType value);
 
 	/**
-	 * Returns the value of the '<em><b>RAM</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>RAM</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>RAM</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>RAM</em>' attribute list.
+	 * @return the value of the '<em>RAM</em>' attribute.
+	 * @see #setRAM(int)
 	 * @see CProvML.CProvMLPackage#getInstance_RAM()
-	 * @model required="true" upper="16"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getRAM();
+	int getRAM();
+
+	/**
+	 * Sets the value of the '{@link CProvML.Instance#getRAM <em>RAM</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>RAM</em>' attribute.
+	 * @see #getRAM()
+	 * @generated
+	 */
+	void setRAM(int value);
 } // Instance
