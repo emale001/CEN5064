@@ -8,6 +8,10 @@ import java.util.HashMap;
 import java.util.List;
 
 
+
+
+
+
 import javax.xml.parsers.DocumentBuilder;  
 import javax.xml.parsers.DocumentBuilderFactory;  
 import javax.xml.parsers.ParserConfigurationException;  
@@ -63,6 +67,8 @@ public class XMLParser {
 				/*1 create the nodes.#-name map*/
 				HashMap<String, String> hashmap = new HashMap();
 				HashMap<String, String> hashmap2 = new HashMap();
+				HashMap<String, String> hashmap3 = new HashMap();
+
 
 				List<Pair> list = new ArrayList();
 			
@@ -84,7 +90,12 @@ public class XMLParser {
 						
 					    System.out.println("put key-vlue:"+n1.getAttribute("source")+"-"+n.getAttribute("name"));
 					    hashmap.put(n1.getAttribute("source"), n.getAttribute("name"));
+					 
 					    hashmap2.put(n1.getAttribute("source"), arr[1].toLowerCase());
+					}else{
+						hashmap.put(n.getAttribute("name"), n.getAttribute("name"));
+					    hashmap2.put(n.getAttribute("name"), arr[1].toLowerCase());
+						
 					}
 					for (int e=0;e<chileNodes.getLength();e++){
 						
@@ -94,10 +105,12 @@ public class XMLParser {
 					}
 					    
 				}
+				System.out.println("hashmap.size = "+hashmap.size());
 				System.out.println(list.size());
 				/*2create xml file*/
 				for(int i=0;i<nodes.getLength();i++){
 					Element n=(Element)nodes.item(i);
+					 NodeList tmpNodes = n.getElementsByTagName("sourceConnections");
 					
 					//if the item is not 'Environment'
 					if(!n.getAttribute("xsi:type").equals("CProvML:Environment")){
@@ -109,24 +122,31 @@ public class XMLParser {
 								AttrName.setValue(n.getAttribute("name"));
 								
 								node.setAttributeNode(AttrName); 
-					            xml.appendChild(node);
+					            
 					            
 					            Element connections = document.createElement("connections");
 					            NodeList chileNodes = n.getElementsByTagName("sourceConnections");
 					            
 					            for(int j=0;j<chileNodes.getLength();j++){
 					            	Element n2=(Element)chileNodes.item(j);
-					            	Element instance = document.createElement("instance");
-					            	String tmp=(String)hashmap.get(n2.getAttribute("target"));
-					            	if(tmp!=null){
-					            	Attr instanceName1 = document.createAttribute("name");
-					            	instanceName1.setValue((String)hashmap.get(n2.getAttribute("target")));
-					            	instance.setAttributeNode(instanceName1);
-					            	connections.appendChild(instance);
-					            	node.appendChild(connections);
+					            	System.out.println("*****************"+hashmap2.get(n2.getAttribute("target")));
+					            	if(hashmap2.get(n2.getAttribute("target"))==null||!hashmap2.get(n2.getAttribute("target")).equals("environment")){
+					            		xml.appendChild(node);
+					            		Element instance = document.createElement("instance");
+					            		String tmp=(String)hashmap.get(n2.getAttribute("target"));
+					            		if(tmp!=null){
+					            			Attr instanceName1 = document.createAttribute("name");
+					            			instanceName1.setValue((String)hashmap.get(n2.getAttribute("target")));
+					            			instance.setAttributeNode(instanceName1);
+					            			connections.appendChild(instance);
+					            			node.appendChild(connections);
+					            		}					            	
+					            	}else{
+					            		hashmap3.put(n2.getAttribute("target"), n2.getAttribute("source"));
+					            		
+					            		
+					            		
 					            	}
-					            	
-					            	
 					            }
 						
 					}else{
@@ -139,6 +159,27 @@ public class XMLParser {
 			            xml.appendChild(node);
 			            
 			            NodeList chileNodes = n.getElementsByTagName("sourceConnections");
+			            if(hashmap3.get(n.getAttribute("name"))!=null){
+			            	Element instance2 = document.createElement((String)hashmap2.get(hashmap3.get(n.getAttribute("name"))));
+			            	Attr attrTmp=document.createAttribute("name");
+			            	attrTmp.setValue(hashmap3.get(n.getAttribute("name")));
+			            	instance2.setAttributeNode(attrTmp);
+			            	Element connections = document.createElement("connections");
+			            	Pair p1=list.get(0);
+			            	System.out.println(p1.getH());
+			            	for(Pair p : list){			            	
+			            		if(p.getH().equals(hashmap3.get(n.getAttribute("name")))){
+			            			Element instance3 = document.createElement("instance");
+			            			Attr attrTmp2 = document.createAttribute("name");
+			            			attrTmp2.setValue((String)hashmap.get(p.getR()));
+			            			instance3.setAttributeNode(attrTmp2);
+			            			connections.appendChild(instance3);
+			            		}
+			            	}         	
+                            instance2.appendChild(connections);			            	
+			            	node.appendChild(instance2);
+			            	
+			            }
 			            
 			            for(int j=0;j<chileNodes.getLength();j++){
 			            	Element n2=(Element)chileNodes.item(j);
@@ -183,7 +224,7 @@ public class XMLParser {
             DOMSource source = new DOMSource(document);  
             transformer.setOutputProperty(OutputKeys.ENCODING, "gb2312");  
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");  
-            PrintWriter pw = new PrintWriter(new FileOutputStream("c:\\output.xprovml"));  
+            PrintWriter pw = new PrintWriter(new FileOutputStream("c:/test.xcprovml"));  
             StreamResult result = new StreamResult(pw);  
             transformer.transform(source, result);     
             System.out.println("create XML done!");  

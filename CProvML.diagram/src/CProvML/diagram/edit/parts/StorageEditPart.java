@@ -1,6 +1,8 @@
 package CProvML.diagram.edit.parts;
 
 import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.GridData;
+import org.eclipse.draw2d.GridLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.Label;
 import org.eclipse.draw2d.RectangleFigure;
@@ -8,8 +10,10 @@ import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
@@ -20,6 +24,7 @@ import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
+import cprovml.custom.figures.StorageShape;
 
 /**
  * @generated
@@ -65,15 +70,18 @@ public class StorageEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
-		FlowLayoutEditPolicy lep = new FlowLayoutEditPolicy() {
-
-			protected Command createAddCommand(EditPart child, EditPart after) {
-				return null;
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				EditPolicy result = child
+						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
+				if (result == null) {
+					result = new NonResizableEditPolicy();
+				}
+				return result;
 			}
 
-			protected Command createMoveChildCommand(EditPart child,
-					EditPart after) {
+			protected Command getMoveChildrenCommand(Request request) {
 				return null;
 			}
 
@@ -244,7 +252,7 @@ public class StorageEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class StorageFigure extends RectangleFigure {
+	public class StorageFigure extends StorageShape {
 
 		/**
 		 * @generated
@@ -256,15 +264,9 @@ public class StorageEditPart extends ShapeNodeEditPart {
 		 */
 		public StorageFigure() {
 
-			FlowLayout layoutThis = new FlowLayout();
-			layoutThis.setStretchMinorAxis(false);
-			layoutThis.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
-
-			layoutThis.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
-			layoutThis.setMajorSpacing(5);
-			layoutThis.setMinorSpacing(5);
-			layoutThis.setHorizontal(true);
-
+			GridLayout layoutThis = new GridLayout();
+			layoutThis.numColumns = 2;
+			layoutThis.makeColumnsEqualWidth = true;
 			this.setLayoutManager(layoutThis);
 
 			createContents();
@@ -277,9 +279,18 @@ public class StorageEditPart extends ShapeNodeEditPart {
 
 			fFigureStorageNameFigure = new Label();
 
-			fFigureStorageNameFigure.setText("<...>");
+			fFigureStorageNameFigure.setText("<..>");
 
-			this.add(fFigureStorageNameFigure);
+			GridData constraintFFigureStorageNameFigure = new GridData();
+			constraintFFigureStorageNameFigure.verticalAlignment = GridData.BEGINNING;
+			constraintFFigureStorageNameFigure.horizontalAlignment = GridData.BEGINNING;
+			constraintFFigureStorageNameFigure.horizontalIndent = 0;
+			constraintFFigureStorageNameFigure.horizontalSpan = 1;
+			constraintFFigureStorageNameFigure.verticalSpan = 1;
+			constraintFFigureStorageNameFigure.grabExcessHorizontalSpace = false;
+			constraintFFigureStorageNameFigure.grabExcessVerticalSpace = false;
+			this.add(fFigureStorageNameFigure,
+					constraintFFigureStorageNameFigure);
 
 		}
 
