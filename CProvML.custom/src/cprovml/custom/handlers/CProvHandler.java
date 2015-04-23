@@ -1,5 +1,6 @@
 package cprovml.custom.handlers;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.eclipse.core.commands.AbstractHandler;
@@ -20,6 +21,7 @@ import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.jface.dialogs.MessageDialog;
 
+import cprovml.custom.transformations.APIFactory;
 import cprovml.custom.transformations.XMLParser;
 
 /**
@@ -71,7 +73,19 @@ public class CProvHandler extends AbstractHandler {
 			return null;
 		}
 		
-		XMLParser.transformCprovml(cprovmlPath);
+		// Determine save path.
+		File cprovmlFile = new File(cprovmlPath);
+		String directory = cprovmlFile.getParent();
+		String fileName = cprovmlFile.getName().split("\\.(?=[^\\.]+$)")[0] + ".xcprovml";
+		String outputName = new File(directory, fileName).getAbsolutePath();
+		
+		XMLParser.transformCprovml(cprovmlPath, outputName);
+		
+		// Transform CProvML to API calls.
+		String callsFileName = cprovmlFile.getName().split("\\.(?=[^\\.]+$)")[0] + ".txt";
+		String callsOutputName = new File(directory, fileName).getAbsolutePath();
+		
+		APIFactory.toTXT(outputName, callsOutputName);
 		
 		MessageDialog.openInformation(
 				window.getShell(),
