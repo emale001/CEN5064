@@ -9,12 +9,21 @@
             categoryId="CProvML.custom.commands.category"
             id="CProvML.custom.commands.sampleCommand">
       </command>
+      <command
+            name="Transform to EC2 Calls"
+            categoryId="CProvML.custom.commands.category"
+            id="CProvML.custom.commands.sampleCommandTwo">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
             commandId="CProvML.custom.commands.sampleCommand"
             class="cprovml.custom.handlers.CProvHandler">
+      </handler>
+      <handler
+            commandId="CProvML.custom.commands.sampleCommandTwo"
+            class="cprovml.custom.handlers.CProvHandlerCalls">
       </handler>
    </extension>
    <extension
@@ -38,6 +47,11 @@
                   commandId="CProvML.custom.commands.sampleCommand"
                   mnemonic="S"
                   id="CProvML.custom.menus.sampleCommand">
+            </command>
+            <command
+                  commandId="CProvML.custom.commands.sampleCommandTwo"
+                  mnemonic="S"
+                  id="CProvML.custom.menus.sampleCommandTwo">
             </command>
             <visibleWhen
                   checkEnabled="true">
