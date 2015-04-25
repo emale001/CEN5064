@@ -82,13 +82,23 @@ See the example diagram (ExampleDiagram.png). This is the corresponding X-CProvM
 		</connections>
 	</storage>
 	
-	<environment name="environment">
+	<environment name="ENV">
 		
 		<instance name="site">
 			<connections>
 				<instance name="web"/>
 			</connections>
 		</instance>
+		
+		<instance name="instance7">
+			<connections>
+				<storage name="storage1"/>
+			</connections>
+		</instance>
+		
+		<storage name="storage1">
+		</storage>
+		
 		
 		<instance name="sql">
 			<connections>
