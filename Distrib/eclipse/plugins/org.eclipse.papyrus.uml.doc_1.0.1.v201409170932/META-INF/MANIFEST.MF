@@ -1,0 +1,176 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: Papyrus UML User Guide
+Bundle-SymbolicName: org.eclipse.papyrus.uml.doc;singleton:=true
+Require-Bundle: org.eclipse.help;bundle-version="3.6.0",org.eclipse.pa
+ pyrus.infra.doc;bundle-version="1.0.1"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.1.v201409170932
+Bundle-ManifestVersion: 2
+
+Name: resource/ClassDiagramEditorNewAgg.bmp
+SHA1-Digest: qiVRVVt/ajeETyYMmCPhU6jP6dI=
+
+Name: resource/ClassDiagramEditorNewAss.bmp
+SHA1-Digest: gNiXXLiswI+hr0MGHSYIDOL2whY=
+
+Name: resource/InstallPapyrusComp.bmp
+SHA1-Digest: oKUH3XkGjs4jhrvGv52dpRH+gvY=
+
+Name: resource/EclipseView.bmp
+SHA1-Digest: Kf8hZf1FNzNykUOdZ81iN6FpCZM=
+
+Name: resource/MyProject.bmp
+SHA1-Digest: 80ohsUSEWSpWexHUbnx78QEfEUk=
+
+Name: resource/CompositeStructure.bmp
+SHA1-Digest: PnIZbmeGo4B8IO282boC6pgPGPI=
+
+Name: resource/WelcomePage.bmp
+SHA1-Digest: 5ValIE5b1ekf84EGsU7PpeKKe20=
+
+Name: resource/PapyrusStarterGuide-main-toc.xml
+SHA1-Digest: jfHwXjHefPu34k+WttBORj5J7Vg=
+
+Name: resource/ElementContextMenuDiaFormat.bmp
+SHA1-Digest: oytL3jFB50vixvpxxzB5hku1n3s=
+
+Name: resource/StateDiagram.bmp
+SHA1-Digest: lJAlJ9AYX/5VNLxE+ReCbJvqvO8=
+
+Name: resource/ElementContextMenuDiaDelHide.bmp
+SHA1-Digest: GEEfuVjoL5kDD4eJRLr+oUON1TI=
+
+Name: resource/ProjectExpl.bmp
+SHA1-Digest: zmLSXEPD9Pp9fV0GI+iZifs6uLg=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/InstallNewSoftware.bmp
+SHA1-Digest: EqneV6O2FPVU4bZ+8e9m6x8y4l4=
+
+Name: resource/EclipseArchitecture.bmp
+SHA1-Digest: p5H5GwumamKS9AxDPbUcaH1GDd0=
+
+Name: resource/ValidationConstraints.bmp
+SHA1-Digest: fkGNRApjbRyJHDyNswxPhZWkCtA=
+
+Name: resource/CommunicationDiagram.bmp
+SHA1-Digest: nrnGgpbJYCb+ggTywrYJuSfoC5U=
+
+Name: resource/ImportWiz.bmp
+SHA1-Digest: qr0itp8REgLRxNhv7+9hyJJ2G6U=
+
+Name: resource/ActivityDiagram.bmp
+SHA1-Digest: MiX59cncXvx0WMS2cPQfZBQVmYk=
+
+Name: resource/ModelValidationView.bmp
+SHA1-Digest: VKWnWtu9qsFbWR/mwBc6HrJVfDs=
+
+Name: resource/NewOperation.bmp
+SHA1-Digest: sBsLgl9QD3tTJnqzsjmSvqHb0LA=
+
+Name: resource/ElementContextMenuDia.bmp
+SHA1-Digest: 3vNvMW5NeT6gG4ebeoH6PizfzlE=
+
+Name: resource/Feature-Plug-in.bmp
+SHA1-Digest: sUUX61YVk5F6Bwlphw4R1jqpEsk=
+
+Name: resource/ModelProjResourcesFS.bmp
+SHA1-Digest: b6H1ksFsPwvGzzUMqHTm7Wx1apE=
+
+Name: resource/SearchView.bmp
+SHA1-Digest: ITw3US3gDQRmpWVYugUZPd5B9Bs=
+
+Name: resource/PapyrusStarterGuide.pdf
+SHA1-Digest: CmVeYHRp+vjTituHYWaK7R8Awv4=
+
+Name: resource/SequenceDiagram.bmp
+SHA1-Digest: GLd/VnYYvYhZMmoHZ2EW2ALKeAw=
+
+Name: resource/ExportWiz.bmp
+SHA1-Digest: Ol++iCLYPd0lR1QxCW0bB6KFmjo=
+
+Name: resource/NewActor.bmp
+SHA1-Digest: vlT9uLM1cKBwtbfCTDCSEkeBTZ8=
+
+Name: resource/NewClass.bmp
+SHA1-Digest: /cVX44RPLNwiyywzeSoywq5WE8g=
+
+Name: resource/PropertiesView.bmp
+SHA1-Digest: 4mhcW82aRMaKSphL1JDgP7Qjzog=
+
+Name: resource/ClassDiagramEditorBase.bmp
+SHA1-Digest: X3em/mtLAMImKqUnCrkmk0cPd+s=
+
+Name: resource/EditingView.bmp
+SHA1-Digest: SUj7Zf1BnJyxup7fofuUqbQjW5o=
+
+Name: resource/ClassDiagram.bmp
+SHA1-Digest: M5vinRL2ictqme49pKvKRwzb+K8=
+
+Name: resource/DiagramEditor.bmp
+SHA1-Digest: /oXnVmZTK6JS2h5TvpW+5IRNttk=
+
+Name: resource/PapyrusStarterGuide.html
+SHA1-Digest: /OqdCzpjzzHdUx2k36gD+DDC/IM=
+
+Name: resource/UCdiagram.bmp
+SHA1-Digest: 3nOGgYqiUGn7l6P9BvuQPkp0KKI=
+
+Name: plugin.xml
+SHA1-Digest: JAoc5iTe205a9TcDgWws5ITHBEY=
+
+Name: resource/NewPackage.bmp
+SHA1-Digest: KZZkMgBKI6aMrG6YVBbTiBVptYk=
+
+Name: resource/DiagramEditorFieldsPointers.bmp
+SHA1-Digest: N9HfBNoUYnulqzjA5NaaZYh59dI=
+
+Name: resource/PapyrusStarterGuide-toc.xml
+SHA1-Digest: uyzN8ngG3ouDXKRFWW4l0qUrBZ8=
+
+Name: resource/PapyrusStarterGuide.mediawiki
+SHA1-Digest: vJ5/fyZUWvkhygv/2+zmfGM0pk0=
+
+Name: resource/IkonOpenPerspective.png
+SHA1-Digest: e8PKQa5TCtJO8YHJVk0zkB3+HWA=
+
+Name: resource/NewDiagram.bmp
+SHA1-Digest: aPYihTsjPDRL3fYnH5cO+COtHJ8=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: resource/ModelProjResourcesPE.bmp
+SHA1-Digest: 3lKhqaIFDUyRN6Wubuo1fpN/FAM=
+
+Name: resource/ModelExpl.bmp
+SHA1-Digest: tg/sMMsD1ZpeEiTqTKI39zBictA=
+
+Name: resource/Preferences.bmp
+SHA1-Digest: 2tcbo3YGT07P9HCGKW6T34/pMwk=
+
+Name: resource/WorkspacePopup.bmp
+SHA1-Digest: hv3zLVEeSWHQO7p4ekHlus864ro=
+
+Name: resource/DiagramEditorFields.bmp
+SHA1-Digest: cVloE5C1sNeBgMIhxt4H6r80R7w=
+
+Name: resource/NewUseCase.bmp
+SHA1-Digest: NgebiXN91jVwRF5S65muUyfNKec=
+
+Name: resource/Relationships.bmp
+SHA1-Digest: kgbBU0bV/YaRnGOcXPJqGnYd+J4=
+
+Name: resource/NewAttribute.bmp
+SHA1-Digest: otnUPryUklYETR/lNW/zgLkTDM4=
+
+Name: resource/Workbench.bmp
+SHA1-Digest: KfiOgrNrubDCkIViodpbEhPs5tE=
+
+Name: resource/OutlineView.bmp
+SHA1-Digest: DDmoIT6doYBrmQmjz4s04yw+xQA=
+

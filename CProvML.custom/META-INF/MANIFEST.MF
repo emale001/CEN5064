@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: CProvML.ee;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: cprovml.custom.Activator
+Bundle-Activator: cprovml.ee.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.workbench,
@@ -11,11 +11,12 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.common,
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
- org.eclipse.jface
+ org.eclipse.jface,
+ CProvML
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.draw2d,
  org.eclipse.emf.ecore.util,
  org.eclipse.emf.ecore.xmi.impl,
  org.eclipse.gmf.runtime.diagram.ui.figures
-Export-Package: cprovml.custom.figures
+Export-Package: cprovml.ee.utility

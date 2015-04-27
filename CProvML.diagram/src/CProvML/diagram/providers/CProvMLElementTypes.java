@@ -53,10 +53,6 @@ public class CProvMLElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Environment_2005 = getElementType("CProvML.diagram.Environment_2005"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
 	public static final IElementType Instance_2002 = getElementType("CProvML.diagram.Instance_2002"); //$NON-NLS-1$
 	/**
 	 * @generated
@@ -66,6 +62,10 @@ public class CProvMLElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Network_2004 = getElementType("CProvML.diagram.Network_2004"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Environment_2005 = getElementType("CProvML.diagram.Environment_2005"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */

@@ -1,0 +1,75 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: CSS Documentation
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css.doc;singlet
+ on:=true
+Require-Bundle: org.eclipse.help;bundle-version="3.6.0",org.eclipse.pa
+ pyrus.infra.doc;bundle-version="1.0.1"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.1.v201409170932
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/css-toc.xml
+SHA1-Digest: PhGwwVCq4t3ULuEdLMhJiSMcFmc=
+
+Name: resource/Papyrus_CSS_export_style.png
+SHA1-Digest: cbQ4nnlRuiOzFabpLSMZ0BcmIJA=
+
+Name: resource/css.mediawiki
+SHA1-Digest: 3yRVqaXYRdDa+f+phdR9DnvQk+o=
+
+Name: resource/css-main-toc.xml
+SHA1-Digest: h/UIUiKNCrpFdVNkLcYb5Fajslw=
+
+Name: resource/Papyrus_CSS_default_style.png
+SHA1-Digest: J3CQX+zAIYkwArvXFmJjeyjA5lU=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: resource/Papyrus_CSS_no_theme.png
+SHA1-Digest: zYLpydn51d4L7z1QRD7GBLyiR0o=
+
+Name: resource/documentation.css
+SHA1-Digest: ErEunM5JtZsf1uv0mdkzkUA52QQ=
+
+Name: resource/Papyrus_CSS_project.png
+SHA1-Digest: ppbDaByKqM4zdnHu/5gORIZA8JU=
+
+Name: resource/Papyrus_CSS_customStyle.png
+SHA1-Digest: VJJhgnyZKLqMtPodV9VJ9zLY/0o=
+
+Name: resource/Papyrus_CSS_maskLabel_result.png
+SHA1-Digest: Gpkt+E0LC3iZn+betnIi97C4pEU=
+
+Name: resource/Papyrus_CSS_theme_creation.png
+SHA1-Digest: yYkBci20J5bX4Z1M9Mzx+Jp9CRE=
+
+Name: resource/css.html
+SHA1-Digest: tUXrGbjqj5TABsIUi1Vqbl+Xf9o=
+
+Name: resource/Papyrus_CSS_tooltip.png
+SHA1-Digest: rxYSkxxqHHbeE18j1MYKobYBqqU=
+
+Name: resource/Papyrus_CSS_installation.png
+SHA1-Digest: Z6MUEmg1o+nNFEKZQr5+rNbS/kU=
+
+Name: plugin.xml
+SHA1-Digest: Pwsn/7M+LaQMMbIEI0JpqCzJg/E=
+
+Name: resource/Papyrus_CSS_import_stylesheet.png
+SHA1-Digest: XjAtpZZSp05kkqGu+bkZgjf13Uw=
+
+Name: resource/Papyrus_CSS_maskLabel.png
+SHA1-Digest: mTVRXLkSuGvEhN446a9/SyMHPW8=
+
+Name: resource/Papyrus_CSS_theme.png
+SHA1-Digest: pAti1Wj5Fuuj7+a7Z78n68ct3IQ=
+
+Name: resource/Papyrus_CSS_maskLabel_association.png
+SHA1-Digest: Osy+Mcvu6Kt1XamByXJobKcwfCs=
+

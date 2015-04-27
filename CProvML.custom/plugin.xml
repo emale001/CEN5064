@@ -6,30 +6,30 @@
          point="org.eclipse.ui.commands">
       <command
             name="Transform to X-CProvML"
-            categoryId="CProvML.custom.commands.category"
-            id="CProvML.custom.commands.sampleCommand">
+            categoryId="CProvML.ee.commands.category"
+            id="CProvML.ee.commands.sampleCommand">
       </command>
       <command
             name="Transform to EC2 Calls"
-            categoryId="CProvML.custom.commands.category"
-            id="CProvML.custom.commands.sampleCommandTwo">
+            categoryId="CProvML.ee.commands.category"
+            id="CProvML.ee.commands.sampleCommandTwo">
       </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
-            commandId="CProvML.custom.commands.sampleCommand"
-            class="cprovml.custom.handlers.CProvHandler">
+            commandId="CProvML.ee.commands.sampleCommand"
+            class="cprovml.ee.xcprovmlfilter.MenuHandler">
       </handler>
       <handler
-            commandId="CProvML.custom.commands.sampleCommandTwo"
-            class="cprovml.custom.handlers.CProvHandlerCalls">
+            commandId="CProvML.ee.commands.sampleCommandTwo"
+            class="cprovml.ee.cloudservicecallsfilter.MenuHandler">
       </handler>
    </extension>
    <extension
          point="org.eclipse.ui.bindings">
       <key
-            commandId="CProvML.custom.commands.sampleCommand"
+            commandId="CProvML.ee.commands.sampleCommand"
             contextId="org.eclipse.ui.contexts.window"
             sequence="M1+6"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
@@ -42,16 +42,16 @@
          <menu
                label="CProvML"
                mnemonic="M"
-               id="CProvML.custom.menus.sampleMenu">
+               id="CProvML.ee.menus.sampleMenu">
             <command
-                  commandId="CProvML.custom.commands.sampleCommand"
+                  commandId="CProvML.ee.commands.sampleCommand"
                   mnemonic="S"
-                  id="CProvML.custom.menus.sampleCommand">
+                  id="CProvML.ee.menus.sampleCommand">
             </command>
             <command
-                  commandId="CProvML.custom.commands.sampleCommandTwo"
+                  commandId="CProvML.ee.commands.sampleCommandTwo"
                   mnemonic="S"
-                  id="CProvML.custom.menus.sampleCommandTwo">
+                  id="CProvML.ee.menus.sampleCommandTwo">
             </command>
             <visibleWhen
                   checkEnabled="true">

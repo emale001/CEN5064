@@ -1,0 +1,110 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: mujor/vxiENBMwZ1bh0BUtWoMfE=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: 9cjY7bCua7Xo8pZJUJSC/F6unyc=
+
+Name: resource/symbols.mediawiki
+SHA1-Digest: zuc4qltRmHzVj0deKucETAXsrUo=
+
+Name: resource/constraints.html
+SHA1-Digest: lnoCDXdb+FQYfRg+qNcRQ+GL/t8=
+
+Name: resource/Symbol_Compartment.png
+SHA1-Digest: r/FcLRpNTIDaof2NxRwaxrKapVw=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: w7GPal1GlLZqF0/qMGZc1gbLnrQ=
+
+Name: resource/PapyrusConstraint-CreateViaME.png
+SHA1-Digest: FHvgKKbq+oSHrTcSVBxxM4D5pQE=
+
+Name: resource/constraint-creation.html
+SHA1-Digest: AixWsbHSuhPZJKaixhEB29YgFCM=
+
+Name: resource/Symbol_ProfileSelectionDialog.png
+SHA1-Digest: 1m6ZyhfNOg6rvt6NI7EmxY8mfPo=
+
+Name: resource/Symbol_TypeSymbolDefinition_SymbolPath.png
+SHA1-Digest: 7Zy3IgzSoVtqmprzX1NqgOYkA/Y=
+
+Name: resource/PapyrusConstraint-SpecViaPropertyView.png
+SHA1-Digest: YSO8WChsfJwOqwdCqaMOKUAGGAE=
+
+Name: resource/Symbol_ActorAndTypedElementWithTypeActor.png
+SHA1-Digest: vZy6INdw2Kcp4f1sa8E8e1iHQDo=
+
+Name: resource/PapyrusConstraint-OpaqueExpressionAddLang.png
+SHA1-Digest: KhB6Ur++cZ5XiLCueJHKV9esxaM=
+
+Name: resource/PapyrusConstraint-CreateViaDiagram.png
+SHA1-Digest: 53jBHVh28MeWfGhKm2evsRkehJ4=
+
+Name: resource/constraints-toc.xml
+SHA1-Digest: eACeJBk2wmjwpaDn554qzZQuXsI=
+
+Name: resource/PapyrusConstraint-OpaqueExpressionEdit.png
+SHA1-Digest: F+B1GMlH75srn+aAw17+VNBCxPA=
+
+Name: plugin.xml
+SHA1-Digest: 0ebHDU+XeKHCWMJPC9y+hyvcRto=
+
+Name: resource/Symbol_Example.png
+SHA1-Digest: C5OaecQnAhKrUNGa65En0pMDF7U=
+
+Name: resource/Symbol_ApplyTypeSymbolDefinitionStereotypeDialog.png
+SHA1-Digest: y55km3K/bZNQZrfhdRTQeeiXqA4=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: resource/Symbol_AddImageToStereotype.png
+SHA1-Digest: M+yqKQiDKscyaAlemfx6O7D/qGk=
+
+Name: resource/Symbol_DecoratorPropertyView.png
+SHA1-Digest: wOBqMfcWREpyRIsczZ40oghPqNE=
+
+Name: about.html
+SHA1-Digest: /vga0Nzd1yu4aqFpG4OBmPWooUw=
+
+Name: resource/PapyrusConstraint-ContextViaPropertyView.png
+SHA1-Digest: m8fYjtdxSsBXGvhpp1kerlM0b1E=
+
+Name: resource/Symbol_CompartmentDialog.png
+SHA1-Digest: geZGFXGkgQHEAJ/yehGxsw0HTcA=
+
+Name: resource/Symbol_Decorator.png
+SHA1-Digest: kSTSJI7271HL2OoFCKVxIU0DtwE=
+
+Name: resource/symbols-main-toc.xml
+SHA1-Digest: AWPxicABA1XhrM1eFJO5nHTMuwk=
+
+Name: resource/constraint-creation-toc.xml
+SHA1-Digest: 99mX80mHiHehgkWmXLJSZ7uA/SY=
+
+Name: resource/Symbol_ProfileSelectionDialogAllSubProfile.png
+SHA1-Digest: AlMVmUCEZAjcfZpmimM059nMmU4=
+
+Name: resource/PapyrusConstraint-ContextViaDiagram.png
+SHA1-Digest: 3c4vxqmL9SqpK34hhmaCwwJXjFw=
+
+Name: resource/constraint-creation.mediawiki
+SHA1-Digest: cg+3ygtl7tldFFk0StD5r2MfORE=
+
+Name: resource/PapyrusConstraint-CreationUseCase.png
+SHA1-Digest: 02F16s8Xckxfcb3di+UrrzZIBMg=
+
+Name: resource/Symbol_ApplyTypeSymbolDefinitionStereotype.png
+SHA1-Digest: TrA28TM1PrqqsFGT7ke6/yZi3yc=
+
+Name: resource/Symbol_ApplyRegisteredProfile.png
+SHA1-Digest: Z5QGmD8LVaGhtA0OLs1Epj4NtNU=
+
+Name: resource/PapyrusConstraint-ChooseEditor.png
+SHA1-Digest: YSIkzUiBCPrnzlNnkbV1lq7abKM=
+
+Name: resource/symbols-toc.xml
+SHA1-Digest: P4Nhh4MXAqYF2afkCbgDqkmMOMM=
+
+Name: resource/symbols.html
+SHA1-Digest: Zpk6/LeSgJ3wsXs0BktiDD4eov4=
+

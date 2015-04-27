@@ -41,25 +41,6 @@ public class CProvMLParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser environmentName_5004Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getEnvironmentName_5004Parser() {
-		if (environmentName_5004Parser == null) {
-			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
-					.getNode_Name() };
-			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
-					features);
-			environmentName_5004Parser = parser;
-		}
-		return environmentName_5004Parser;
-	}
-
-	/**
-	 * @generated
-	 */
 	private IParser instanceName_5005Parser;
 
 	/**
@@ -112,6 +93,25 @@ public class CProvMLParserProvider extends AbstractProvider implements
 			networkName_5002Parser = parser;
 		}
 		return networkName_5002Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser environmentName_5004Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getEnvironmentName_5004Parser() {
+		if (environmentName_5004Parser == null) {
+			EAttribute[] features = new EAttribute[] { CProvML.CProvMLPackage.eINSTANCE
+					.getNode_Name() };
+			CProvML.diagram.parsers.MessageFormatParser parser = new CProvML.diagram.parsers.MessageFormatParser(
+					features);
+			environmentName_5004Parser = parser;
+		}
+		return environmentName_5004Parser;
 	}
 
 	/**

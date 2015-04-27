@@ -2,7 +2,7 @@
 <gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="CProvML">
   <figures name="Default">
     <descriptors name="InstanceFigure">
-      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureInstanceFigure" qualifiedClassName="cprovml.custom.figures.InstanceShape">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureInstanceFigure" qualifiedClassName="cprovml.ee.utility.InstanceShape">
         <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
         <children xsi:type="gmfgraph:Label" name="InstanceNameFigure" text="&lt;..>">
           <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
@@ -11,7 +11,7 @@
       <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="StorageFigure">
-      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureStorageFigure" qualifiedClassName="cprovml.custom.figures.StorageShape">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureStorageFigure" qualifiedClassName="cprovml.ee.utility.StorageShape">
         <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
         <children xsi:type="gmfgraph:Label" name="StorageNameFigure" text="&lt;..>">
           <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
@@ -23,7 +23,7 @@
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionFigure"/>
     </descriptors>
     <descriptors name="SecurityGroupFigure">
-      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureSecurityGroupFigure" qualifiedClassName="cprovml.custom.figures.SecurityGroupShape">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureSecurityGroupFigure" qualifiedClassName="cprovml.ee.utility.SecurityGroupShape">
         <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
         <children xsi:type="gmfgraph:Label" name="SecurityGroupNameFigure" text="&lt;..>">
           <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
@@ -32,7 +32,7 @@
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="NetworkFigure">
-      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureNetworkFigure" qualifiedClassName="cprovml.custom.figures.NetworkShape">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureNetworkFigure" qualifiedClassName="cprovml.ee.utility.NetworkShape">
         <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
         <children xsi:type="gmfgraph:Label" name="NetworkNameFigure" text="&lt;..>">
           <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
@@ -41,7 +41,7 @@
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="EnvironmentFigure">
-      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureEnvironmentFigure" qualifiedClassName="cprovml.custom.figures.EnvironmentShape">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureEnvironmentFigure" qualifiedClassName="cprovml.ee.utility.EnvironmentShape">
         <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
         <children xsi:type="gmfgraph:Label" name="EnvironmentNameFigure" text="&lt;..>">
           <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>

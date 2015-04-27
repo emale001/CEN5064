@@ -1,0 +1,68 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: Ycwt/C6SLxBMGtxXVKGIKh4fgEI=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: 97b6tDDuoUIwGAx7fupRzEMAdGk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: resource/css-toc.xml
+SHA1-Digest: BLTvv0Q5G5zZOov9Vxa5RQWV+NA=
+
+Name: resource/Papyrus_CSS_export_style.png
+SHA1-Digest: VCIH661EtBiezSB2KweLBzqRp38=
+
+Name: resource/css.mediawiki
+SHA1-Digest: hQkuqSc4uwfPQ7pU8wc41OoCAv4=
+
+Name: resource/css-main-toc.xml
+SHA1-Digest: SN+wWJQelxBlzfl8IryKgQvNy58=
+
+Name: resource/Papyrus_CSS_default_style.png
+SHA1-Digest: apZAAO3X2nQdq3nhqU14rLIR/EA=
+
+Name: about.html
+SHA1-Digest: /vga0Nzd1yu4aqFpG4OBmPWooUw=
+
+Name: resource/Papyrus_CSS_no_theme.png
+SHA1-Digest: EAjaln6imcX8KW95BKZXis0WStI=
+
+Name: resource/documentation.css
+SHA1-Digest: Bw84LkhFpJJFrE/HdTe8Cmzzy14=
+
+Name: resource/Papyrus_CSS_project.png
+SHA1-Digest: PiJCF3vuYsB8nTE+Z9Jf9yAYuIs=
+
+Name: resource/Papyrus_CSS_customStyle.png
+SHA1-Digest: UmbB4f1wYOj/jtoBc87WY95l7Wo=
+
+Name: resource/Papyrus_CSS_maskLabel_result.png
+SHA1-Digest: qYCMvr5UV+72tDQZbaZtbHRdWk0=
+
+Name: resource/Papyrus_CSS_theme_creation.png
+SHA1-Digest: NTJQKXd3rzxp9ianW+Pe/zldaYQ=
+
+Name: resource/css.html
+SHA1-Digest: iEAAOPzvitc4PiJJ22+JRnOY7WU=
+
+Name: resource/Papyrus_CSS_tooltip.png
+SHA1-Digest: u+COVVCaTsqEpl0CU81Kf6dofpk=
+
+Name: resource/Papyrus_CSS_installation.png
+SHA1-Digest: 0Y6gK39C6e44VqlNs9bCEvxpA6o=
+
+Name: plugin.xml
+SHA1-Digest: 8DH+eXQV25vw3MSytrEexQmS89U=
+
+Name: resource/Papyrus_CSS_maskLabel.png
+SHA1-Digest: xen0xSdoBxn0dD36tvFUPSZtpyA=
+
+Name: resource/Papyrus_CSS_import_stylesheet.png
+SHA1-Digest: olfsGrH/noG2QF0ZRYx2OySIldw=
+
+Name: resource/Papyrus_CSS_theme.png
+SHA1-Digest: 0vLNzXszSerHCarYnjaxlhWMudQ=
+
+Name: resource/Papyrus_CSS_maskLabel_association.png
+SHA1-Digest: cx518Br/XF6l8F0yTN0vDKkvhlk=
+

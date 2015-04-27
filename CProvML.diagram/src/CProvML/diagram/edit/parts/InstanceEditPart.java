@@ -22,7 +22,7 @@ import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
-import cprovml.custom.figures.InstanceShape;
+import cprovml.ee.utility.InstanceShape;
 
 /**
  * @generated

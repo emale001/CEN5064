@@ -16,11 +16,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Environment.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Environment.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -29,11 +29,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/SecurityGroup.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/SecurityGroup.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -42,11 +42,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Network.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Network.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -55,11 +55,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Instance.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Instance.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -68,11 +68,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Storage.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Storage.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
@@ -81,11 +81,11 @@
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Connection.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
         <largeIcon
             xsi:type="gmftool:BundleImage"
             path="/icons/Connection.png"
-            bundle="CProvML.custom"/>
+            bundle="CProvML.ee"/>
       </tools>
     </tools>
   </palette>

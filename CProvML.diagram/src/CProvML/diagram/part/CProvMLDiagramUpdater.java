@@ -165,18 +165,6 @@ public class CProvMLDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005ContainedLinks(
-			View view) {
-		CProvML.Environment modelElement = (CProvML.Environment) view
-				.getElement();
-		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_Connection_4001(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getInstance_2002ContainedLinks(
 			View view) {
 		CProvML.Instance modelElement = (CProvML.Instance) view.getElement();
@@ -210,6 +198,18 @@ public class CProvMLDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005ContainedLinks(
+			View view) {
+		CProvML.Environment modelElement = (CProvML.Environment) view
+				.getElement();
+		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_Connection_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getConnection_4001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
@@ -221,21 +221,6 @@ public class CProvMLDiagramUpdater {
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getSecurityGroup_2003IncomingLinks(
 			View view) {
 		CProvML.SecurityGroup modelElement = (CProvML.SecurityGroup) view
-				.getElement();
-		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
-				.find(view.eResource().getResourceSet().getResources());
-		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
-		result.addAll(getIncomingTypeModelFacetLinks_Connection_4001(
-				modelElement, crossReferences));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005IncomingLinks(
-			View view) {
-		CProvML.Environment modelElement = (CProvML.Environment) view
 				.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
@@ -290,6 +275,21 @@ public class CProvMLDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005IncomingLinks(
+			View view) {
+		CProvML.Environment modelElement = (CProvML.Environment) view
+				.getElement();
+		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
+				.find(view.eResource().getResourceSet().getResources());
+		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Connection_4001(
+				modelElement, crossReferences));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getConnection_4001IncomingLinks(
 			View view) {
 		return Collections.emptyList();
@@ -301,18 +301,6 @@ public class CProvMLDiagramUpdater {
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getSecurityGroup_2003OutgoingLinks(
 			View view) {
 		CProvML.SecurityGroup modelElement = (CProvML.SecurityGroup) view
-				.getElement();
-		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
-		result.addAll(getOutgoingTypeModelFacetLinks_Connection_4001(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005OutgoingLinks(
-			View view) {
-		CProvML.Environment modelElement = (CProvML.Environment) view
 				.getElement();
 		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Connection_4001(modelElement));
@@ -347,6 +335,18 @@ public class CProvMLDiagramUpdater {
 	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getNetwork_2004OutgoingLinks(
 			View view) {
 		CProvML.Network modelElement = (CProvML.Network) view.getElement();
+		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Connection_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<CProvML.diagram.part.CProvMLLinkDescriptor> getEnvironment_2005OutgoingLinks(
+			View view) {
+		CProvML.Environment modelElement = (CProvML.Environment) view
+				.getElement();
 		LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor> result = new LinkedList<CProvML.diagram.part.CProvMLLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Connection_4001(modelElement));
 		return result;

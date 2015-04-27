@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.papyrus.copypaste.ui.doc;singleton:=t
+ rue
+Require-Bundle: org.eclipse.help
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.1.v201409170932
+Bundle-ManifestVersion: 2
+
+Name: resource/copypaste-toc.xml
+SHA1-Digest: ON9YD3ewBeivxw3w3sHNgsoPNWY=
+
+Name: resource/copypaste.mediawiki
+SHA1-Digest: 9eSGotrySuhq6BCTQ7I2ShXJvbU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: about.html
+SHA1-Digest: Ja08ztPmovrfPo9Lly7dPlAGquM=
+
+Name: resource/copypaste-main-toc.xml
+SHA1-Digest: e/b0D9vC059vecptr/VDCoFlP3Q=
+
+Name: plugin.properties
+SHA1-Digest: msJu6ZDIWNGWrrYpazD4O76ypZ8=
+
+Name: resource/images/RenameExample.png
+SHA1-Digest: WdNG7EEVnTirWuDAwq449t3RJPg=
+
+Name: resource/images/ConstraintExample.png
+SHA1-Digest: auUSFZfjm0s7mY8JRmv5J3Z+WTc=
+
+Name: resource/images/DiagramMenus.png
+SHA1-Digest: iOSNgv0I41kgTm1iL5+rV4weYgw=
+
+Name: resource/images/StereotypeStrategy.png
+SHA1-Digest: L3nDQGbmhKSpmsCM1s79Z4GtXVE=
+
+Name: resource/images/PastePreferences.png
+SHA1-Digest: iufCNFp4R0pzTCfmIZUv0cGk8Y4=
+
+Name: plugin.xml
+SHA1-Digest: cyKMSiDCBiVZNOcqXCIE6Vo4I7E=
+
+Name: resource/copypaste.html
+SHA1-Digest: hM5MPVTvJnMqpWN8y8MMEtPvQKI=
+
+Name: resource/images/ModelExplorerMenus.png
+SHA1-Digest: h2nPPY6iS+9UMVKazov7CdPzoyM=
+

@@ -49,9 +49,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Environment_2005));
 		entry.setId("createEnvironment1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Environment.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Environment.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Environment.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Environment.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -66,9 +66,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.SecurityGroup_2003));
 		entry.setId("createSecurityGroup2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/SecurityGroup.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/SecurityGroup.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/SecurityGroup.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/SecurityGroup.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -83,9 +83,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Network_2004));
 		entry.setId("createNetwork3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Network.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Network.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Network.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Network.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -100,9 +100,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Instance_2002));
 		entry.setId("createInstance4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Instance.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Instance.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Instance.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Instance.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -117,9 +117,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Storage_2001));
 		entry.setId("createStorage5CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Storage.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Storage.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Storage.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Storage.png")); //$NON-NLS-1$
 		return entry;
 	}
 
@@ -134,9 +134,9 @@ public class CProvMLPaletteFactory {
 						.singletonList(CProvML.diagram.providers.CProvMLElementTypes.Connection_4001));
 		entry.setId("createConnection6CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Connection.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Connection.png")); //$NON-NLS-1$
 		entry.setLargeIcon(CProvML.diagram.part.CProvMLDiagramEditorPlugin
-				.findImageDescriptor("/CProvML.custom/icons/Connection.png")); //$NON-NLS-1$
+				.findImageDescriptor("/CProvML.ee/icons/Connection.png")); //$NON-NLS-1$
 		return entry;
 	}
 
