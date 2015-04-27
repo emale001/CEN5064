@@ -1,0 +1,7 @@
+# Tracing options for the CProvML.diagram plug-in
+
+# Common issues
+CProvML.diagram/debug=false
+
+# Visual IDs
+CProvML.diagram/debug/visualID=false

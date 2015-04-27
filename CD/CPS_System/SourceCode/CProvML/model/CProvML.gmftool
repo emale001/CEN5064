@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="CProvMLPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="CProvML">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Environment"
+          description="Create new Environment">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Environment.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Environment.png"
+            bundle="CProvML.ee"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Security Group"
+          description="Create new SecurityGroup">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/SecurityGroup.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/SecurityGroup.png"
+            bundle="CProvML.ee"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Network"
+          description="Create new Network">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Network.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Network.png"
+            bundle="CProvML.ee"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Instance"
+          description="Create new Instance">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Instance.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Instance.png"
+            bundle="CProvML.ee"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Storage"
+          description="Create new Storage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Storage.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Storage.png"
+            bundle="CProvML.ee"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Connection"
+          description="Create new Connection">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Connection.png"
+            bundle="CProvML.ee"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="/icons/Connection.png"
+            bundle="CProvML.ee"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

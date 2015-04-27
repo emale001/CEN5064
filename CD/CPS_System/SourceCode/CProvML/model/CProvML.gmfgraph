@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="CProvML">
+  <figures name="Default">
+    <descriptors name="InstanceFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureInstanceFigure" qualifiedClassName="cprovml.ee.utility.InstanceShape">
+        <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
+        <children xsi:type="gmfgraph:Label" name="InstanceNameFigure" text="&lt;..>">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="StorageFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureStorageFigure" qualifiedClassName="cprovml.ee.utility.StorageShape">
+        <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
+        <children xsi:type="gmfgraph:Label" name="StorageNameFigure" text="&lt;..>">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ConnectionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionFigure"/>
+    </descriptors>
+    <descriptors name="SecurityGroupFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureSecurityGroupFigure" qualifiedClassName="cprovml.ee.utility.SecurityGroupShape">
+        <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
+        <children xsi:type="gmfgraph:Label" name="SecurityGroupNameFigure" text="&lt;..>">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NetworkFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureNetworkFigure" qualifiedClassName="cprovml.ee.utility.NetworkShape">
+        <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
+        <children xsi:type="gmfgraph:Label" name="NetworkNameFigure" text="&lt;..>">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EnvironmentFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomFigureEnvironmentFigure" qualifiedClassName="cprovml.ee.utility.EnvironmentShape">
+        <layout xsi:type="gmfgraph:GridLayout" numColumns="2"/>
+        <children xsi:type="gmfgraph:Label" name="EnvironmentNameFigure" text="&lt;..>">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" verticalAlignment="BEGINNING" horizontalAlignment="BEGINNING"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+  </figures>
+  <nodes name="Instance" figure="InstanceFigure"/>
+  <nodes name="Storage" figure="StorageFigure"/>
+  <nodes name="SecurityGroup" figure="SecurityGroupFigure"/>
+  <nodes name="Network" figure="NetworkFigure"/>
+  <nodes name="Environment" figure="EnvironmentFigure"/>
+  <connections name="Connection" figure="ConnectionFigure"/>
+  <labels name="InstanceName" figure="InstanceFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="StorageName" figure="StorageFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="SecurityGroupName" figure="SecurityGroupFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="NetworkName" figure="NetworkFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="EnvironmentName" figure="EnvironmentFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+</gmfgraph:Canvas>

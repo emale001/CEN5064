@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CProvML/src" modelPluginID="CProvML" modelName="CProvML"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" language="" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>CProvML.ecore</foreignModel>
+  <genPackages prefix="CProvML" disposableProviderFactory="true" ecorePackage="CProvML.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CProvML.ecore#//OSType">
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//OSType/Windows"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//OSType/Linux"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//OSType/OSX"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CProvML.ecore#//CPUType">
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//CPUType/Intel"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//CPUType/AMD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CProvML.ecore#//StorageType">
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//StorageType/SSD"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//StorageType/HDD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CProvML.ecore#//NetworkType">
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//NetworkType/HostOnly"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//NetworkType/Bridge"/>
+      <genEnumLiterals ecoreEnumLiteral="CProvML.ecore#//NetworkType/NAT"/>
+    </genEnums>
+    <genClasses ecoreClass="CProvML.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Node/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CProvML.ecore#//Node/sourceConnections"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CProvML.ecore#//Node/targetConnections"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//Instance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Instance/CPU"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Instance/OS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Instance/RAM"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//Storage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Storage/Size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Storage/Type"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//NodesDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CProvML.ecore#//NodesDiagram/nodes"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CProvML.ecore#//Connection/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CProvML.ecore#//Connection/target"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//SecurityGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//SecurityGroup/IPRange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//SecurityGroup/VPCName"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//Network">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CProvML.ecore#//Network/Type"/>
+    </genClasses>
+    <genClasses ecoreClass="CProvML.ecore#//Environment"/>
+  </genPackages>
+</genmodel:GenModel>
