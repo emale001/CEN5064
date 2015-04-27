@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<cloudProvision>
+<instance name="a">
+<connections>
+<instance name="v"/>
+</connections>
+</instance>
+<instance name="v">
+<connections/>
+</instance>
+</cloudProvision>

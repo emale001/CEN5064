@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CProvML="CProvML" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_lxcpcOyUEeSwpb9ku2aosA" type="CProvML" name="default.cprovml_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_m01ZEOyUEeSwpb9ku2aosA" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m05DcOyUEeSwpb9ku2aosA" type="5005"/>
+    <element xmi:type="CProvML:Instance" href="default.cprovml#a"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m02AIOyUEeSwpb9ku2aosA" x="120" y="132"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_nRqfAOyUEeSwpb9ku2aosA" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nRrGEOyUEeSwpb9ku2aosA" type="5005"/>
+    <element xmi:type="CProvML:Instance" href="default.cprovml#v"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nRqfAeyUEeSwpb9ku2aosA" x="535" y="198"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_lxcpceyUEeSwpb9ku2aosA"/>
+  <element xmi:type="CProvML:NodesDiagram" href="default.cprovml#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_n3Lm4OyUEeSwpb9ku2aosA" type="4001" source="_m01ZEOyUEeSwpb9ku2aosA" target="_nRqfAOyUEeSwpb9ku2aosA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_n3MN8OyUEeSwpb9ku2aosA" fontName="Segoe UI"/>
+    <element xmi:type="CProvML:Connection" href="default.cprovml#//@nodes.0/@sourceConnections.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n3MN8eyUEeSwpb9ku2aosA" points="[66, 8, -349, -58]$[481, 31, 66, -35]"/>
+  </edges>
+</notation:Diagram>
