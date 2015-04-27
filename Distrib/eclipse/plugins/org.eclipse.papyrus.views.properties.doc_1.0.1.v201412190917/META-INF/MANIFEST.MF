@@ -1,0 +1,75 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: Properties view Documentation
+Bundle-SymbolicName: org.eclipse.papyrus.views.properties.doc;singleto
+ n:=true
+Require-Bundle: org.eclipse.help;bundle-version="3.6.0",org.eclipse.pa
+ pyrus.infra.doc;bundle-version="1.0.1"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.1.v201412190917
+Bundle-ManifestVersion: 2
+
+Name: resource/fig13.png
+SHA1-Digest: If/gYLrv4ViGSrsCw4i9Mjo2YCY=
+
+Name: resource/fig14.png
+SHA1-Digest: B0i+EiD0MMYKOjlu5nsSwljOlto=
+
+Name: resource/properties-view-toc.xml
+SHA1-Digest: KfePuarOY4JHS+NlVwaE69lrNmQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/properties-view.mediawiki
+SHA1-Digest: ldigojOdZF5+GQx64k1kHeBFIks=
+
+Name: resource/fig1.png
+SHA1-Digest: oBVzkAxmYGSEf/4AnXntpfiZUbo=
+
+Name: resource/fig2.png
+SHA1-Digest: S/CRzifPNkhLGgEceVx+CAUFlss=
+
+Name: resource/fig3.png
+SHA1-Digest: ouY4aJSEB68TAXSDwDtvKoX6kJU=
+
+Name: resource/properties-view-main-toc.xml
+SHA1-Digest: FDZhH2pHur1k8dpgGtobPX5iOfQ=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: resource/fig4.png
+SHA1-Digest: hpctzWyvpajdqaVT+zQdsUm86Mg=
+
+Name: resource/fig5.png
+SHA1-Digest: 5G/pLw0kFKsMFUo+AYRX0BO0qb4=
+
+Name: resource/fig6.png
+SHA1-Digest: 6lCADUzlJA89g2nXxM31RAeeYqI=
+
+Name: resource/fig7.png
+SHA1-Digest: zjt4iUJHYCF4gsNWyzIZ94uLkAM=
+
+Name: resource/fig8.png
+SHA1-Digest: w3uW4KW82Zy3Il82o1i/jb7Quo8=
+
+Name: resource/fig9.png
+SHA1-Digest: gA3GL8qguhX8gE0p5pUiQeS4O3E=
+
+Name: resource/properties-view.html
+SHA1-Digest: 0N9gBQ2qjMG0bxBt+isBlwTwEfM=
+
+Name: plugin.xml
+SHA1-Digest: /jfeZ/izSOqAy6jqdoyWJfcV3No=
+
+Name: resource/fig10.png
+SHA1-Digest: V0urtolvI01dBmrEHmzV6D87gkY=
+
+Name: resource/fig11.png
+SHA1-Digest: H2mRFT5fB5dBSK49QvjJ+pxIHdw=
+
+Name: resource/fig12.png
+SHA1-Digest: Pox6Ex/H5cglwLRtH/pc+13vrUc=
+

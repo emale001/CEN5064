@@ -1,0 +1,179 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: 8QF8lzeYDtlltfZCYJvvnlE6xmE=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: dRemPAZrsE5P/2hXUE07cwTZnvM=
+
+Name: resource/images/applyStereotype.png
+SHA1-Digest: GjsgP9JtJh9R/tG6Qxr0DfNvvEk=
+
+Name: resource/images/selectIcon.png
+SHA1-Digest: ZlveioXH9yOnjuTVh3QY4IPgMxk=
+
+Name: resource/images/arrow_left.gif
+SHA1-Digest: KmX6wmhU8PfLyQVyMxQTq8LHBQ4=
+
+Name: resource/images/importProfile.png
+SHA1-Digest: kvpNeRT+OY956KFfbfNzxDSXPT8=
+
+Name: resource/images/selectProfileModel.png
+SHA1-Digest: Al1NTzXNYABJ60zL8ji+rZulBUc=
+
+Name: resource/images/subProfiles.png
+SHA1-Digest: 92PW9CA1vFNKTPP0Mh8WOwslEiU=
+
+Name: resource/images/resultProfile.png
+SHA1-Digest: rauxHcCnK3UvaKj7nsKrNiRFAXA=
+
+Name: resource/images/high.png
+SHA1-Digest: kG8XgsbrrWgFbDG2TJj8/h3soJ8=
+
+Name: resource/images/low.png
+SHA1-Digest: u3N+IOeuehg/8yy5en8C6UQAA/g=
+
+Name: resource/images/importMetaclassDialog.png
+SHA1-Digest: tUCwgqo5m9BYWxAWAd1u35WmPRA=
+
+Name: resource/images/iconKind.png
+SHA1-Digest: kWEgW+HeKaJTObzxc4rcGrIu/+Q=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: resource/images/Generalization.gif
+SHA1-Digest: ByxLwgKg+sxISQ8h7bSBEIVBJd0=
+
+Name: resource/images/profileDefinitionErrors.png
+SHA1-Digest: PqvKd9OgLLQlSWzpSYWrm01AuKs=
+
+Name: resource/images/stereotypePalette.png
+SHA1-Digest: usWPDTj5pCRKqYciRWVkzvErfB4=
+
+Name: resource/images/generalizeStereotype.png
+SHA1-Digest: uNgGtmXz6PBx5vfq6oSqVXlJv+w=
+
+Name: resource/profile.html
+SHA1-Digest: QzpTw5aJywGdkrpCgQdHjlDnSo0=
+
+Name: resource/images/stereotypeDisplays.png
+SHA1-Digest: J1XIbSOD5deVybT6oYiYS6lX7so=
+
+Name: resource/images/importedMetaclass.png
+SHA1-Digest: 4jwzd7Rvt/DqFaedJlxTUfn3hJ0=
+
+Name: resource/images/profileEditor.png
+SHA1-Digest: FeY5GV60ScJIUbV5pzKttOXGN6Q=
+
+Name: resource/images/stereotypeDisplayOptions.png
+SHA1-Digest: Ly58lPubIlL5ymUcb4LSzQjrjjQ=
+
+Name: resource/images/change_display.gif
+SHA1-Digest: kj1nWzMWJ5e/EVM+BYpwlj41p6c=
+
+Name: resource/images/profileDefinition1.png
+SHA1-Digest: pLaWgBbu8RfVGW0je/uyvnEIovw=
+
+Name: resource/images/arrow_right.gif
+SHA1-Digest: 2prJb+GgubNTGhjcdG5kiK/6sOc=
+
+Name: resource/images/profileDefinition2.png
+SHA1-Digest: cGCZCTt/B0mOYw5+GBS/jKw27wQ=
+
+Name: resource/profile-toc.xml
+SHA1-Digest: HMsDXYDaEOFGYmtrMpkU+8SdwRY=
+
+Name: resource/images/appliedProfiles.png
+SHA1-Digest: FBZAterP3DmMP3NOn7A4bJm2AHk=
+
+Name: resource/images/applyProfile.png
+SHA1-Digest: lCE5hR9o1d9t7ifPHhCk5ooyvKc=
+
+Name: resource/profile.mediawiki
+SHA1-Digest: 66ICinXKa1q/0EBT41zB6LLuIu4=
+
+Name: resource/images/stereotypeName.png
+SHA1-Digest: KRbTh//bkso7aX8EG6/TElUGTlE=
+
+Name: resource/images/iconsForStereotype.png
+SHA1-Digest: lpyxExx0ExZv3PRyrjXa6obg9E8=
+
+Name: resource/images/selectProfile.png
+SHA1-Digest: +0h3kwuRRIFdVvqkyRfrWiLPOIE=
+
+Name: resource/images/appliedStereotype.png
+SHA1-Digest: A6l6mtEdSXclbN+MEwuoAuxtAlw=
+
+Name: resource/images/Delete.gif
+SHA1-Digest: kztj0ZRuRcHOmpT+4aMWhcRK3Lk=
+
+Name: resource/images/newProfile.png
+SHA1-Digest: oYWL7XB1FaU9bHy+BVVtXLZtkdM=
+
+Name: resource/images/stereotypePropertyEdition.png
+SHA1-Digest: 1vlUODxy7wodrxAfd7UxH9q+InM=
+
+Name: plugin.xml
+SHA1-Digest: RvElMHa4oLoMQNw/AbkHc8TdITE=
+
+Name: resource/images/metaclassExtension.png
+SHA1-Digest: UpctFJ8VUjIu+q00RTesIICQ94k=
+
+Name: resource/images/Add.gif
+SHA1-Digest: aYv06Y2wN+O+rUsfDBfls8zMjOM=
+
+Name: resource/profile-main-toc.xml
+SHA1-Digest: DYF18h5fmq/+Ob1kVy69DHsiUes=
+
+Name: resource/images/applyStereotype2.png
+SHA1-Digest: 0OqUNxSea34ThzR25JSb2H0Lo/Y=
+
+Name: resource/images/applyStereotype3.png
+SHA1-Digest: kHX7ww53cBLkvH7y0AFcRZ2raDc=
+
+Name: resource/images/applyStereotype4.png
+SHA1-Digest: h7dGpaYj+7I73X0Dh+Jzbi9sRak=
+
+Name: resource/images/applyStereotype5.png
+SHA1-Digest: 5X5xSvaRYmrgasGNKtTyjUF+ylI=
+
+Name: resource/images/medium.png
+SHA1-Digest: cvqns9mpgD1uT34GCDT3EY/Y1XI=
+
+Name: resource/images/iconExpressions.png
+SHA1-Digest: nVpVgo57crAoOO2ObMPMkT5UlJM=
+
+Name: resource/images/Profile.gif
+SHA1-Digest: w5j1FVbSf+xESX8adbmaTr4/cuM=
+
+Name: about.html
+SHA1-Digest: /vga0Nzd1yu4aqFpG4OBmPWooUw=
+
+Name: resource/images/manyStereotypeIcons.png
+SHA1-Digest: K8Krs10ko+yIPFQblH5Yf5xYxzw=
+
+Name: resource/images/newProfileDiagram.png
+SHA1-Digest: Jk1mhhfeLFQW3acZUjpaGmXvDsM=
+
+Name: resource/images/dropStereotype.png
+SHA1-Digest: IXnJLN70bX1ZlJHP/dR7pSq6A2g=
+
+Name: resource/images/stereotypeProperties.png
+SHA1-Digest: jY7TjgCleilX8SVJFgf2JPqrAhU=
+
+Name: resource/images/selectProfiles.png
+SHA1-Digest: dZFd0cFLTBxHBRzH9YzXZ0f2YTQ=
+
+Name: resource/images/ConsoleViewQN.gif
+SHA1-Digest: EsvoI+x0Et/J+6G5EhDJBPOSEAA=
+
+Name: resource/images/highReqIcon.png
+SHA1-Digest: GeAD+TXocwd5ha5xf4jaKFAnpWI=
+
+Name: resource/images/applyProfile2.png
+SHA1-Digest: 5NJOZExQAEe1/wZpzGyerBVcTvA=
+
+Name: resource/images/applyProfile3.png
+SHA1-Digest: wg4jromSO8A539t8BKr6cGP3v4s=
+
+Name: resource/images/Extension.gif
+SHA1-Digest: jOxobSeojtTLSXhhoSsHKnnQs/s=
+
